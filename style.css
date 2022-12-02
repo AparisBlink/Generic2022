@@ -1,3 +1,4 @@
+
 /*
 *   Imports de todos los archivos de estilos
 */
@@ -882,8 +883,9 @@ body #book-index #indice .col-main {
   /************************
    * CSS AÑADIDO POR HTML *
    ************************/
-
-		/* Vuestro CSS aquí. */
+        body {
+            font-size: 30px !important;
+        }
 
    /************************
    * CSS AÑADIDO POR HTML *
