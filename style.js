@@ -86,9 +86,9 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./generic/blink-src/js/cke_styles.js":
+/***/ "./generic2022/blink-src/js/cke_styles.js":
 /*!********************************************!*\
-  !*** ./generic/blink-src/js/cke_styles.js ***!
+  !*** ./generic2022/blink-src/js/cke_styles.js ***!
   \********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -99,7 +99,7 @@ __webpack_require__.r(__webpack_exports__);
 *   Array con la definición de los estilos para el editor de CKEditor
 */
 const ckeStyles = [
-  {name: 'Caja 1', type: 'widget', widget: 'blink_box', attributes: {'class': 'box-1'}},
+  {name: 'Cajita bonita', type: 'widget', widget: 'blink_box', attributes: {'class': 'box-1'}},
   {name: 'Caja 2', type: 'widget', widget: 'blink_box', attributes: {'class': 'box-2'}},
   {name: 'Énfasis', element: 'span', attributes: {'class': 'bck-enfasis'}}
   // Añadir elementos CKEditor aquí.
@@ -108,9 +108,9 @@ const ckeStyles = [
 
 /***/ }),
 
-/***/ "./generic/blink-src/js/layout/main.js":
+/***/ "./generic2022/blink-src/js/layout/main.js":
 /*!*********************************************!*\
-  !*** ./generic/blink-src/js/layout/main.js ***!
+  !*** ./generic2022/blink-src/js/layout/main.js ***!
   \*********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -911,18 +911,18 @@ class Layout {
 
 /***/ }),
 
-/***/ "./generic/blink-src/js/main.js":
+/***/ "./generic2022/blink-src/js/main.js":
 /*!**************************************!*\
-  !*** ./generic/blink-src/js/main.js ***!
+  !*** ./generic2022/blink-src/js/main.js ***!
   \**************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _cke_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cke_styles */ "./generic/blink-src/js/cke_styles.js");
-/* harmony import */ var _overrides__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./overrides */ "./generic/blink-src/js/overrides.js");
-/* harmony import */ var _layout_main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./layout/main */ "./generic/blink-src/js/layout/main.js");
+/* harmony import */ var _cke_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cke_styles */ "./generic2022/blink-src/js/cke_styles.js");
+/* harmony import */ var _overrides__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./overrides */ "./generic2022/blink-src/js/overrides.js");
+/* harmony import */ var _layout_main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./layout/main */ "./generic2022/blink-src/js/layout/main.js");
 /*
 *   Javascript principal con la estructura básica del estilo
 */
@@ -933,16 +933,16 @@ __webpack_require__.r(__webpack_exports__);
 (function (blink) {
   'use strict';
 
-  var GenericStyle = function () {
+  var Generic2022Style = function () {
     blink.theme.styles.basic.apply(this, arguments);
   };
 
-  GenericStyle.prototype = {
+  Generic2022Style.prototype = {
     parent: blink.theme.styles.basic.prototype,
-    bodyClassName: 'content_type_clase_generic',
+    bodyClassName: 'content_type_clase_generic2022',
     extraPlugins: ['image2'],
     ckEditorStyles: {
-      name: 'generic',
+      name: 'generic2022',
       styles: _cke_styles__WEBPACK_IMPORTED_MODULE_0__["default"]
     },
     init: function (scope) {
@@ -954,15 +954,15 @@ __webpack_require__.r(__webpack_exports__);
     },
     ..._overrides__WEBPACK_IMPORTED_MODULE_1__["default"]
   };
-  GenericStyle.prototype = _.extend({}, new blink.theme.styles.basic(), GenericStyle.prototype);
-  blink.theme.styles['generic'] = GenericStyle;
+  Generic2022Style.prototype = _.extend({}, new blink.theme.styles.basic(), Generic2022Style.prototype);
+  blink.theme.styles['generic2022'] = Generic2022Style;
 })(blink);
 
 /***/ }),
 
-/***/ "./generic/blink-src/js/overrides.js":
+/***/ "./generic2022/blink-src/js/overrides.js":
 /*!*******************************************!*\
-  !*** ./generic/blink-src/js/overrides.js ***!
+  !*** ./generic2022/blink-src/js/overrides.js ***!
   \*******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1033,9 +1033,9 @@ const overrides = {
 
 /***/ }),
 
-/***/ "./generic/blink-src/styles/main.scss":
+/***/ "./generic2022/blink-src/styles/main.scss":
 /*!********************************************!*\
-  !*** ./generic/blink-src/styles/main.scss ***!
+  !*** ./generic2022/blink-src/styles/main.scss ***!
   \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -1048,13 +1048,13 @@ const overrides = {
 
 /***/ 0:
 /*!*********************************************************************************!*\
-  !*** multi ./generic/blink-src/js/main.js ./generic/blink-src/styles/main.scss ***!
+  !*** multi ./generic2022/blink-src/js/main.js ./generic2022/blink-src/styles/main.scss ***!
   \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\workspaces\web\blinkweb\blink\www\themes\responsive\assets\styles\generic\blink-src\js\main.js */"./generic/blink-src/js/main.js");
-module.exports = __webpack_require__(/*! D:\workspaces\web\blinkweb\blink\www\themes\responsive\assets\styles\generic\blink-src\styles\main.scss */"./generic/blink-src/styles/main.scss");
+__webpack_require__(/*! D:\workspaces\web\blinkweb\blink\www\themes\responsive\assets\styles\generic2022\blink-src\js\main.js */"./generic2022/blink-src/js/main.js");
+module.exports = __webpack_require__(/*! D:\workspaces\web\blinkweb\blink\www\themes\responsive\assets\styles\generic2022\blink-src\styles\main.scss */"./generic2022/blink-src/styles/main.scss");
 
 
 /***/ })
