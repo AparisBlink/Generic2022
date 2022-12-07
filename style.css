@@ -920,6 +920,21 @@ body #book-index #indice .col-main {
   }
   #actividad .carousel-inner .item-container {
     padding: 0 0 3rem 0;
+    margin-bottom: 10rem; /*Para que se vea dónde acaba la pagina*/
+  }
+
+  /*Navbar*/
+  .slider-indicators li {
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+   .navbar-bottom .slider-indicators .active {
+    background-color: var(--MainColor);
+    color: var(--MainColorLight);
+    outline: 2px solid var(--MainColorLight);
   }
 
   /*Titulo de la slide*/
@@ -932,6 +947,7 @@ body #book-index #indice .col-main {
     display: flex;
     flex-direction: column;
     width: calc(100% + var(--SlidePadding)*2);
+    text-align: center;
   }
   #actividad .content .header .chapter {
     display: block;
@@ -954,13 +970,17 @@ body #book-index #indice .col-main {
     display: none;
   }
   #actividad .content .header .title h3 {
-    font-size: calc(var(--MainText)*2);
+    font-size: calc(var(--MainText)*1.6);
     color: #ffffff;
     margin: 0;
-    font-weight: bold;
+    font-weight: normal;
   }
 
   /*Titulos*/
+  #actividad h1, h2, h3, h4, h5, h6 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
   #actividad .bck-title-1{
      font-size: calc(var(--MainText) * 2);
      font-weight: bold;
@@ -1023,6 +1043,10 @@ body #book-index #indice .col-main {
   #actividad p.bck-p-6 {
     font-size: 2.2rem;
   }
+
+  /*Listas ordenadas*/
+
+  /*Listas desordenadas*/
 
 
 
