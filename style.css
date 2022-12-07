@@ -904,7 +904,7 @@ body #book-index #indice .col-main {
     --MainText: 1.8rem;
     --MainLineHeight: 1.6;
   }
-  .texto_curso {
+  body #actividad {
     font-family: var(--MainFontFamily);
     font-size: var(--MainText);
     line-height: var(--MainLineHeight);
