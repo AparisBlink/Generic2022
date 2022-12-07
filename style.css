@@ -917,6 +917,9 @@ body #book-index #indice .col-main {
     padding-left: var(--SlidePadding);
     padding-right: var(--SlidePadding);
   }
+  #actividad .carousel-inner .item-container {
+    padding: 0 0 3rem 0;
+  }
 
   /*Titulo de la slide*/
   #actividad .content .header {
@@ -927,8 +930,8 @@ body #book-index #indice .col-main {
     background-color: var(--MainColor);
     display: flex;
     flex-direction: column;
+    width: calc(100% + var(--SlidePadding)*2);
   }
-
   #actividad .content .header .chapter {
     display: block;
     background-color: #ffcfe2;
@@ -955,6 +958,73 @@ body #book-index #indice .col-main {
     margin: 0;
     font-weight: bold;
   }
+
+  /*Titulos*/
+  #actividad .bck-title-1{
+     font-size: calc(var(--MainText) * 2);
+     font-weight: bold;
+     color: var(--MainColor);
+  }
+  #actividad .bck-title-2{
+    font-size: calc(var(--MainText) * 1.6);
+    font-weight: bold;
+    color: var(--MainColor);
+  }
+  #actividad .bck-title-3{
+    font-size: calc(var(--MainText) * 1.3);
+    font-weight: bold;
+    color: var(--MainColor);
+  }
+  #actividad .bck-title-4{
+    font-size: calc(var(--MainText) * 1.15);
+    font-weight: bold;
+    color: var(--TextColor);
+  }
+  #actividad .bck-title-5{
+    font-size: calc(var(--MainText) * 1.15);
+    color: var(--MainColor);
+  }
+
+  /*Enfasis*/
+  .bck-enfasis-1 {
+    color:  var(--MainColor);
+  }
+  .bck-enfasis-2 {
+    padding: 0.1rem 0.6rem;
+    border-radius: 3px;
+      background-color: var(--MainColorLight);
+  }
+  .bck-enfasis-3 {
+    background: var(--solution-lightcolor);
+    padding: 0.1rem 0.6rem;
+    border-radius: 5px;
+  }
+  .bck-enfasis-4 {
+    border-bottom: 2px solid var(--MainColor);
+  }
+
+  /*Estilos de parrafo*/
+  #actividad p.bck-p-1 {
+    font-size: 1.8rem;
+  }
+  #actividad p.bck-p-2 {
+    font-size: 1.6rem;
+  }
+  #actividad p.bck-p-3 {
+    font-size: 1.4rem;
+  }
+  #actividad p.bck-p-4 {
+    font-size: 1.2rem;
+  }
+  #actividad p.bck-p-5 {
+    font-size: 2.0rem;
+  }
+  #actividad p.bck-p-6 {
+    font-size: 2.2rem;
+  }
+
+  
+
 
    /************************
    * CSS AÑADIDO POR HTML *
