@@ -86,9 +86,9 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./generic2022/blink-src/js/cke_styles.js":
+/***/ "./Generic2022/blink-src/js/cke_styles.js":
 /*!********************************************!*\
-  !*** ./generic2022/blink-src/js/cke_styles.js ***!
+  !*** ./Generic2022/blink-src/js/cke_styles.js ***!
   \********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -99,6 +99,7 @@ __webpack_require__.r(__webpack_exports__);
 *   Array con la definición de los estilos para el editor de CKEditor
 */
 const ckeStyles = [
+  { name: ' Título 01', element: 'h4', attributes: { 'class': 'bck-title-1'} },
   {name: 'Cajita bonita', type: 'widget', widget: 'blink_box', attributes: {'class': 'box-1'}},
   {name: 'Caja 2', type: 'widget', widget: 'blink_box', attributes: {'class': 'box-2'}},
   {name: 'Énfasis', element: 'span', attributes: {'class': 'bck-enfasis'}}
@@ -108,9 +109,9 @@ const ckeStyles = [
 
 /***/ }),
 
-/***/ "./generic2022/blink-src/js/layout/main.js":
+/***/ "./Generic2022/blink-src/js/layout/main.js":
 /*!*********************************************!*\
-  !*** ./generic2022/blink-src/js/layout/main.js ***!
+  !*** ./Generic2022/blink-src/js/layout/main.js ***!
   \*********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -911,18 +912,18 @@ class Layout {
 
 /***/ }),
 
-/***/ "./generic2022/blink-src/js/main.js":
+/***/ "./Generic2022/blink-src/js/main.js":
 /*!**************************************!*\
-  !*** ./generic2022/blink-src/js/main.js ***!
+  !*** ./Generic2022/blink-src/js/main.js ***!
   \**************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _cke_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cke_styles */ "./generic2022/blink-src/js/cke_styles.js");
-/* harmony import */ var _overrides__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./overrides */ "./generic2022/blink-src/js/overrides.js");
-/* harmony import */ var _layout_main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./layout/main */ "./generic2022/blink-src/js/layout/main.js");
+/* harmony import */ var _cke_styles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cke_styles */ "./Generic2022/blink-src/js/cke_styles.js");
+/* harmony import */ var _overrides__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./overrides */ "./Generic2022/blink-src/js/overrides.js");
+/* harmony import */ var _layout_main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./layout/main */ "./Generic2022/blink-src/js/layout/main.js");
 /*
 *   Javascript principal con la estructura básica del estilo
 */
@@ -939,10 +940,10 @@ __webpack_require__.r(__webpack_exports__);
 
   Generic2022Style.prototype = {
     parent: blink.theme.styles.basic.prototype,
-    bodyClassName: 'content_type_clase_generic2022',
+    bodyClassName: 'content_type_clase_Generic2022',
     extraPlugins: ['image2'],
     ckEditorStyles: {
-      name: 'generic2022',
+      name: 'Generic2022',
       styles: _cke_styles__WEBPACK_IMPORTED_MODULE_0__["default"]
     },
     init: function (scope) {
@@ -955,14 +956,14 @@ __webpack_require__.r(__webpack_exports__);
     ..._overrides__WEBPACK_IMPORTED_MODULE_1__["default"]
   };
   Generic2022Style.prototype = _.extend({}, new blink.theme.styles.basic(), Generic2022Style.prototype);
-  blink.theme.styles['generic2022'] = Generic2022Style;
+  blink.theme.styles['Generic2022'] = Generic2022Style;
 })(blink);
 
 /***/ }),
 
-/***/ "./generic2022/blink-src/js/overrides.js":
+/***/ "./Generic2022/blink-src/js/overrides.js":
 /*!*******************************************!*\
-  !*** ./generic2022/blink-src/js/overrides.js ***!
+  !*** ./Generic2022/blink-src/js/overrides.js ***!
   \*******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1033,9 +1034,9 @@ const overrides = {
 
 /***/ }),
 
-/***/ "./generic2022/blink-src/styles/main.scss":
+/***/ "./Generic2022/blink-src/styles/main.scss":
 /*!********************************************!*\
-  !*** ./generic2022/blink-src/styles/main.scss ***!
+  !*** ./Generic2022/blink-src/styles/main.scss ***!
   \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -1048,13 +1049,13 @@ const overrides = {
 
 /***/ 0:
 /*!*********************************************************************************!*\
-  !*** multi ./generic2022/blink-src/js/main.js ./generic2022/blink-src/styles/main.scss ***!
+  !*** multi ./Generic2022/blink-src/js/main.js ./Generic2022/blink-src/styles/main.scss ***!
   \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\workspaces\web\blinkweb\blink\www\themes\responsive\assets\styles\generic2022\blink-src\js\main.js */"./generic2022/blink-src/js/main.js");
-module.exports = __webpack_require__(/*! D:\workspaces\web\blinkweb\blink\www\themes\responsive\assets\styles\generic2022\blink-src\styles\main.scss */"./generic2022/blink-src/styles/main.scss");
+__webpack_require__(/*! D:\workspaces\web\blinkweb\blink\www\themes\responsive\assets\styles\Generic2022\blink-src\js\main.js */"./Generic2022/blink-src/js/main.js");
+module.exports = __webpack_require__(/*! D:\workspaces\web\blinkweb\blink\www\themes\responsive\assets\styles\Generic2022\blink-src\styles\main.scss */"./Generic2022/blink-src/styles/main.scss");
 
 
 /***/ })
