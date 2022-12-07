@@ -100,10 +100,59 @@ __webpack_require__.r(__webpack_exports__);
 */
 const ckeStyles = [
   { name: ' Título 01', element: 'h4', attributes: { 'class': 'bck-title-1'} },
-  {name: 'Cajita bonita', type: 'widget', widget: 'blink_box', attributes: {'class': 'box-1'}},
-  {name: 'Caja 2', type: 'widget', widget: 'blink_box', attributes: {'class': 'box-2'}},
-  {name: 'Énfasis', element: 'span', attributes: {'class': 'bck-enfasis'}}
-  // Añadir elementos CKEditor aquí.
+  { name: ' Título 02', element: 'h4', attributes: { 'class': 'bck-title-2'} },
+  { name: ' Título 03', element: 'h4', attributes: { 'class': 'bck-title-3'} },
+  { name: ' Título 04', element: 'h4', attributes: { 'class': 'bck-title-4'} },
+  { name: ' Título 05', element: 'h4', attributes: { 'class': 'bck-title-5'} },
+
+  { name: 'Énfasis 01 Color', element: 'span', attributes: { 'class': 'bck-enfasis-1'} },
+  { name: 'Énfasis 02 Resaltado', element: 'span', attributes: { 'class': 'bck-enfasis-2'} },
+  { name: 'Énfasis 03 Ejemplo', element: 'span', attributes: { 'class': 'bck-enfasis-3'} },
+  { name: 'Énfasis 04 Subrayado', element: 'span', attributes: { 'class': 'bck-enfasis-4'} },
+  { name: 'Énfasis 05', element: 'span', attributes: { 'class': 'bck-enfasis-5'} },    
+
+  { name: 'Parrafo 18px', element: 'p', attributes: { 'class': 'bck-p bck-p-1'} },
+  { name: 'Parrafo 16px', element: 'p', attributes: { 'class': 'bck-p bck-p-2'} },
+  { name: 'Parrafo 14px', element: 'p', attributes: { 'class': 'bck-p bck-p-3'} },
+  { name: 'Parrafo 12px', element: 'p', attributes: { 'class': 'bck-p bck-p-4'} },
+  { name: 'Parrafo 20px', element: 'p', attributes: { 'class': 'bck-p bck-p-5'} },
+  { name: 'Parrafo 22px', element: 'p', attributes: { 'class': 'bck-p bck-p-6'} },
+
+
+  { name: 'Lista ordenada 01', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-1' } },
+  { name: 'Lista ordenada 02', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-2' } },
+  { name: 'Lista ordenada 03', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-3' } },
+  { name: 'Lista ordenada 04', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-4' } },
+
+
+  { name: 'Lista desordenada 01', element: 'ul', attributes: { 'class': 'bck-ul bck-ul-1' } },
+  { name: 'Lista desordenada 02', element: 'ul', attributes: { 'class': 'bck-ul bck-ul-2' } },
+
+
+  { name: 'Caja 01', type: 'widget', widget: 'blink_box', attributes: { 'class': 'bck-box bck-box-1' } },
+  { name: 'Caja 02', type: 'widget', widget: 'blink_box', attributes: { 'class': 'bck-box bck-box-2' } },
+  { name: 'Caja 03', type: 'widget', widget: 'blink_box', attributes: { 'class': 'bck-box bck-box-3' } },
+  { name: 'Caja 04', type: 'widget', widget: 'blink_box', attributes: { 'class': 'bck-box bck-box-4' } },
+  { name: 'Caja 05', type: 'widget', widget: 'blink_box', attributes: { 'class': 'bck-box bck-box-5' } },
+  { name: 'Caja 06 IMG Ancho Slide', type: 'widget', widget: 'blink_box', attributes: { 'class': 'bck-box bck-box-6' } },
+  { name: 'Caja 07 Ancho Slide', type: 'widget', widget: 'blink_box', attributes: { 'class': 'bck-box bck-box-7' } },
+
+  { name: 'Desplegable 01', type: 'widget', widget: 'blink_dropdown', attributes: { 'class': 'bck-dropdown bck-dropdown-1' } },
+  { name: 'Desplegable 02', type: 'widget', widget: 'blink_dropdown', attributes: { 'class': 'bck-dropdown bck-dropdown-2' } },
+  { name: 'Desplegable 03', type: 'widget', widget: 'blink_dropdown', attributes: { 'class': 'bck-dropdown bck-dropdown-3' } },
+
+  {name: 'Flipbox 01', type: 'widget', widget: 'blink_flipbox', attributes: {'class': 'bck-flipbox bck-flipbox-1'}},
+  {name: 'Flipbox 02', type: 'widget', widget: 'blink_flipbox', attributes: {'class': 'bck-flipbox bck-flipbox-2'}},
+
+
+  { name: 'Tabla 01', element: 'table', type: 'bck-stack-class', attributes: { 'class': 'bck-table bck-table-1'} },
+  { name: 'Tabla 02', element: 'table', type: 'bck-stack-class', attributes: { 'class': 'bck-table bck-table-2'} },
+  { name: 'Tabla 03', element: 'table', type: 'bck-stack-class', attributes: { 'class': 'bck-table bck-table-3'} },
+
+  { name: 'Celda 01', element: 'td', attributes: { 'class': 'bck-td bck-td-1'} },
+  { name: 'Celda 02', element: 'td', attributes: { 'class': 'bck-td bck-td-2'} },
+  { name: 'Celda 03', element: 'td', attributes: { 'class': 'bck-td bck-td-3'} },
+  { name: 'Celda 04', element: 'td', attributes: { 'class': 'bck-td bck-td-4'} }
 ];
 /* harmony default export */ __webpack_exports__["default"] = (ckeStyles);
 
