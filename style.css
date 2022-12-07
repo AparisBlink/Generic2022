@@ -884,6 +884,7 @@ body #book-index #indice .col-main {
    * CSS AÑADIDO POR HTML *
    ************************/
    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
    
 
   :root {
@@ -897,10 +898,10 @@ body #book-index #indice .col-main {
     --workspace-lightcolor: #EDEDED;
     
     --MainColor: #900C3F;
-    --MainColorLight: #E64885;
+    --MainColorLight: #ffcfe2;
     --SlidePadding: 4rem;
     --TextColor: #2E2E2E;
-    --MainFontFamily: 'Merriweather', serif;
+    --MainFontFamily: 'Poppins', sans-serif;
     --MainText: 1.8rem;
     --MainLineHeight: 1.6;
   }
@@ -924,16 +925,20 @@ body #book-index #indice .col-main {
     border-bottom: 0;
     margin-left: calc(var(--SlidePadding) * -1);
     background-color: var(--MainColor);
+    display: flex;
+    flex-direction: column;
   }
 
   #actividad .content .header .chapter {
     display: block;
-    background-color: var(--MainColorLight);
+    background-color: #ffcfe2;
     color: var(--MainColor);
     text-align: center;
-    margin: 0 auto;
+    margin: -1rem auto 0.5rem;
     width: fit-content;
     width: -moz-fit-content;
+    padding: 0.5rem;
+    border-radius: 0 0 7px 7px;
   }
   #actividad .content .header .title {
     margin-bottom: 10px;
