@@ -883,10 +883,32 @@ body #book-index #indice .col-main {
   /************************
    * CSS AÑADIDO POR HTML *
    ************************/
-        body {
-            font-size: 30px !important;
-        }
+   @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+   
 
+  :root {
+    --ok-color: #16A34A;
+    --ok-lightcolor: #D0EDDB;
+    --error-color: #DC2626;
+    --error-lightcolor: #fee2e2;
+    --solution-color: #00BDFF;
+    --solution-lightcolor: #B2EBFF;
+    --workspace-color: #C2C2C2;
+    --workspace-lightcolor: #EDEDED;
+    
+    --MainColor: #900C3F;
+    --MainColorLight: #E64885;
+    --SlidePadding: 4rem;
+    --TextColor: #2E2E2E;
+    --MainFontFamily: 'Merriweather', serif;
+    --MainText: 1.8rem;
+    --MainLineHeight: 1.6;
+  }
+  .texto_curso {
+    font-family: var(--MainFontFamily);
+    font-size: var(--MainText);
+    line-height: var(--MainLineHeight);
+  }
    /************************
    * CSS AÑADIDO POR HTML *
    ************************/
