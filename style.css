@@ -932,6 +932,8 @@ body #book-index #indice .col-main {
     border-radius: 3px;
   }
    .navbar-bottom .slider-indicators .active {
+    width: 12px;
+    height: 12px;
     background-color: var(--MainColor);
     color: var(--MainColorLight);
     outline: 2px solid var(--MainColorLight);
@@ -1045,6 +1047,85 @@ body #book-index #indice .col-main {
   }
 
   /*Listas ordenadas*/
+  #actividad ol.bck-ol,
+   #actividad ul.bck-ul {
+    padding: 0;
+  }
+  #actividad ol.bck-ol {
+   list-style-type: none;
+   counter-reset: bck-li-counter;
+  }
+  #actividad ol.bck-ol li,
+  #actividad ul.bck-ul li {
+   position: relative;
+  }
+
+  #actividad ol.bck-ol li {
+    counter-increment: bck-li-counter;
+    margin-left: 2.0rem;
+  }
+  #actividad ol.bck-ol li:before {
+    position: absolute;
+    content: counter(bck-li-counter) ".";
+    left: -4.5rem;
+    width: 4.0rem;
+    height: auto;
+    display: inline-block;
+    color: var(--TextColor);
+    background-color: transparent;
+    text-align: right;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  /*
+    { name: 'Ol.1 1. Negro', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-1' } },
+  { name: 'Ol.2 1. Color', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-2' } },
+  { name: 'Ol.3 a) Negro', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-3' } },
+  { name: 'Ol.4 a) Color', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-4' } },
+  { name: 'Ol.5 A. Negro', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-5' } },
+  { name: 'Ol.6 A. Color', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-6' } },
+  { name: 'Ol.7 I Negro', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-7' } },
+  { name: 'Ol.8 I Color', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-8' } },
+  { name: 'Ol.9 Botón Num Color', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-9' } }
+  */
+  /*Ol.1 1. Negro*/
+  #actividad ol.bck-ol-1 li {
+  }
+
+  #actividad ol.bck-ol-1 li:before {
+    color: var(--TextColor);
+  }
+
+  /*Ol.1 1. Color*/
+  #actividad ol.bck-ol-2 li {
+  }
+  #actividad ol.bck-ol-2 li:before {
+    color: var(--MainColor);
+  }
+
+  /*Ol.3 a) Color*/
+  #actividad ol.bck-ol-3 li {
+  }
+  #actividad ol.bck-ol-3 li:before {
+    color: var(--MainColor);
+  }
+
+
+
+  #actividad ol.bck-ol-2 li:before {
+    content: counter(bck-li-counter);
+    background-color: var(--MainColor);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    left: -5rem;
+  }
+  #actividad ol.bck-ol-2 li {
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+  }
+
 
   /*Listas desordenadas*/
 
