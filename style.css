@@ -1057,7 +1057,7 @@ body #book-index #indice .col-main {
 
   #actividad ol.bck-ol,
    #actividad ul.bck-ul {
-    padding: 0;
+    padding: 2rem;
   }
   #actividad ol.bck-ol {
    list-style-type: none;
