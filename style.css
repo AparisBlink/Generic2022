@@ -1047,6 +1047,14 @@ body #book-index #indice .col-main {
   }
 
   /*Listas ordenadas*/
+  .texto_curso ul, .texto_curso ol, .workspace:not(.multiple-choice,.matching,.ordenar,.clasificar,.test) ul li ul, .workspace:not(.multiple-choice,.matching,.ordenar,.clasificar,.test) ul li ol, .cke_contents ul, .cke_contents ol, .popover-content ul, .popover-content ol {
+    padding-left: 0;
+  }
+
+  #actividad ol li::marker {
+    font-weight: bold;
+  }
+
   #actividad ol.bck-ol,
    #actividad ul.bck-ul {
     padding: 0;
@@ -1078,42 +1086,57 @@ body #book-index #indice .col-main {
     font-weight: bold;
   }
 
-  /*
-    { name: 'Ol.1 1. Negro', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-1' } },
-  { name: 'Ol.2 1. Color', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-2' } },
-  { name: 'Ol.3 a) Negro', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-3' } },
-  { name: 'Ol.4 a) Color', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-4' } },
-  { name: 'Ol.5 A. Negro', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-5' } },
-  { name: 'Ol.6 A. Color', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-6' } },
-  { name: 'Ol.7 I Negro', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-7' } },
-  { name: 'Ol.8 I Color', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-8' } },
-  { name: 'Ol.9 Botón Num Color', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-9' } }
-  */
-  /*Ol.1 1. Negro*/
+
+  /*Ol.1 1. Color*/
   #actividad ol.bck-ol-1 li {
   }
 
   #actividad ol.bck-ol-1 li:before {
-    color: var(--TextColor);
+    color: var(--MainColor)
   }
 
-  /*Ol.1 1. Color*/
+  /*Ol.2 a) Negro*/
   #actividad ol.bck-ol-2 li {
   }
   #actividad ol.bck-ol-2 li:before {
-    color: var(--MainColor);
+    content: counter(bck-li-counter, lower-alpha) ")";
+    color: var(--TextColor);
   }
 
   /*Ol.3 a) Color*/
   #actividad ol.bck-ol-3 li {
   }
   #actividad ol.bck-ol-3 li:before {
+    content: counter(bck-li-counter, lower-alpha) ")";
     color: var(--MainColor);
   }
 
+  /*Ol.4 A. Color*/
+  #actividad ol.bck-ol-4 li {
+  }
+  #actividad ol.bck-ol-4 li:before {
+    content: counter(bck-li-counter, upper-alpha) ".";
+    color: var(--MainColor);
+  }
 
+  /*Ol.5 I. Color*/
+  #actividad ol.bck-ol-5 li {
+  }
+  #actividad ol.bck-ol-5 li:before {
+    content: counter(bck-li-counter, upper-roman) ".";
+    color: var(--MainColor);
+  }  
 
-  #actividad ol.bck-ol-2 li:before {
+  /*Ol.6 i. Color*/
+  #actividad ol.bck-ol-6 li {
+  }
+  #actividad ol.bck-ol-6 li:before {
+    content: counter(bck-li-counter, lower-roman) ".";
+    color: var(--MainColor);
+  } 
+  
+  /*Ol.7 Boton Num Color*/
+  #actividad ol.bck-ol-7 li {
     content: counter(bck-li-counter);
     background-color: var(--MainColor);
     color: white;
@@ -1121,10 +1144,10 @@ body #book-index #indice .col-main {
     border-radius: 5px;
     left: -5rem;
   }
-  #actividad ol.bck-ol-2 li {
+  #actividad ol.bck-ol-7 li:before {
     margin-left: 5rem;
     margin-bottom: 1rem;
-  }
+  } 
 
 
   /*Listas desordenadas*/
