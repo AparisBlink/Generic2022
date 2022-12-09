@@ -119,10 +119,13 @@ const ckeStyles = [
   { name: 'Parrafo 22px', element: 'p', attributes: { 'class': 'bck-p bck-p-6'} },
 
 
-  { name: 'Lista ordenada 01', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-1' } },
-  { name: 'Lista ordenada 02', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-2' } },
-  { name: 'Lista ordenada 03', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-3' } },
-  { name: 'Lista ordenada 04', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-4' } },
+  { name: 'Ol.1 1. Color', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-1' } },
+  { name: 'Ol.2 a) Negro', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-2' } },
+  { name: 'Ol.3 a) Color', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-3' } },
+  { name: 'Ol.4 A. Color', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-4' } },
+  { name: 'Ol.5 I. Color', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-5' } },
+  { name: 'Ol.6 i. Color', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-6' } },
+  { name: 'Ol.7 Botón Num Color', element: 'ol', attributes: { 'class': 'bck-ol bck-ol-7' } },
 
 
   { name: 'Lista desordenada 01', element: 'ul', attributes: { 'class': 'bck-ul bck-ul-1' } },
