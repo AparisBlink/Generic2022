@@ -931,7 +931,7 @@ body #book-index #indice .col-main {
     -moz-border-radius: 3px;
     border-radius: 3px;
   }
-   .navbar-bottom .slider-indicators .active {
+   body:not(.edit).navbar-bottom .slider-indicators .active {
     width: 12px;
     height: 12px;
     background-color: var(--MainColor);
