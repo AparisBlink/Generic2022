@@ -1137,16 +1137,16 @@ body #book-index #indice .col-main {
   
   /*Ol.7 Boton Num Color*/
   #actividad ol.bck-ol-7 li {
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+  }
+  #actividad ol.bck-ol-7 li:before {
     content: counter(bck-li-counter);
     background-color: var(--MainColor);
     color: white;
     text-align: center;
     border-radius: 5px;
     left: -5rem;
-  }
-  #actividad ol.bck-ol-7 li:before {
-    margin-left: 5rem;
-    margin-bottom: 1rem;
   } 
 
 
