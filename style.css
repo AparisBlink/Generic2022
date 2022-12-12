@@ -1212,13 +1212,13 @@ body #book-index #indice .col-main {
   }
 
   /*-- Caja 7 --*/
-  .bck-box.bck-box-7 {
+  #actividad .bck-box-7 {
     border: 0;
     background-color: #D9D9D9;
     width: calc(100% + var(--SlidePadding) * 2);
     margin-left: calc(-1 * var(--SlidePadding));
   }
-  .bck-box.bck-box-7 > .bck-title {
+  #actividad .bck-box-7 > .bck-title {
     color: var(--TextColor);
     font-weight: 700;
     margin-bottom: 1rem;
