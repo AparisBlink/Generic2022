@@ -1201,6 +1201,7 @@ body #book-index #indice .col-main {
 
   /*-- Caja 6 --*/
   .body_clase:not(.edit) #actividad .bck-box-6 {
+    border: 0;
     padding: 0;
     width: calc(100% + var(--SlidePadding) * 2);
     margin-left: calc(-1 * var(--SlidePadding));
@@ -1212,6 +1213,7 @@ body #book-index #indice .col-main {
 
   /*-- Caja 7 --*/
   .bck-box.bck-box-7 {
+    border: 0;
     background-color: #D9D9D9;
     width: calc(100% + var(--SlidePadding) * 2);
     margin-left: calc(-1 * var(--SlidePadding));
