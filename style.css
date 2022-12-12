@@ -1151,6 +1151,56 @@ body #book-index #indice .col-main {
   /*Listas desordenadas*/
 
 
+  /*--- CAJAS ---*/
+  #actividad .bck-box {
+    margin-bottom: 2rem;
+    border: 2px solid var(--MainColor);
+    border-radius: 10px;
+    padding: 1.5rem 1.5rem
+  }
+  #actividad .bck-box .bck-title {
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  /*-- Caja 1 --*/
+  #actividad .bck-box-1 > .bck-title {
+    color: var(--MainColor);
+  }
+
+  /*-- Caja 2 --*/
+  #actividad .bck-box-2 {
+    border-color: var(--TextColor);
+  }
+  #actividad .bck-box-2 > .bck-title {
+    color: var(--TextColor);
+    font-weight: bold;
+  }
+
+  /*-- Caja 3 --*/
+  #actividad .bck-box-3 {
+    padding: 0;
+    position: relative;
+    background-color: var(--MainColorLight);
+    border-color: var(--MainColorLight);
+    border-radius: 10px;
+    margin-top: 3rem;
+}
+  #actividad .bck-box-3 > .bck-title {
+    background-color: var(--MainColor);
+    color: #ffffff;
+    padding: .5rem 1.5rem;
+    display: block;
+    border-radius: 5px;
+    width: fit-content;
+    width: moz-fit-content;
+    margin: -1.5rem auto 1rem;
+}
+
+#actividad .bck-box-3 > .bck-content {
+  padding: 0.5rem 1.5rem;
+}
+
+
 
 
    /************************
