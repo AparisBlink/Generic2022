@@ -1184,7 +1184,7 @@ body #book-index #indice .col-main {
     border-color: var(--MainColorLight);
     border-radius: 10px;
     margin-top: 3rem;
-}
+  }
   #actividad .bck-box-3 > .bck-title {
     background-color: var(--MainColor);
     color: #ffffff;
@@ -1194,11 +1194,34 @@ body #book-index #indice .col-main {
     width: fit-content;
     width: moz-fit-content;
     margin: -1.5rem auto 1rem;
-}
+  }
+  #actividad .bck-box-3 > .bck-content {
+    padding: 0.5rem 1.5rem;
+  }
 
-#actividad .bck-box-3 > .bck-content {
-  padding: 0.5rem 1.5rem;
-}
+  /*-- Caja 6 --*/
+  .body_clase:not(.edit) #actividad .bck-box-6 {
+    padding: 0;
+    width: calc(100% + var(--SlidePadding) * 2);
+    margin-left: calc(-1 * var(--SlidePadding));
+    text-align: center;
+  }
+  .body_clase:not(.edit) #actividad .bck-box-6 .bck-i-fullscreen-wrapper {
+      padding: 0;
+  }
+
+  /*-- Caja 7 --*/
+  .bck-box.bck-box-7 {
+    background-color: #D9D9D9;
+    width: calc(100% + var(--SlidePadding) * 2);
+    margin-left: calc(-1 * var(--SlidePadding));
+  }
+  .bck-box.bck-box-7 > .bck-title {
+    color: var(--TextColor);
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
 
 
 
