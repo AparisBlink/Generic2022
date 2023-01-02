@@ -1154,9 +1154,9 @@ body #book-index #indice .col-main {
   /*--- CAJAS ---*/
   #actividad .bck-box {
     margin-bottom: 2rem;
-    border: 2px solid var(--MainColor);
+    border: 3px solid var(--MainColor);
     border-radius: 10px;
-    padding: 1.5rem 1.5rem
+    padding: 0;
   }
   #actividad .bck-box .bck-title {
     margin-bottom: 1rem;
@@ -1199,6 +1199,35 @@ body #book-index #indice .col-main {
     padding: 0.5rem 1.5rem;
   }
 
+  
+  /*-- Caja 4 --*/
+  #actividad .bck-box-4 {
+    padding: 0;
+    border: 0
+  }
+  #actividad .bck-box-4 > .bck-title {
+    background-color: var(--MainColor);
+    color: #ffffff;
+    padding: .5rem 1.5rem;
+    border-radius: 5px 5px 0px 0px;
+    width: fit-content;
+    width: moz-fit-content;
+    margin: 0;
+  }
+  #actividad .bck-box-4 > .bck-content {
+    padding: 0.5rem 1.5rem;
+    background-color: #D9D9D9;
+    border-left: 3px solid var(--MainColor);
+    border-radius: 0 5px 5px 0;
+  }
+
+  /* -- Caja 5 --*/
+  #actividad .bck-box-5 {
+    background-color: var(--MainColor);
+    color: #ffffff;
+    box-shadow: var(--MainColor) 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, var(--MainColorLight) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, var(--MainColor) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, var(--MainColorLight) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, var(--MainColor) 40px -40px;
+  }
+
   /*-- Caja 6 --*/
   .body_clase:not(.edit) #actividad .bck-box-6 {
     border: 0;
@@ -1217,6 +1246,8 @@ body #book-index #indice .col-main {
     background-color: #D9D9D9;
     width: calc(100% + var(--SlidePadding) * 2);
     margin-left: calc(-1 * var(--SlidePadding));
+    border-radius: 0;
+    padding: 1.5rem var(--SlidePadding);
   }
   #actividad .bck-box-7 > .bck-title {
     color: var(--TextColor);
