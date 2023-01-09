@@ -1161,7 +1161,12 @@ body #book-index #indice .col-main {
   #actividad .bck-box .bck-title {
     margin-bottom: 1rem;
     font-weight: bold;
+    padding: 0.5rem 1.5rem;
   }
+  #actividad .bck-box .bck-content {
+    padding: 0.5rem 1.5rem;
+  }
+  
   /*-- Caja 1 --*/
   #actividad .bck-box-1 > .bck-title {
     color: var(--MainColor);
@@ -1222,11 +1227,7 @@ body #book-index #indice .col-main {
   }
 
   /* -- Caja 5 --*/
-  #actividad .bck-box-5 {
-    background-color: var(--MainColor);
-    color: #ffffff;
-    box-shadow: var(--MainColor) 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, var(--MainColorLight) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, var(--MainColor) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, var(--MainColorLight) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, var(--MainColor) 40px -40px;
-  }
+
 
   /*-- Caja 6 --*/
   .body_clase:not(.edit) #actividad .bck-box-6 {
