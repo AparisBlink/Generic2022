@@ -1159,12 +1159,12 @@ body #book-index #indice .col-main {
     padding: 0;
   }
   #actividad .bck-box .bck-title {
-    margin-bottom: 1rem;
     font-weight: bold;
-    padding: 0.5rem 1.5rem;
+    padding: 1rem 1.5rem 0;
+    margin-bottom: 0;
   }
   #actividad .bck-box .bck-content {
-    padding: 0.5rem 1.5rem;
+    padding: 1rem 1.5rem;
   }
   
   /*-- Caja 1 --*/
@@ -1236,6 +1236,9 @@ body #book-index #indice .col-main {
     width: calc(100% + var(--SlidePadding) * 2);
     margin-left: calc(-1 * var(--SlidePadding));
     text-align: center;
+  }
+  .body_clase:not(.edit) #actividad .bck-box-6 > .bck-content {
+    padding: 0;
   }
   .body_clase:not(.edit) #actividad .bck-box-6 .bck-i-fullscreen-wrapper {
       padding: 0;
