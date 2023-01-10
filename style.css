@@ -1374,6 +1374,12 @@ body #book-index #indice .col-main {
     align-items: center;
   }
   /*Mensaje del popup*/
+  .info-popover .popover-title, .popover-template .popover-title {
+    display: flex;
+    color: var(--MainColor);
+    font-weight: bold;
+    padding: 1.0rem 4.5rem 1.0rem 1.5rem;
+  }
   .info-popover .popover-title:before,
   .popover-template .popover-title:before {
     display: none;
