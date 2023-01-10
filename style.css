@@ -1197,7 +1197,7 @@ body #book-index #indice .col-main {
     display: block;
     border-radius: 5px;
     width: fit-content;
-    width: moz-fit-content;
+    width: -moz-fit-content;
     margin: -1.5rem auto 1rem;
   }
   #actividad .bck-box-3 > .bck-content {
@@ -1216,7 +1216,7 @@ body #book-index #indice .col-main {
     padding: .5rem 1.5rem;
     border-radius: 5px 5px 0px 0px;
     width: fit-content;
-    width: moz-fit-content;
+    width: -moz-fit-content;
     margin: 0;
   }
   #actividad .bck-box-4 > .bck-content {
@@ -1227,7 +1227,22 @@ body #book-index #indice .col-main {
   }
 
   /* -- Caja 5 --*/
-
+  #actividad .bck-box-5 {
+    background-color: var(--TextColor);
+    color: #ffffff;
+    border-color: var(--TextColor);
+  }
+  #actividad .bck-box-5 > .bck-title {
+    background-color: #ffffff;
+    border-radius: 0 0 10px 10px;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 0 auto;
+    color: var(--TextColor);
+    padding: 1rem 1.5rem;
+    margin-top: -0.3rem;
+    box-shadow: 3px 2px 5px #000000bd;
+  }
 
   /*-- Caja 6 --*/
   .body_clase:not(.edit) #actividad .bck-box-6 {
@@ -1258,6 +1273,54 @@ body #book-index #indice .col-main {
     font-weight: 700;
     margin-bottom: 1rem;
   }
+
+  /*---- Desplegables ----*/
+
+  /*Desplegable por defecto*/
+  #actividad .bck-dropdown {
+    width: 100%;
+    margin: 2rem 0;
+    background-color: transparent;
+  }
+  #actividad .bck-dropdown .bck-dropdown-button {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 1.0rem 1.5rem;
+    background-color: var(--MainColor);
+    color: #ffffff;
+    border-radius: 10px;
+  }
+  #actividad .bck-dropdown .open .bck-dropdown-button {
+    border-radius: 10px 10px 0 0;
+  }
+  #actividad .bck-dropdown .bck-dropdown-icon {
+    position: relative;
+    width: auto;
+    height: auto;
+  }
+  #actividad .bck-dropdown .bck-dropdown-icon>.fa {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font-size: var(--MainText);
+  }
+  #actividad .bck-dropdown .bck-dropdown-titulo {
+    color: inherit;
+    cursor: pointer;
+    font-size: var(--MainText);
+    font-weight: bold;
+    line-height: var(--MainLineHeight);
+    padding-right: 2.7rem;
+    padding: 0;
+  }
+  
 
 
 
