@@ -1294,7 +1294,7 @@ body #book-index #indice .col-main {
     color: #ffffff;
     border-radius: 10px;
   }
-  #actividad .bck-dropdown .open .bck-dropdown-button {
+  #actividad .bck-dropdown.open .bck-dropdown-button {
     border-radius: 10px 10px 0 0;
   }
   #actividad .bck-dropdown .bck-dropdown-icon {
@@ -1319,6 +1319,81 @@ body #book-index #indice .col-main {
     line-height: var(--MainLineHeight);
     padding-right: 2.7rem;
     padding: 0;
+  }
+
+  /*Popup*/
+  #actividad .info-button {
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--MainColor);
+    box-shadow: 1px 3px 3px #00000073;
+    border: 2px solid var(--MainColor);
+    border-radius: 7px;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  #actividad .info-button:hover, #actividad .info-button:focus {
+    box-shadow: 0px 0px 1px 5px var(--MainColorLight);
+  }
+  /*Popup flotante*/
+  #actividad .info-template {
+    min-width: 175px;
+    background: #ffffff;
+    border-radius: 10px 0 0px 10px;
+    box-shadow: 0px 6px 3px #00000073;
+    padding: 1.5rem 1rem 1rem 1.5rem;
+    font-size: calc(var(--MainText)/1.1);
+  }
+  #actividad .info-template:hover, #actividad .info-template:focus {
+    box-shadow: 0px 0px 1px 5px var(--MainColorLight);
+  }
+  .info-template .info-title.shown {
+    font-size: inherit;
+    margin: 0;
+  }
+  .info-template .info-title:hover {
+    opacity: 1;
+  }
+  .info-template .info-title {
+    color: var(--MainColor);
+    transition: none;
+  }
+  .info-template .info-icon {
+    color: var(--MainColor);
+    box-shadow: none;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    left: 0px;
+    top: -4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*Mensaje del popup*/
+  .info-popover .popover-title:before,
+  .popover-template .popover-title:before {
+    display: none;
+  }
+  .info-popover .popover-title,
+  .popover-template .popover-title .popover-title-text {
+    margin: 0;
+  }
+  .info-popover .popover-content, .popover-template .popover-content {
+    padding: 1rem 1.5rem;
+  }
+  .close-popover {
+    color: var(--TextColor);
+    background: transparent;
+    border-radius: 5px;
+    transition: background 0.2s ease-in-out;
+  } 
+  .close-popover:hover {
+    opacity: 1;
+    background: var(--MainColorLight);
   }
   
 
