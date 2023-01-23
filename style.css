@@ -1292,10 +1292,6 @@ body #book-index #indice .col-main {
     padding: 1.0rem 1.5rem;
     background-color: var(--MainColor);
     color: #ffffff;
-    border-radius: 10px;
-  }
-  #actividad .bck-dropdown.open .bck-dropdown-button {
-    border-radius: 10px 10px 0 0;
   }
   #actividad .bck-dropdown .bck-dropdown-icon {
     position: relative;
@@ -1320,6 +1316,15 @@ body #book-index #indice .col-main {
     padding-right: 2.7rem;
     padding: 0;
   }
+  .bck-dropdown-content {
+    padding: 1.5rem 1rem;
+    margin-top: -0.5rem;
+    background-color: #ffffff;
+  }
+
+
+
+
 
   /*Popup*/
   #actividad .info-button {
@@ -1402,6 +1407,30 @@ body #book-index #indice .col-main {
     background: var(--MainColorLight);
   }
   
+  /*Icono audio*/
+  #actividad .player.audio {
+    background: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: none;
+    width: auto !important;
+    vertical-align: baseline;
+    height: auto !important;
+    min-width: 28px;
+    min-height: 28px;
+  }
+  #actividad .player.audio:before {
+    font-family: "FontAwesome";
+    content: "\f028";
+    font-weight: 400;
+    color: var(--MainColor);
+  }
+  #actividad .player.audio:hover, #actividad .player.audio:focus {
+    background: var(--MainColorLight);
+    outline: 2px solid var(--MainColor);
+    outline-offset: 0;
+  }
 
 
 
