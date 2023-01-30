@@ -1399,43 +1399,43 @@ body #book-index #indice .col-main {
   }
 
   /*---- TABLAS ----*/
-  .body_clase #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) {
+  #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) {
     width: 100%;
     font-size: inherit;
     margin-bottom: 2.0rem;
   }
-  body .texto_curso table.bck-table td,
-   body .texto_curso table.bck-table th,
-    body .texto_curso table.bck-table tr {
+  table.bck-table td,
+   table.bck-table th,
+    table.bck-table tr {
     border-width: 2px;
     border-color: var(--MainColor);
   }
-  body .texto_curso table.bck-table-2 td,
-   body .texto_curso table.bck-table-2 th,
-    body .texto_curso table.bck-table-2 tr {
+  table.bck-table-2 td,
+   table.bck-table-2 th,
+    table.bck-table-2 tr {
     border-color: #2E2E2E;
   }
-  body .texto_curso table.bck-table-3 {
+  table.bck-table-3 {
     border: 0;
     border-color: transparent;
   }
-  body .texto_curso table.bck-table-3 td,
-   body .texto_curso table.bck-table-3 th,
-    body .texto_curso table.bck-table-3 tr {
+  table.bck-table-3 td,
+   table.bck-table-3 th,
+    table.bck-table-3 tr {
     border: 0;
     border-color: transparent;
   }
   
-  body .texto_curso table td.bck-td-1 {
+  table td.bck-td-1 {
     background-color: var(--MainColor);
     color: #fff;
     font-weight: bold;
   }
-  body .texto_curso table td.bck-td-2 {
+  table td.bck-td-2 {
     background-color: var(--MainColorLight);
     font-weight: bold;
   }
-  body .texto_curso table td.bck-td-3{
+  table td.bck-td-3{
     background-color: #2E2E2E;
     color: #fff;
     font-weight: bold;
