@@ -1412,7 +1412,7 @@ body #book-index #indice .col-main {
     border-color: var(--MainColor);
     padding: 1rem;
   }
-  #actividad table.bck-table-2 td,
+  #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle).bck-table-2 td,
   table.bck-table-2 td,
    table.bck-table-2 th,
     table.bck-table-2 tr {
@@ -1422,7 +1422,7 @@ body #book-index #indice .col-main {
     border: 0;
     border-color: transparent;
   }
-  #actividad table.bck-table-3 td,
+  #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle).bck-table-3 td,
   table.bck-table-3 td,
    table.bck-table-3 th,
     table.bck-table-3 tr {
@@ -1437,7 +1437,6 @@ body #book-index #indice .col-main {
   }
   table td.bck-td-2 {
     background-color: var(--MainColorLight);
-    font-weight: bold;
   }
   table td.bck-td-3{
     background-color: #2E2E2E;
@@ -1445,8 +1444,7 @@ body #book-index #indice .col-main {
     font-weight: bold;
   }
   table td.bck-td-4{
-    background-color: #808080;
-    font-weight: bold;
+    background-color: #c6c6c6;
   }
   /*-----------*/
 
