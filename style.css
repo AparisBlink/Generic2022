@@ -1404,7 +1404,7 @@ body #book-index #indice .col-main {
     font-size: inherit;
     margin-bottom: 2.0rem;
   }
-  #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle)
+  #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) td,
   table.bck-table td,
    table.bck-table th,
     table.bck-table tr {
@@ -1412,6 +1412,7 @@ body #book-index #indice .col-main {
     border-color: var(--MainColor);
     padding: 1rem;
   }
+  #actividad table.bck-table-2 td,
   table.bck-table-2 td,
    table.bck-table-2 th,
     table.bck-table-2 tr {
@@ -1421,6 +1422,7 @@ body #book-index #indice .col-main {
     border: 0;
     border-color: transparent;
   }
+  #actividad table.bck-table-3 td,
   table.bck-table-3 td,
    table.bck-table-3 th,
     table.bck-table-3 tr {
