@@ -1331,6 +1331,9 @@ body #book-index #indice .col-main {
     color: var(--MainColor);
   }
   /*Desplegable 3*/
+  #actividad .bck-dropdown-3 {
+    border-radius: 0;
+}
   #actividad .bck-dropdown-3.open .bck-dropdown-button {
     box-shadow: 2px 6px 10px #00000052;
   }
