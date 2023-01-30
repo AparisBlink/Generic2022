@@ -1340,6 +1340,108 @@ body #book-index #indice .col-main {
   .bck-dropdown-3 .bck-dropdown-content {
     background-color: var(--MainColorLight);
   }
+  /*---- FLIPBOX ---*/
+  body:not(.edit) .bck-flipbox-title,
+   body:not(.edit) .bck-flipbox-section {
+    padding: 2rem;
+  }
+  body:not(.edit) .bck-flipbox {
+    margin-bottom: 2rem;
+  }
+  /*El color lo hereda del color del padre, front o back*/
+  body:not(.edit) .front .bck-flipbox-title,
+   body:not(.edit) .front .bck-flipbox-section {
+    color: inherit;
+  }
+  body:not(.edit) .bck-flipbox-face.front {
+    border-radius: 7px;
+    box-shadow: 2px 8px 9px #00000036;
+    color: var(--MainColor);
+    border-color: var(--MainColor);
+  }
+  body:not(.edit) .bck-flipbox-face.back {
+    background-color: var(--MainColor);
+    border-radius: 7px;
+    border-color: var(--MainColor);
+  }
+
+  /*Flipbox 2*/
+  body:not(.edit) .bck-flipbox-2 .bck-flipbox-face.front {
+    background-color: var(--MainColorLight);
+    border-color: var(--MainColorLight);
+  }
+  body:not(.edit) .bck-flipbox-2 .bck-flipbox-face.back {
+    background-color: #808080;
+    border-color: #808080;
+  }
+
+  /*Tabs*/
+  body:not(.edit) .bck-tabs-box {
+    background-color: transparent;
+    border: 2px solid var(--MainColor);
+    border-radius: 7px;
+  }
+  .bck-tabtitles {
+    background-color: transparent;
+    font-weight: bold;
+    color: var(--MainColor);
+    padding: 1rem 2rem;
+  }
+  .bck-tabtitles:hover,
+  .bck-tabtitles .active {
+    background-color: var(--MainColor);
+    color: #fff;
+  }
+  body:not(.edit) .bck-tabcontents .div-contents {
+    padding: 0.5rem 1.5rem;
+    background-color: transparent;
+    border: 0;
+  }
+
+  /*---- TABLAS ----*/
+  .body_clase #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) {
+    width: 100%;
+    font-size: inherit;
+    margin-bottom: 2.0rem;
+  }
+  body .texto_curso table.bck-table td,
+   body .texto_curso table.bck-table th,
+    body .texto_curso table.bck-table tr {
+    border-width: 2px;
+    border-color: var(--MainColor);
+  }
+  body .texto_curso table.bck-table-2 td,
+   body .texto_curso table.bck-table-2 th,
+    body .texto_curso table.bck-table-2 tr {
+    border-color: #2E2E2E;
+  }
+  body .texto_curso table.bck-table-3 {
+    border: 0;
+    border-color: transparent;
+  }
+  body .texto_curso table.bck-table-3 td,
+   body .texto_curso table.bck-table-3 th,
+    body .texto_curso table.bck-table-3 tr {
+    border: 0;
+    border-color: transparent;
+  }
+  
+  body .texto_curso table td.bck-td-1 {
+    background-color: var(--MainColor);
+    color: #fff;
+    font-weight: bold;
+  }
+  body .texto_curso table td.bck-td-2 {
+    background-color: var(--MainColorLight);
+    font-weight: bold;
+  }
+  body .texto_curso table td.bck-td-3{
+    background-color: #2E2E2E;
+    color: #fff;
+    font-weight: bold;
+  }
+  /*-----------*/
+
 
 
 
