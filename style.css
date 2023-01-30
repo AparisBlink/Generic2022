@@ -1404,6 +1404,7 @@ body #book-index #indice .col-main {
     font-size: inherit;
     margin-bottom: 2.0rem;
   }
+  #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) td,
   table.bck-table td,
    table.bck-table th,
     table.bck-table tr {
