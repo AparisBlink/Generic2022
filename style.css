@@ -1444,6 +1444,10 @@ body #book-index #indice .col-main {
     color: #fff;
     font-weight: bold;
   }
+  table td.bck-td-4{
+    background-color: #808080;
+    font-weight: bold;
+  }
   /*-----------*/
 
 
