@@ -1359,7 +1359,7 @@ body #book-index #indice .col-main {
     box-shadow: 2px 8px 9px #00000036;
     background-color: var(--MainColorLight);
     border-color: var(--MainColorLight);
-
+    color: var(--MainColor);
   }
   body:not(.edit) .bck-flipbox-face.back {
     border-radius: 7px;
@@ -1602,14 +1602,35 @@ body #book-index #indice .col-main {
   #actividad .bck-file-attach:hover,
    #actividad .bck-file-attach:active{
    box-shadow: 4px 5px var(--MainColor);
-
- }
+  }
 
  /*--- HR ---*/
- hr {
-  margin: 2rem 0;
-  border-top: 2px dashed var(--MainColor);
- }
+  hr {
+    margin: 2rem 0;
+    border-top: 2px dashed var(--MainColor);
+  }
+
+ /*--- Enlaces ---*/
+ #actividad .slide-wrapper a:not(.player.audio, .bck-file-attach) {
+    text-decoration: none;
+    border-radius: 7px;
+    padding: 0 .5rem;
+    transition: none;
+    position: relative;
+    padding: 0 0.5rem;
+    border-bottom: 2px solid var(--MainColor);
+    border-radius: 0;
+    color: var(--MainColor);
+  }
+  #actividad .slide-wrapper a:hover,
+   #actividad .slide-wrapper a:active,
+    #actividad .slide-wrapper a:focus {
+    background-color: var(--MainColorLight);
+    color: var(--MainColor);
+    outline: 2px solid var(--MainColor);
+    border: 0;
+    border-radius: 7px;
+  }
 
 
 
