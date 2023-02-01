@@ -1558,8 +1558,9 @@ body #book-index #indice .col-main {
     font-weight: 400;
     color: var(--MainColor);
   }
-  #actividad .player.audio:hover, #actividad .player.audio:focus {
-    background: var(--MainColorLight);
+  #actividad .player.audio:hover,
+   #actividad .player.audio:focus {
+    background-color: var(--MainColorLight);
     outline: 2px solid var(--MainColor);
     outline-offset: 0;
   }
@@ -1618,17 +1619,15 @@ body #book-index #indice .col-main {
     transition: none;
     position: relative;
     padding: 0 0.5rem;
-    border-bottom: 2px solid var(--MainColor);
     border-radius: 0;
     color: var(--MainColor);
   }
-  #actividad .slide-wrapper a:hover,
-   #actividad .slide-wrapper a:active,
-    #actividad .slide-wrapper a:focus {
+  #actividad .slide-wrapper a:not(.player.audio, .bck-file-attach):hover,
+   #actividad .slide-wrapper a:not(.player.audio, .bck-file-attach):active,
+    #actividad .slide-wrapper a:not(.player.audio, .bck-file-attach):focus {
     background-color: var(--MainColorLight);
     color: var(--MainColor);
     outline: 2px solid var(--MainColor);
-    border: 0;
     border-radius: 7px;
   }
 
