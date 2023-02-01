@@ -1048,17 +1048,13 @@ body #book-index #indice .col-main {
 
   /*Listas ordenadas*/
   .texto_curso ul, .texto_curso ol, .workspace:not(.multiple-choice,.matching,.ordenar,.clasificar,.test) ul li ul, .workspace:not(.multiple-choice,.matching,.ordenar,.clasificar,.test) ul li ol, .cke_contents ul, .cke_contents ol, .popover-content ul, .popover-content ol {
-    padding-left: 0;
+    padding-left: 2rem;
   }
 
   #actividad ol li::marker {
     font-weight: bold;
   }
 
-  #actividad ol.bck-ol,
-   #actividad ul.bck-ul {
-    padding: 2rem;
-  }
   #actividad ol.bck-ol {
    list-style-type: none;
    counter-reset: bck-li-counter;
@@ -1613,7 +1609,7 @@ body #book-index #indice .col-main {
 
  /*--- Enlaces ---*/
  #actividad .slide-wrapper a:not(.player.audio, .bck-file-attach) {
-    text-decoration: none;
+    text-decoration: underline;
     border-radius: 7px;
     padding: 0 .5rem;
     transition: none;
