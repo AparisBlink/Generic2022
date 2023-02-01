@@ -1538,17 +1538,15 @@ body #book-index #indice .col-main {
   }
   
   /*Icono audio*/
-  #actividad .player.audio {
+  body:not(.edit) #actividad .player.audio {
     background: none;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: none;
     width: auto !important;
-    vertical-align: baseline;
     height: auto !important;
-    min-width: 28px;
-    min-height: 28px;
+    vertical-align: baseline;
   }
   #actividad .player.audio:before {
     font-family: "FontAwesome";
