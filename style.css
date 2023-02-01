@@ -1344,6 +1344,7 @@ body #book-index #indice .col-main {
   body:not(.edit) .bck-flipbox-title,
    body:not(.edit) .bck-flipbox-section {
     padding: 2rem;
+    color: var(--MainColor);
   }
   body:not(.edit) .bck-flipbox {
     margin-bottom: 2rem;
@@ -1371,6 +1372,7 @@ body #book-index #indice .col-main {
   body:not(.edit) .bck-flipbox-2 .bck-flipbox-face.front {
     color: var(--MainColor);
     border-color: var(--MainColor);
+    background-color: transparent;
   }
   body:not(.edit) .bck-flipbox-2 .bck-flipbox-face.back {
     background-color: var(--MainColor);
