@@ -1356,24 +1356,25 @@ body #book-index #indice .col-main {
   body:not(.edit) .bck-flipbox-face.front {
     border-radius: 7px;
     box-shadow: 2px 8px 9px #00000036;
-    color: var(--MainColor);
-    border-color: var(--MainColor);
+    background-color: var(--MainColorLight);
+    border-color: var(--MainColorLight);
+
   }
   body:not(.edit) .bck-flipbox-face.back {
-    background-color: var(--MainColor);
     border-radius: 7px;
-    border-color: var(--MainColor);
+    background-color: #808080;
+    border-color: #808080;
+
   }
 
   /*Flipbox 2*/
   body:not(.edit) .bck-flipbox-2 .bck-flipbox-face.front {
-    background-color: var(--MainColorLight);
-    border-color: var(--MainColorLight);
+    color: var(--MainColor);
+    border-color: var(--MainColor);
   }
   body:not(.edit) .bck-flipbox-2 .bck-flipbox-face.back {
-    background-color: #808080;
-    border-color: #808080;
-  }
+    background-color: var(--MainColor);
+    border-color: var(--MainColor);  }
 
   /*Tabs*/
   body:not(.edit) .bck-tabs-box {
