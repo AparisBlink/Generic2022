@@ -1632,6 +1632,18 @@ body #book-index #indice .col-main {
     border-radius: 7px;
   }
 
+  /*---- Vídeo ----*/
+  /*Quitamos altura por defecto para que tenga 100%, menos en los vídeos externos (Youtube)
+  que sí necesitan una altura mínima*/
+  .bck-video-player {
+    height: 100%;
+    min-height: 276px;
+  }
+  .external-url-player .bck-video-player {
+    height: 276px;
+  }
+
+
 
 
 
