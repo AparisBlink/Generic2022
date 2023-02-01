@@ -1575,6 +1575,7 @@ body #book-index #indice .col-main {
     margin: 0;
     padding: 0;
     background: none;
+    border-radius: 0;
   }
   #actividad .bck-file-attach {
     font-size: .8em;
@@ -1602,6 +1603,12 @@ body #book-index #indice .col-main {
    #actividad .bck-file-attach:active{
    box-shadow: 4px 5px var(--MainColor);
 
+ }
+
+ /*--- HR ---*/
+ hr {
+  margin: 2rem 0;
+  border-top: 2px dashed var(--MainColor);
  }
 
 
