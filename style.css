@@ -936,7 +936,7 @@ body #actividad {
     height: 12px;
     margin: 7px;
 }
-body:not(.edit).navbar-bottom .slider-indicators .active {
+.navbar-bottom .slider-indicators .active {
     width: 12px;
     height: 12px;
     background-color: var(--MainColor);
@@ -1182,14 +1182,14 @@ body:not(.edit).navbar-bottom .slider-indicators .active {
 }
 
 /*Desordenada 1*/
-#actividad ul .bck-ul-1 li:before {
+#actividad ul.bck-ul-1 li:before {
     border-radius: 0;
     width: 0.7rem;
     height: 0.2rem;
     margin-top: 0.7em;
 }
 /*Desordenada 2*/
-#actividad ul .bck-ul-2 li:before {
+#actividad ul.bck-ul-2 li:before {
     content: "\f069";
     font-family: FontAwesome;
     background-color: transparent;
