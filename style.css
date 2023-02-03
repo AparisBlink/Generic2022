@@ -1479,7 +1479,7 @@ body #book-index #indice .col-main {
     font-size: calc(var(--MainText)/1.1);
   }
   #actividad .info-template:hover, #actividad .info-template:focus {
-    box-shadow: 0px 0px 1px 5px var(--MainColorLight);
+    box-shadow: 0px 0px 1px 5px var(--MainColor);
   }
   .info-template .info-title.shown {
     font-size: inherit;
@@ -1535,6 +1535,7 @@ body #book-index #indice .col-main {
   
   /*Icono audio*/
   body:not(.edit) #actividad .player.audio {
+    background-image: none;
     background-color: var(--MainColorLight);
     display: inline-flex;
     align-items: center;
@@ -1566,6 +1567,15 @@ body #book-index #indice .col-main {
 
   /*--- Archivo adjunto ---*/
   /*Quitamos la imagen que aparece por defecto*/
+  #actividad .bck-file-attach:before {
+    font-weight: 100;
+    content: "\f0ed";
+    font-family: FontAwesome;
+    font-size: 24px;
+    font-weight: 100;
+    color: inherit;
+    margin-right: 10px;
+  }
   .bck-file-attach > img {
     display: none;
   }
