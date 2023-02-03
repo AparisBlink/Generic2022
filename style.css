@@ -1499,12 +1499,6 @@ table td.bck-td-4{
     background-color: #c6c6c6;
 }
 /*-----------*/
-
-
-
-
-
-
 /*Popup*/
 #actividad .info-button {
     cursor: pointer;
@@ -1703,6 +1697,1114 @@ que sí necesitan una altura mínima*/
 }
 .external-url-player .bck-video-player {
     height: 276px;
+}
+
+/*ACTIVIDADES*/
+
+/*VARIABLES*/
+:root {
+--ok-color: #16A34A;
+--ok-lightcolor: #D0EDDB;
+--error-color: #DC2626;
+--error-lightcolor: #fee2e2;
+--solution-color: #00BDFF;
+--solution-lightcolor: #B2EBFF;
+--workspace-color: #C2C2C2;
+--workspace-lightcolor: #EDEDED;
+
+--SlidePadding: 4rem;
+--TextColor: #2E2E2E;
+--MainFontFamily: 'Source Sans Pro', 'sans-serif';
+--MainText: 1.8rem;
+--MainLineHeight: 1.6;
+}
+
+/*Modificación Padding Slide*/
+#actividad .carousel-inner .item-container .class_slide {
+    padding: 5px var(--SlidePadding);
+    color: var(--TextColor) ;
+}
+/*Vinculamos el texto general a las variables*/
+  /*Esta es la regla actual, pero seguro que se puede hacer más genérica*/
+    .texto_curso p {
+      font-family: var(--MainFontFamily);
+      font-size: var(--MainText);
+      line-height: var(--MainLineHeight) !important;
+    }
+  /*---*/
+  .texto_curso {
+    font-family: var(--MainFontFamily);
+    font-size: var(--MainText);
+    line-height: var(--MainLineHeight);
+  }
+  #actividad .pregunta .texto_curso {
+    font-size: var(--MainText);
+}
+/*----*/ 
+
+/*-- Modificación iframe --
+* Cambio en el diseño del botón cerrar del iframe
+*/
+
+.btn-close-iframe a {
+  padding: 10px;
+  color: #ffffff;
+  transition: none;
+}
+.btn-close-iframe a:hover,
+ .btn-close-iframe a:active,
+ .btn-close-iframe a:focus {
+  color: black;
+  font-weight: 400;
+  background-color: #ffffff;
+}
+/*----*/
+
+/*--- Modificaciones icono de audio. Son modificaciones sobre reglas ya existentes---*/
+#actividad .player.audio,
+ #actividad .player.video,
+  #help-panel-content .player,
+   #remote-alert-modal-rich .player {
+    vertical-align: bottom;
+    height: 2.8rem !important;
+    width: 2.8rem;
+}
+body #actividad .player.audio, body #actividad .player.video {
+  background-size: 1.8rem;
+}
+
+
+/*--*/
+
+/*-- Título de la slide --*/
+#actividad .content .header.empty .title {
+  display: none;
+}
+
+/*Títulos*/
+#actividad h1,
+ #actividad h2,
+  #actividad h3,
+   #actividad h4,
+    #actividad h5 {
+  margin-bottom: 2rem;
+}
+#actividad .carousel-inner .item-container .class_slide .header .title h3 {
+  font-size: calc(var(--MainText) * 2);
+  font-weight: bold;
+  color: var(--maincolor);
+}
+.bck-title-1{
+   font-size: calc(var(--MainText) * 2);
+   font-weight: bold;
+   color: var(--maincolor);
+}
+.bck-title-2 {
+   font-size: calc(var(--MainText) * 1.6);
+   font-weight: bold;
+   color: var(--maincolor);
+}
+.bck-title-3 {
+  font-size: calc(var(--MainText) * 1.3);
+  font-weight: bold;
+  color: var(--maincolor);
+}
+.bck-title-4 {
+   font-size: calc(var(--MainText) * 1.15);
+   font-weight: bold;
+}
+.bck-title-5 {
+   font-size: calc(var(--MainText) * 1.15);
+   color: var(--maincolor);
+   font-weight: 400;
+}
+
+/*Enfasis*/
+.bck-enfasis-1 {
+    color: var(--maincolor);
+}
+.bck-enfasis-2 {
+  padding: 0.1rem 0.6rem;
+  border-radius: 3px;
+  background-color: var(--secondcolor);
+}
+.bck-enfasis-3 {
+  background: var(--solution-lightcolor);
+  padding: 0.1rem 0.6rem;
+  border-radius: 5px;
+}
+.bck-enfasis-4 {
+  border-bottom: 2px solid var(--maincolor);
+}
+
+/*---- CAJAS ---- */
+.bck-box {
+  margin: 2.0rem 0;
+}
+/*Caja 4*/
+.bck-box.bck-box-4 {
+    background-color: var(--secondcolor);
+    padding: 23px 36px;
+    margin: 20px 0;
+    width: calc(100% + var(--SlidePadding) * 2);
+    margin-left: calc(-1 * var(--SlidePadding));
+}
+.bck-box.bck-box-4 .bck-title {
+  color: var(--maincolor);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+/*Caja 5*/
+.body_clase:not(.edit) #actividad .bck-box.bck-box-5 {
+    padding: 0;
+    width: calc(100% + var(--SlidePadding) * 2);
+    margin-left: calc(-1 * var(--SlidePadding));
+    text-align: center;
+}
+.body_clase:not(.edit) #actividad .bck-box.bck-box-5 .bck-i-fullscreen-wrapper {
+    padding: 0;
+}
+
+/*Estilo de párrafo*/
+#actividad p.bck-p-1 {
+  font-size: 1.8rem;
+}
+#actividad p.bck-p-2 {
+  font-size: 1.6rem;
+}
+#actividad p.bck-p-3 {
+  font-size: 1.4rem;
+}
+#actividad p.bck-p-4 {
+  font-size: 1.2rem;
+}
+#actividad p.bck-p-5 {
+  font-size: 2.0rem;
+}
+#actividad p.bck-p-6 {
+  font-size: 2.2rem;
+}
+
+/*--- Listas ordenadas y desordenadas ---*/
+#actividad ul.bck-ul,
+#actividad ol.bck-ol {
+   padding: 0;
+   list-style-type: none;
+   counter-reset: bck-li-counter;
+}
+#actividad ul.bck-ul li,
+#actividad ol.bck-ol li {
+ position: relative;
+}
+/*Listas ordenadas*/
+.body_clase:not(.book-summary) #actividad ol.bck-ol li{
+  counter-increment: bck-li-counter;
+  margin-left: 1em;
+  margin-bottom: 1.5rem;
+}
+.body_clase:not(.book-summary) #actividad ol.bck-ol li:before {
+  position: absolute;
+  content: counter(bck-li-counter) ".";
+  padding: 0;
+  height: auto;
+  display: inline-block;
+  color: var(--TextColor);
+  background-color: transparent;
+  text-align: right;
+  font-size: 1em;
+  font-weight: bold;
+  width: 6rem;
+  left: -6.5rem;
+}
+.body_clase:not(.book-summary) #actividad ol.bck-ol.bck-ol-2 li:before {
+  color: var(--maincolor);
+}
+.body_clase:not(.book-summary) #actividad ol.bck-ol.bck-ol-3 li:before {
+  content: counter(bck-li-counter, lower-alpha) ")";
+}
+.body_clase:not(.book-summary) #actividad ol.bck-ol.bck-ol-4 li:before {
+  content: counter(bck-li-counter, lower-alpha) ")";
+  color: var(--maincolor);
+}
+.body_clase:not(.book-summary) #actividad ol.bck-ol.bck-ol-5 li:before {
+  content: counter(bck-li-counter, upper-alpha) ".";
+  color: var(--maincolor);
+}
+.body_clase:not(.book-summary) #actividad ol.bck-ol.bck-ol-6 li {
+  margin-bottom: 1.5rem;
+  margin-left: 1.5em;
+}
+.body_clase:not(.book-summary) #actividad ol.bck-ol.bck-ol-6 li:before {
+  display: flex;
+  content: counter(bck-li-counter) "";
+  color: #fff;
+  background-color: var(--maincolor);
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  left: -2em;
+  text-align: center;
+  padding: 5px;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*Listas desordenadas*/
+.body_clase:not(.book-summary) #actividad .texto_curso ul li,
+.body_clase:not(.book-summary) #actividad ul.bck-ul li {
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+.body_clase:not(.book-summary) #actividad .texto_curso ul li:before,
+.body_clase:not(.book-summary) #actividad ul.bck-ul li:before {
+  position: absolute;
+  content: "";
+  margin: 0;
+  background-color: var(--maincolor);
+  color: var(--maincolor);
+  text-align: center;
+  width: 0.5em;
+  height: 0.5em;
+  left: 0;
+  margin-top: 0.5em;
+}
+.body_clase:not(.book-summary) #actividad ul.bck-ul-1 li {
+  padding-left: 1.4em;
+}
+.body_clase:not(.book-summary) #actividad ul.bck-ul-1 li:before {
+  background: url(images/tick.svg) no-repeat 50%;
+  background-color: transparent;
+  background-size: contain;
+  width: 1.1em;
+  height: 1.2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 0;
+  content: "";
+  margin-top: 0;
+}
+.body_clase:not(.book-summary) #actividad ul.bck-ul-2 li:before {
+  width: 0.8rem;
+  height: 0.1rem;
+  margin-top: 0.7em;
+}
+
+/*-------------*/
+
+/*--- TABLAS ---*/
+.body_clase #actividad div:not(.calculo) > table:not(.rf-tablegrid):not(.puzzle) {
+  width: 100%;
+  font-size: var(--MainText);
+  margin-bottom: 2.0rem;
+}
+body .texto_curso table.bck-table td,
+ body .texto_curso table.bck-table th,
+  body .texto_curso table.bck-table tr {
+  border-width: 2px;
+  border-color: var(--maincolor);
+}
+body .texto_curso table.bck-table-2 td,
+ body .texto_curso table.bck-table-2 th,
+  body .texto_curso table.bck-table-2 tr {
+  border-color: #2E2E2E;
+}
+body .texto_curso table.bck-table-3 {
+  border: 0;
+  border-color: transparent;
+}
+body .texto_curso table.bck-table-3 td,
+ body .texto_curso table.bck-table-3 th,
+  body .texto_curso table.bck-table-3 tr {
+  border: 0;
+  border-color: transparent;
+}
+
+body .texto_curso table td.bck-td-1 {
+  background-color: var(--maincolor);
+  color: #fff;
+  font-weight: bold;
+}
+body .texto_curso table td.bck-td-2 {
+  background-color: var(--secondcolor);
+  font-weight: bold;
+}
+body .texto_curso table td.bck-td-3{
+  background-color: #2E2E2E;
+  color: #fff;
+  font-weight: bold;
+}
+/*-----------*/
+
+/*--- Ajustes PopUp --- */
+/*Estilo Botón Popup*/
+  #actividad .info-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.0rem 0;
+    color: var(--maincolor);
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    border: 0;
+    outline: 2px solid var(--maincolor);
+    box-shadow: 0 0 9px #000000;
+    font-size: 1.8rem;
+  }
+/*---*/
+/*Estilo Popup Flotante*/
+  .info-template.shown {
+    padding: 1.6rem 0.9rem 1rem;
+    border-radius: 0;
+    background: #ffffff;
+    border: 2px solid var(--maincolor);
+    border-right: 0;
+    min-width:150px;
+  }
+  .body_clase #actividad .info-template .info-title {
+    font-size: calc(var(--MainText) / 1.1);
+    font-weight: bold;
+    margin: 0;
+  }
+  .info-template .info-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--maincolor);
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.6rem;
+  }
+  body:not(.edit) .popover-content {
+    color: var(--TextColor);
+    background-color: var(--secondcolor);
+  }
+/*Estilo Ventana Popup*/  
+  .popover-title {
+    font-size: 18px;
+    margin-bottom: 0;
+    padding: 1rem 1.5rem;
+  }
+  .info-popover .popover-title p, .popover-template .popover-title p {
+    margin-bottom: 0;
+  }
+  body:not(.edit) .popover-template .popover-content {
+    padding: 1rem 1.5rem;
+  }
+  .close-popover {
+    top: 3px;
+    color: white;
+  }
+  .popover-template {
+    min-width: 270px;
+  }
+  .info-popover .popover-title:before, .popover-template .popover-title:before {
+    font-weight: 100;
+  }
+/*----------*/
+
+/*--Tooltip--*/
+body:not(.edit) .popover-content {
+  color: var(--TextColor);
+  background-color: var(--secondcolor);
+}
+/*---*/
+
+/*Desplegables*/
+body .bck-dropdown {
+  margin-bottom: 2rem;
+}
+body .bck-dropdown .bck-dropdown-button {
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+}
+body .bck-dropdown-titulo {
+  font-size: var(--MainText); 
+  padding-left: 0;
+}
+body .bck-dropdown .bck-dropdown-content {
+  padding: 1rem 1.5rem;
+}
+  /*Revierto interlineado para alinear el icono verticalmente*/
+  .bck-dropdown-icon>.fa {
+    line-height: revert;
+  }
+/*Desplegable 2*/
+#actividad .bck-dropdown-2 {
+  background-color: #ffffff;
+  border: 2px solid var(--maincolor);
+}
+ #actividad .bck-dropdown-2 .bck-dropdown-button {
+  color: var(--maincolor);
+  background-color: #ffffff;
+  font-weight: bold;
+}
+#actividad .bck-dropdown-2 .bck-dropdown-titulo {
+    color: inherit;
+}
+#actividad .bck-dropdown-2 .bck-dropdown-content {
+  background-color: #ffffff;
+  border: 0;
+}
+/*Desplegable 3*/
+#actividad .bck-dropdown-3 {
+  background-color: #ffffff;
+  border: 2px solid #2E2E2E;
+}
+ #actividad .bck-dropdown-3 .bck-dropdown-button {
+  color: #ffffff;
+  background-color: #2E2E2E;
+}
+#actividad .bck-dropdown-3 .bck-dropdown-content {
+  background-color: #ffffff;
+  border: 0;
+}
+
+/*--- Flipbox. Nueva regla ---*/
+body:not(.edit) .bck-flipbox {
+  margin-bottom: 2rem;
+}
+
+/*Icono archivo adjunto. Pasamos las medidas ya existentes a rem y cambios en hover*/
+body .bck-file-attach {
+  padding: 0.4rem 0 0.4rem 4rem;
+  background-size: 1.8rem;
+  background-position: 1.5rem;
+}
+body .bck-file-attach:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+/*--*/
+
+/*--- Ajustes actividades ---*/
+/*Generico workspace*/
+#actividad .workspace {
+  font-size: var(--MainText);
+  line-height: var(--MainLineHeight);
+}
+/*Botones*/
+.item-container  .btn {
+  border-radius: 5px;
+  font-weight: 700; 
+}
+#actividad .content .review .attemps span {
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: var(--maincolor);
+}
+.item-container .btn[disabled] {
+  background-color: var(--maincolor) !important;
+  border: 2px solid var(--maincolor) !important;
+  color: #ffffff !important;
+}
+.item-container .btn-primary {
+  border: 2px solid var(--maincolor);
+  background-color: #ffffff;
+  color: var(--maincolor);
+}
+.item-container .btn-primary:hover,
+.item-container .btn-primary:focus,
+.item-container .btn-primary:active,
+.item-container .btn-primary.active,
+.item-container .open .dropdown-toggle .btn-primary {
+  border: 2px solid var(--maincolor);
+  background-color: var(--maincolor);
+  color: #ffffff;
+}
+.item-container .btn-solution {
+  border: 2px solid #00bdff;
+  background-color: #ffffff;
+  color: #00bdff;
+}
+.item-container .btn-solution:hover {
+  background-color: #00bdff;
+  color: #ffffff;
+}
+.item-container .btn-danger{
+  border: 2px solid #db3228;
+  background-color: #ffffff;
+  color: #db3228;
+}
+.item-container .btn-danger:hover {
+  background-color: #db3228;
+  color: #ffffff;
+}
+
+/*Inputs*/
+.slide_main input,
+ .slide_main .img-input-container {
+  border: 2px solid var(--workspace-color);
+  background-color: var(--workspace-lightcolor);
+  height: 1.8em;
+  padding: 0 6px;
+  max-width: 100%;
+  border-radius: 5px;
+}
+.body_clase:not(.edit) .form-control,
+.body_clase:not(.edit) input[type="text"],
+.body_clase.edit .form-control,
+.body_clase.edit input[type="text"]{
+  font-size: var(--MainText);
+}
+.body_clase:not(.edit):not(.edit) .form-control:focus,
+ .body_clase:not(.edit):not(.edit) .form-control:focus-within,
+  .body_clase:not(.edit):not(.edit)  input[type="text"]:focus {
+  border-top-color: var(--maincolor);
+  border-right-color: var(--maincolor);
+  border-bottom-color: var(--maincolor);
+  border-left-color: var(--maincolor);
+  box-shadow: 0 1px 1px rgb(0 0 0 / 8%) inset, 0 0 8px var(--secondcolor), 0.3;
+}
+.body_clase #actividad input.respuesta_ok,
+.body_clase #actividad .img-input-container.respuesta_ok {
+  border-color: var(--ok-color);
+  background-color: #ffffff;;
+}
+.body_clase #actividad .slide_main input.respuesta_ko,
+.body_clase #actividad .slide_main .img-input-container.respuesta_ko {
+  border-color: var(--error-color);
+  background-color: var(--error-lightcolor);
+}
+.body_clase #actividad .slide_main input.solucion,
+.body_clase #actividad .slide_main textarea.solucion,
+.body_clase #actividad .slide_main .shortanswer-container .preview.solucion,
+.body_clase #actividad .slide_main .img-input-container.solucion {
+    border: 0;
+    background-color: var(--solution-lightcolor);
+}
+
+/*---*/
+/*-------------------------*/
+/*--- PLANTILLLAS AUTOEVALUABLES ---*/
+/*----------------------------*/
+/* 1. RESPUESTA MULTIPLE*/
+#actividad .workspace.multiple-choice .opcion {
+  border-color: var(--workspace-color);
+}
+#actividad .workspace.multiple-choice .opcion.respuesta_over {
+  background-color: var(--workspace-lightcolor);
+}
+#actividad .workspace.multiple-choice .opcion.respuesta_checked {
+  border-color: var(--workspace-color);
+  background-color: var(--workspace-lightcolor);
+}
+#actividad .workspace.multiple-choice .opcion.respuesta_ok {
+  border-color: var(--ok-color);
+  background-color: #ffffff;
+}
+#actividad .workspace.multiple-choice .opcion.respuesta_ko {
+  border-color: var(--error-color);
+  background-color: var(--error-lightcolor);
+}
+#actividad .workspace.multiple-choice .opcion.solucion {
+  border-color: transparent;
+  background-color: var(--solution-lightcolor);
+}
+/*Ajuste de los desplegables de feedback de las actividades*/
+#actividad .workspace .bck-dropdown.wrong-fb-dropdown,
+#actividad .workspace .bck-dropdown.right-fb-dropdown {
+  border: 2px solid var(--workspace-color);
+  font-weight: 400;
+  width: 100%;
+}
+#actividad .workspace.multiple-choice .bck-dropdown-titulo {
+  display: block;
+}
+#actividad .workspace.multiple-choice .bck-dropdown-icon {
+  display: block;
+}
+.bck-dropdown.right-fb-dropdown .bck-dropdown-icon>.fa {
+  color: var(--ok-color);
+}
+.bck-dropdown.wrong-fb-dropdown .bck-dropdown-icon>.fa {
+  color: var(--error-color);
+}
+#actividad .workspace .bck-dropdown.wrong-fb-dropdown .bck-dropdown-button,
+#actividad .workspace .bck-dropdown.right-fb-dropdown .bck-dropdown-button {
+  border: 0;
+  background-color: #ffffff;
+  color: var(--TextColor);
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1.5rem;
+  height: auto;
+}
+#actividad .workspace .bck-dropdown.wrong-fb-dropdown .bck-dropdown-titulo,
+#actividad .workspace .bck-dropdown.right-fb-dropdown .bck-dropdown-titulo {
+  color: inherit;
+  font-size: var(--MainText);
+}
+#actividad .workspace .bck-dropdown.wrong-fb-dropdown .bck-dropdown-content,
+#actividad .workspace .bck-dropdown.right-fb-dropdown .bck-dropdown-content {
+  font-size: var(--MainText);
+  margin-left: 0;
+  border: 0;
+  padding: 0 1.5rem 1rem;
+}
+#actividad .workspace .bck-dropdown.right-fb-dropdown {
+    border-color: var(--ok-color);
+  color: var(--ok-color);
+}
+#actividad .workspace .bck-dropdown.wrong-fb-dropdown {
+    border-color: var(--error-color);
+  color: var(--error-color);
+}
+/*--*/
+
+/*--- 2. Plantilla Verdadero y falso y Plantilla Test ---*/
+.checkbox-option label.filter-label,
+ .checkbox-option label.filter-label-append,
+  .radio-option label.filter-label {
+  font-size: revert;
+}
+#actividad .workspace.true-false .checkbox-option input.filter-checkbox[type="checkbox"]+label.filter-label,
+#actividad .workspace.true-false .radio-option input.filter-radio[type="radio"]+label.filter-label,
+#actividad .workspace.test .checkbox-option input.filter-checkbox[type="checkbox"]+label.filter-label,
+#actividad .workspace.test .radio-option input.filter-radio[type="radio"]+label.filter-label {
+    padding: 5px;
+    padding-left: 25px;
+    border-radius: 3px;
+}
+#actividad .workspace.test .respuesta_ok,
+#actividad .workspace.true-false .respuesta_ok {
+  border: 2px solid var(--ok-color);
+}
+#actividad input.respuesta_ok,
+#actividad .img-input-container.respuesta_ok {
+  border-color: var(--ok-color);
+  background-color: #ffffff;;
+}
+#actividad .workspace.test .respuesta_ko,
+#actividad .workspace.true-false .respuesta_ko {
+  border: 2px solid var(--error-color);
+  background-color: var(--error-lightcolor);
+}
+#actividad .workspace.test .solucion,
+#actividad .workspace.true-false .solucion {
+  border: transparent;
+  background-color: var(--solution-lightcolor);
+}
+/*--*/
+
+/*-- PLANTILLA RELLENAR ESPACIOS --*/
+.workspace.frame {
+  padding: 0;
+}
+/*Modificación tamaño respuestas arrastables*/
+.fillblanks-draggable-wrapper .response .count {
+  background-color: var(--maincolor);
+}
+.fillblanks-draggable-wrapper .response{
+  border-color: var(--workspace-color);
+}
+.fillblanks-draggable-wrapper .response.respuesta_over {
+  background-color: var(--workspace-lightcolor);
+}
+.fillblanks-draggable-wrapper .response p {
+  font-size: var(--MainText);
+}
+/*--*/
+/*-- PLANTILLA ARRASTRAR IMÁGENES A ESPACIOS --*/
+.body_clase #actividad .img-input-container.respuesta_ok {
+  border-style: solid;
+}
+.fillblankimages-draggable-wrapper .response {
+  border-color: var(--workspace-color);
+}
+.fillblankimages-draggable-wrapper .response.respuesta_over {
+  background-color: var(--workspace-lightcolor);
+}
+/*-- PLANTILLA ARRASTRAR IMÁGENES A IMÁGENES --*/
+#actividad .image-over-image .drag_image-over-image li {
+  cursor: move;
+}
+
+/*--- PLANTILLA MARCAR PALABRAS ---*/
+/*Ajustamos el interlineado para que coincida con el general*/
+#actividad .markwords-word {
+  line-height: var(--MainLineHeight) !important;
+}
+/*Ajustes en la apariencia y vinculación de colores*/
+#actividad .markword-active,
+#actividad .markword-correct,
+#actividad .markword-false,
+#actividad .markword-solution {
+  padding: 0 4px !important;
+  border: 2px solid var(--workspace-color) !important;
+  border-radius: 5px !important;
+}
+#actividad .markwords-word.markword-correct {
+  color: inherit !important;
+  background-color: #ffffff !important;
+  border-color: var(--ok-color) !important;
+}
+#actividad .markword-false {
+  color: inherit !important;
+  background-color: var(--error-lightcolor) !important;
+  border-color: var(--error-color) !important;
+}
+#actividad .markword-solution {
+  color: var(--TextColor) !important;
+  background-color: var(--solution-lightcolor) !important;
+  border: 2px solid transparent !important;
+}
+/*--*/
+/*-- PLANTILLA RELACIONAR --*/
+#actividad .workspace.matching .opcion {
+  border: 2px solid var(--workspace-color);  
+}
+#actividad .respuesta_over .box {
+  background-color: var(--workspace-lightcolor);
+}
+/*Ajuste para la plantilla en dispositivos táctiles*/
+#actividad .workspace.matching .block.emparejado {
+  border-top-color: var(--workspace-color);
+  border-bottom-color: var(--workspace-color);
+}
+#actividad .workspace.matching .emparejado.ok {
+  border-color: var(--ok-color);
+}
+#actividad .workspace.matching .emparejado.ko {
+  border-color: var(--error-color);
+  background-color: var(--error-lightcolor);
+}
+#actividad .workspace.matching .emparejado.sol {
+  border-color: transparent;
+  background-color: var(--solution-lightcolor);
+}
+/*--*/
+/*--PLANTILLA ORDENAR--*/
+#actividad .workspace.ordenar .js-rank-item {
+  display: flex;
+  position: relative;
+  margin: 1.0rem 0;
+  padding: 0.5rem;
+  cursor: move;
+  align-content: center;
+  align-items: center;
+  font-weight: normal;
+  border: 2px solid var(--workspace-color);
+}
+#actividad .workspace.ordenar .respuesta_over {
+  background-color: var(--workspace-lightcolor);
+}
+#actividad .workspace.ordenar .js-rank-item .posicion {
+  font-weight: bold;
+}
+#actividad .workspace.ordenar li.ejercicio_ok {
+  background-position-y: center;
+}
+#actividad .workspace.ordenar li.ejercicio_ko {
+  background-position-y: center;
+}
+#actividad .workspace.ordenar li.ejercicio_ko {
+    border-color: var(--error-color);
+    background-color: var(--error-lightcolor);
+}
+#actividad .workspace.ordenar li.ejercicio_ok {
+    border-color: var(--ok-color);
+}
+.body_clase #actividad .workspace.ordenar .solucion {
+    border-color: transparent;
+}
+/*--*/
+
+/*--- PLANTILLA CLASIFICAR ---*/
+/*Cambios en la visualización opciones*/
+#actividad .workspace.clasificar .clasificar_lista .respuesta_over {
+  background-color: var(--workspace-lightcolor);
+}
+#actividad .workspace.clasificar .clasificar_lista .classify-item {
+  cursor: move;
+  border: 2px solid var(--workspace-color);
+}
+#actividad .workspace.clasificar .clasificar_conjuntos .conjunto .group-box {
+  border: 2px solid var(--workspace-color);
+}
+#actividad .workspace.clasificar .clasificar_conjuntos .group-name-title {
+  padding: 5px 0;
+}
+#actividad .workspace.clasificar .clasificar_conjuntos .group-name-top {
+  border-bottom: 1px solid var(--workspace-color);
+}
+#actividad .workspace.clasificar .clasificar_conjuntos .classify-item {
+  background-color: transparent;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+#actividad .workspace.clasificar .clasificar_conjuntos .clasify-group span {
+  display: block;
+  margin: 0 0.5rem;
+  border: 2px solid;
+  border-radius: 5px;
+  border-color: var(--workspace-color);  
+}
+#actividad .workspace.clasificar .clasificar_lista ul li,
+#actividad .workspace.clasificar .clasificar_conjuntos .conjunto {
+  font-weight: normal;
+}
+/*Actualización colores ok/ko/solución*/
+.body_clase #actividad .workspace.clasificar .clasificar_conjuntos .respuesta_ok {
+  background-color: #ffffff;
+  border-color: var(--ok-color);
+}
+.body_clase #actividad .workspace.clasificar .clasificar_conjuntos .respuesta_ko {
+  border-color: var(--error-color);
+  background-color: var(--error-lightcolor);
+}
+.body_clase #actividad .workspace.clasificar .clasificar_conjuntos span.solucion {
+  border-color: transparent;
+  background-color: var(--solution-lightcolor);
+}
+/*-----*/
+
+/*-- PLANTILLA ANÁLSIS SINTÁCTICO --*/
+#actividad .workspace.syntax .sintaxis_frase .bloque.respuesta_ko, .sintaxis_adder .respuesta_ko {
+  border-bottom: 1px solid var(--error-color);
+  border-left: 1px solid var(--error-color);
+  border-right: 1px solid var(--error-color);
+  background-color: var(--error-lightcolor);
+}
+#actividad .workspace.syntax .sintaxis_frase .bloque.respuesta_ko:before, #actividad .workspace.syntax .circulo.respuesta_ko {
+  background-color: var(--error-color);
+}
+#actividad .workspace.syntax .sintaxis_frase .bloque.respuesta_ok:before,
+ #actividad .workspace.syntax .circulo.respuesta_ok {
+  background-color: var(--error-lightcolor);
+}
+#actividad .workspace.syntax .sintaxis_frase .bloque.respuesta_ok,
+ .sintaxis_adder .respuesta_ok {
+  border-bottom: 1px solid var(--ok-color);
+  border-left: 1px solid var(--ok-color);
+  border-right: 1px solid var(--ok-color);
+  background-color: var(--ok-lightcolor);
+}
+#actividad .workspace.syntax.solucion .bloque,
+ #actividad .workspace.syntax.solucion .sintaxis_adder select {
+  border-color: var(--solution-color);
+  background-color: var(--solution-lightcolor);
+}
+
+/*-- PLANTILLA SEÑALAR RESPUESTA --*/
+#actividad .slide-wrapper .workspace.chooseblanks .inline-answer a {
+  text-decoration: none;
+  font-weight: inherit;
+}
+#actividad .workspace.chooseblanks .inline-answer a {
+  display: inline-block;
+  vertical-align: middle;
+  border: 2px solid var(--workspace-color);
+  padding: 0px 6px;
+  margin: 0 2px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: inherit;
+}
+#actividad .workspace.chooseblanks .inline-answer a:hover {
+  background-color: var(--workspace-lightcolor);
+  color: inherit;
+}
+#actividad .workspace.chooseblanks select:disabled {
+  opacity: 1;
+}
+
+#actividad .workspace.chooseblanks select {
+  cursor: pointer;
+  border: 2px solid var(--workspace-color);
+  padding: 0 .5rem;
+  border-radius: 5px;
+}
+
+#actividad .workspace.chooseblanks .inline-answer a.selected:not(.respuesta_ok):not(.respuesta_ko):not(.solucion),
+#actividad .workspace.chooseblanks .inline-answer a.focus:not(.respuesta_ok):not(.respuesta_ko):not(.solucion) {
+  background-color: var(--workspace-lightcolor);
+  font-weight: bold;
+  color: inherit;
+}
+.body_clase:not(.edit) #actividad .workspace.chooseblanks .respuesta_ok,
+.body_clase:not(.edit) #actividad .workspace.chooseblanks .respuesta_ko  {
+    border-bottom-width: 2px;
+}
+.body_clase:not(.edit) #actividad .workspace.chooseblanks .respuesta_ok  {
+  border-color: var(--ok-color);
+  background-color: #ffffff;
+}
+.body_clase:not(.edit) #actividad .workspace.chooseblanks .respuesta_ko {
+  border-color: var(--error-color);
+  background-color: var(--error-lightcolor);
+}
+#actividad .workspace.chooseblanks .inline-answer a.respuesta_ok {
+  color: inherit;
+  border-color: var(--ok-color);
+}
+#actividad .workspace.chooseblanks .inline-answer a.respuesta_ko {
+  color: inherit;
+  border-color: var(--error-color);
+}
+.body_clase:not(.edit) #actividad .workspace.chooseblanks .solucion {
+  border-color: transparent;
+  background-color: var(--solution-lightcolor);
+  color: inherit;
+}
+
+/*-------------------------*/
+/*--- PLANTILLLAS EVALUABLES PROFESOR ---*/
+/*----------------------------*/
+/*--Redaccion--*/
+.essay .pista .ta-pista {
+  border-radius: 5px;
+  border-color: transparent;
+  background: var(--solution-lightcolor);
+}
+/*--Dictado--*/
+.workspace.dictation .textarea.solucion {
+  border-color: transparent;
+  border-radius: 5px;
+  background: var(--solution-lightcolor);
+}
+/*--Respuestas cortas--*/
+.hint.solucion.decoding {
+  display: inline-block;
+  color: var(--TextColor);
+  padding: 0.1rem 0.6rem;
+  border-radius: 5px;
+  background: var(--solution-lightcolor);
+  margin-bottom: 2rem; 
+}
+/*--Velocidad de lectura--*/
+#actividad .workspace.reading {
+    line-height: var(--MainLineHeight);
+}
+/*--Grabacion audio--*/
+.btnaudiorecorder.btn-primary {
+  padding: 2px 10px; /*Reducimos padding porque es un botón inline y descuadra el interlineado en las listas*/
+}
+.btnaudiorecorder.active,
+ .btnaudiorecorder:not([disabled]):active,
+  .btnaudiorecorder:not([disabled]):focus,
+   .btnaudiorecorder:not([disabled]):hover {
+    color: #fff;
+    background-color: var(--maincolor);
+}
+
+/* --Plantilla Dibujar --
+*Cambio en el color activo de los botones del canvas*/
+.slide_content_type_35 .tools .active,
+ .slide_content_type_29 .tools .active {
+  background-color: var(--maincolor);
+}
+
+/*--- Plantilla Archivo entregable ---*/
+/*Personalizacion encabezados tabla al subir archivo*/
+.deliverablefile .divtable tr th {
+  background-color: white;
+  color: var(--TextColor);
+  font-weight: bold;
+}
+
+/*--------------------------*/
+/*--- JUEGOS AUTOEVALUABLES --*/
+/*--------------------------*/
+/*--Palabras cruzadas--*/
+.slide.crosswords .respuestas .respuesta.respuesta_ko .caracter.solucion {
+  background-color: var(--error-color);
+}
+.slide.crosswords .respuestas .respuesta.respuesta_ko .caracter {
+  background-color: var(--error-lightcolor);
+}
+.slide.crosswords .respuestas .respuesta.respuesta_ok .caracter.solucion {
+  background-color:  var(--ok-color);
+}
+.slide.crosswords .respuestas .respuesta.respuesta_ok .caracter {
+  background-color: var(--ok-lightcolor);
+}
+.slide.crosswords .respuestas .respuesta.solucion .caracter {
+  background-color: var(--solution-color);
+}
+.slide.crosswords .respuestas .respuesta.solucion .caracter {
+  background-color: var(--solution-lightcolor);
+}
+/*--Sopa de letras--*/
+/*Cambio en la estética para hacerlo similar a Ocean*/
+.rf-tgrid {
+  height: 3rem;
+  width: 3rem;
+  font-family: var(--MainFontFamily);
+  font-weight: normal;
+  font-size: var(--MainText);
+  padding: 0.3rem 0.6rem;
+}
+.rf-wordcontainer {
+  font-family: var(--MainFontFamily);
+}
+.rf-foundword {
+  font-family: var(--MainFontFamily);
+}
+/*Vinculamos los colores a las nuevas variables*/
+.slide.wordsearch .rf-tgrid.rf-selected.selected-horizontal {
+  background-color: var(--ok-lightcolor);
+  border-top-color: var(--ok-color);
+}
+.slide.wordsearch .rf-tgrid.rf-selected.selected-vertical {
+  border-right-color: var(--ok-color);
+  background-color: var(--ok-lightcolor);
+}
+.slide.wordsearch .rf-tgrid.not-found,
+ .slide.wordsearch .rf-wordcontainer .rf-ptrue.found .query span {
+  border-bottom: 0;
+  background-color: var(--ok-lightcolor);
+}
+.slide.wordsearch .rf-wordcontainer .rf-ptrue.not-found .query span {
+  border-bottom: 2px solid var(--error-color);
+  background-color: var(--error-lightcolor);
+}
+.slide.wordsearch .rf-tgrid.selected-vertical.solucion {
+  border-right-color: var(--solution-color) !important;
+  background-color: var(--solution-lightcolor) !important;
+}
+.slide.wordsearch .rf-tgrid.selected-horizontal.solucion {
+  border-bottom-color: var(--solution-color) !important;
+  background-color: var(--solution-lightcolor) !important;
+}
+
+/*-- Crucigrama --*/
+.slide.crosswords-puzzle table.puzzle td input {
+  border-radius: 0;
+}
+.slide.crosswords-puzzle table.puzzle input.done {
+  background-color: var(--ok-lightcolor);
+}
+.slide.crosswords-puzzle table.puzzle input.fail {
+  background-color: var(--error-lightcolor);
+  border: 1px solid var(--error-color);
+}
+.slide.crosswords-puzzle table.puzzle input.solution {
+  background-color: var(--solution-lightcolor);
+}
+/*--Memoria--*/
+#actividad .workspace.memory .front {
+  border-color: var(--workspace-color);
+}
+#actividad .workspace.memory .front:hover {
+  background-color: var(--workspace-lightcolor);
+}
+#actividad .workspace.memory .still .back {
+  border-color: var(--ok-color);
+}
+#actividad .workspace.memory .on.ko .back {
+  border-color: var(--error-color);
+  background-color: var(--error-lightcolor);
+}
+#actividad .workspace.memory .still.solucion .back {
+  border-color: transparent !important;
+  background-color: var(--solution-lightcolor);
 }
 
 
