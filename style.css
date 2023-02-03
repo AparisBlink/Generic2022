@@ -937,7 +937,7 @@ body #actividad {
     margin: 7px;
 }
 .navbar-bottom .slider-indicators .active {
-    width: 12px;
+    width: 18px;
     height: 12px;
     background-color: var(--MainColor);
     color: var(--MainColorLight);
@@ -2045,6 +2045,7 @@ que sí necesitan una altura mínima*/
   #actividad .workspace.clasificar .clasificar_lista .classify-item {
     cursor: move;
     border: 2px solid var(--workspace-color);
+    padding-bottom: 0;
   }
   #actividad .workspace.clasificar .clasificar_conjuntos .conjunto .group-box {
     border: 2px solid var(--workspace-color);
