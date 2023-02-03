@@ -1715,25 +1715,25 @@ que sí necesitan una altura mínima*/
   #actividad .content .review .attemps span {
     border-radius: 5px;
     font-size: 18px;
-    background-color: var(--maincolor);
+    background-color: var(--MainColor);
   }
   .item-container .btn[disabled] {
-    background-color: var(--maincolor) !important;
-    border: 2px solid var(--maincolor) !important;
+    background-color: var(--MainColor) !important;
+    border: 2px solid var(--MainColor) !important;
     color: #ffffff !important;
   }
   .item-container .btn-primary {
-    border: 2px solid var(--maincolor);
+    border: 2px solid var(--MainColor);
     background-color: #ffffff;
-    color: var(--maincolor);
+    color: var(--MainColor);
   }
   .item-container .btn-primary:hover,
   .item-container .btn-primary:focus,
   .item-container .btn-primary:active,
   .item-container .btn-primary.active,
   .item-container .open .dropdown-toggle .btn-primary {
-    border: 2px solid var(--maincolor);
-    background-color: var(--maincolor);
+    border: 2px solid var(--MainColor);
+    background-color: var(--MainColor);
     color: #ffffff;
   }
   .item-container .btn-solution {
@@ -1774,10 +1774,10 @@ que sí necesitan una altura mínima*/
   .body_clase:not(.edit):not(.edit) .form-control:focus,
    .body_clase:not(.edit):not(.edit) .form-control:focus-within,
     .body_clase:not(.edit):not(.edit)  input[type="text"]:focus {
-    border-top-color: var(--maincolor);
-    border-right-color: var(--maincolor);
-    border-bottom-color: var(--maincolor);
-    border-left-color: var(--maincolor);
+    border-top-color: var(--MainColor);
+    border-right-color: var(--MainColor);
+    border-bottom-color: var(--MainColor);
+    border-left-color: var(--MainColor);
     box-shadow: 0 1px 1px rgb(0 0 0 / 8%) inset, 0 0 8px var(--secondcolor), 0.3;
   }
   .body_clase #actividad input.respuesta_ok,
@@ -1917,7 +1917,7 @@ que sí necesitan una altura mínima*/
   }
   /*Modificación tamaño respuestas arrastables*/
   .fillblanks-draggable-wrapper .response .count {
-    background-color: var(--maincolor);
+    background-color: var(--MainColor);
   }
   .fillblanks-draggable-wrapper .response{
     border-color: var(--workspace-color);
@@ -2210,14 +2210,14 @@ que sí necesitan una altura mínima*/
     .btnaudiorecorder:not([disabled]):focus,
      .btnaudiorecorder:not([disabled]):hover {
       color: #fff;
-      background-color: var(--maincolor);
+      background-color: var(--MainColor);
   }
   
   /* --Plantilla Dibujar --
   *Cambio en el color activo de los botones del canvas*/
   .slide_content_type_35 .tools .active,
    .slide_content_type_29 .tools .active {
-    background-color: var(--maincolor);
+    background-color: var(--MainColor);
   }
   
   /*--- Plantilla Archivo entregable ---*/
