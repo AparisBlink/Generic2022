@@ -1706,7 +1706,10 @@ que sí necesitan una altura mínima*/
 #actividad .workspace {
     font-size: var(--MainText);
     line-height: var(--MainLineHeight);
-  }
+}
+#actividad .pregunta .texto_curso{
+    font-size: var(--MainText);
+}
   /*Botones*/
   .item-container  .btn {
     border-radius: 5px;
