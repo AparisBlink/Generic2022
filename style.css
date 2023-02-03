@@ -923,7 +923,7 @@ body #book-index #indice .col-main {
     margin-bottom: 10rem; /*Para que se vea dónde acaba la pagina*/
   }
 
-  /*Navbar*/
+  /*---- Navbar -----*/
   .slider-indicators li {
     width: 12px;
     height: 12px;
@@ -931,12 +931,20 @@ body #book-index #indice .col-main {
     -moz-border-radius: 3px;
     border-radius: 3px;
   }
+  .slider-indicators .active {
+    width: 15px;
+    height: 12px;
+    margin: 7px;
+  }
    body:not(.edit).navbar-bottom .slider-indicators .active {
     width: 12px;
     height: 12px;
     background-color: var(--MainColor);
     color: var(--MainColorLight);
     outline: 2px solid var(--MainColorLight);
+  }
+  .slider-indicators li:hover {
+    background-color: var(--MainColorLight);
   }
 
   /*Titulo de la slide*/
@@ -1047,7 +1055,14 @@ body #book-index #indice .col-main {
   }
 
   /*Listas ordenadas*/
-  .texto_curso ul, .texto_curso ol, .workspace:not(.multiple-choice,.matching,.ordenar,.clasificar,.test) ul li ul, .workspace:not(.multiple-choice,.matching,.ordenar,.clasificar,.test) ul li ol, .cke_contents ul, .cke_contents ol, .popover-content ul, .popover-content ol {
+  .texto_curso ul,
+   .texto_curso ol,
+    .workspace:not(.multiple-choice,.matching,.ordenar,.clasificar,.test) ul li ul,
+     .workspace:not(.multiple-choice,.matching,.ordenar,.clasificar,.test) ul li ol,
+      .cke_contents ul,
+       .cke_contents ol,
+        .popover-content ul,
+         .popover-content ol {
     padding-left: 2rem;
   }
 
@@ -1058,10 +1073,12 @@ body #book-index #indice .col-main {
   #actividad ol.bck-ol {
    list-style-type: none;
    counter-reset: bck-li-counter;
+   padding: 0;
   }
   #actividad ol.bck-ol li,
   #actividad ul.bck-ul li {
    position: relative;
+   margin-left: 2rem;
   }
 
   #actividad ol.bck-ol li {
@@ -1145,7 +1162,14 @@ body #book-index #indice .col-main {
 
 
   /*Listas desordenadas*/
-
+  .foro_wiki_cke_text ul li,
+   .texto_curso ul li,
+    .popover-template .popover-content ul li,
+     .workspace ul li ul li,
+      .cke_contents ul li,
+      .preview ul li {
+        padding: 0;
+      }
 
   /*--- CAJAS ---*/
   #actividad .bck-box {
@@ -1461,13 +1485,14 @@ body #book-index #indice .col-main {
     justify-content: center;
     align-items: center;
     color: var(--MainColor);
-    box-shadow: 1px 3px 3px #00000073;
-    border: 2px solid var(--MainColor);
+    box-shadow: 1px 3px 5px #00000033;
+    border: 0;
     border-radius: 7px;
     transition: box-shadow 0.2s ease-in-out;
+    background-color: var(--MainColorLight);
   }
   #actividad .info-button:hover, #actividad .info-button:focus {
-    box-shadow: 0px 0px 1px 5px var(--MainColorLight);
+    box-shadow: 0px 0px 1px 5px var(--MainColor);
   }
   /*Popup flotante*/
   #actividad .info-template {
@@ -1611,7 +1636,7 @@ body #book-index #indice .col-main {
   }
   #actividad .bck-file-attach:hover,
    #actividad .bck-file-attach:active{
-   box-shadow: 4px 5px var(--MainColor);
+   box-shadow: 0 0 0 5px var(--MainColor);
   }
 
  /*--- HR ---*/
