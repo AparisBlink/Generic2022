@@ -1535,18 +1535,19 @@ body #book-index #indice .col-main {
   
   /*Icono audio*/
   body:not(.edit) #actividad .player.audio {
-    background: none;
+    background-color: var(--MainColorLight);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     transition: none;
     width: auto !important;
     height: auto !important;
-    min-height: 25px;
+    min-height: 28px;
     min-width: 25px;
     vertical-align: baseline;
     border-radius: 7px;
     padding: 0 0.5rem;
+    transition: box-shadow 0.3s ease-in-out;
   }
   #actividad .player.audio:before {
     font-family: "FontAwesome";
@@ -1556,9 +1557,11 @@ body #book-index #indice .col-main {
   }
   #actividad .player.audio:hover,
    #actividad .player.audio:focus {
-    background-color: var(--MainColorLight);
     outline: 2px solid var(--MainColor);
     outline-offset: 0;
+  }
+  #actividad .player.audio:hover {
+    box-shadow: 0 0 0 5px var(--MainColor);
   }
 
   /*--- Archivo adjunto ---*/
