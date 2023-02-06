@@ -952,6 +952,7 @@ body #actividad {
 #actividad .content .header {
     padding: 1rem var(--SlidePadding);
     margin-bottom: 2rem;
+    margin-top: -2rem; /*Misma cantidad que que padding-top de la slide. */
     border-bottom: 0;
     margin-left: calc(var(--SlidePadding) * -1);
     background-color: var(--MainColor);
@@ -1511,6 +1512,10 @@ table td.bck-td-4{
   color: var(--MainColor);
   font-weight: bold;
   text-decoration: none;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.bck-tooltip:hover {
+  box-shadow: 0px 0px 1px 4px var(--MainColor);
 }
 .popover {
   font-size: inherit;
