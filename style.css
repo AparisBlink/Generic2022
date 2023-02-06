@@ -1499,6 +1499,41 @@ table td.bck-td-4{
     background-color: #c6c6c6;
 }
 /*-----------*/
+/*--- Palabra emergente ---*/
+.bck-tooltip {
+  padding: 0rem 0.5rem;
+  background-color: var(--MainColorLight);
+  border-radius: 7px;
+  color: var(--MainColor);
+  font-weight: bold;
+  text-decoration: none;
+}
+.popover {
+  font-size: inherit;
+  font-family: var(--MainFontFamily);
+  background-color: #dddddd;
+  filter: drop-shadow(2px 4px 6px #dddddd);
+}
+.popover-title {
+  font-weight: bold;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: transparent;
+  border: 0;
+}
+.popover-content {
+  padding: 1rem 1.5rem;
+}
+.popover.top>.arrow:after {
+  border-top-color: #dddddd;
+}
+
+
+
+
+
+/*-----------*/
+
 /*Popup*/
 #actividad .info-button {
     cursor: pointer;
