@@ -948,6 +948,7 @@ body #actividad {
 }
 
 /*Titulo de la slide*/
+
 #actividad .content .header {
     padding: 1rem var(--SlidePadding);
     margin-bottom: 2rem;
@@ -985,6 +986,9 @@ body #actividad {
     color: #ffffff;
     margin: 0;
     font-weight: normal;
+}
+#actividad .content .header.empty {
+  display: none;
 }
 
 /*Titulos*/
