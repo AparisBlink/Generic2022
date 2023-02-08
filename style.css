@@ -947,6 +947,10 @@ body #book-index #indice .col-main {
   background-color: var(--MainColorLight);
   color: var(--MainColor);
 }
+#layout-container .section-title-1 {
+  font-size: 35px;
+  font-weight: bold;
+}
 
 /*---- TOC LATERAL - MENÚ DESPLEGABLE LATERAL ----*/
 body:not(.isTablet) #book-index #indice .units ul#list-units li:not(.disabled).active a,
@@ -994,6 +998,24 @@ body #actividad {
     line-height: var(--MainLineHeight);
 }
 
+/*---Ajustes generales---*/
+/*Botón cierre iframe*/
+.btn-close-iframe {
+  margin-top: -8px;
+}
+.btn-close-iframe a {
+  background-color: white;
+  border-radius: 7px;
+  font-weight: bold;
+}
+.btn-close-iframe a:hover,
+ .btn-close-iframe a:active,
+  .btn-close-iframe a:focus {
+  background-color: #343434;
+  color: white;
+}
+/*--*/
+
 /*Ajustes generales slide*/
 #actividad .class_slide {
     padding-bottom: 2rem;
@@ -1024,6 +1046,10 @@ body #actividad {
     background-color: var(--MainColor);
     color: var(--MainColorLight);
     outline: 2px solid var(--MainColorLight);
+}
+.edit .navbar-bottom .slider-indicators .active {
+  width: 40px;
+  height: 20px;
 }
 .slider-indicators li:hover {
     background-color: var(--MainColorLight);    
