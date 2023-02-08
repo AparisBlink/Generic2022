@@ -906,6 +906,88 @@ body #book-index #indice .col-main {
     --MainText: 1.8rem;
     --MainLineHeight: 1.6;
 }
+
+/*---- PRIMERA Y SEGUNDA PANTALLA ----*/
+#layout-container #main-screen #course-content .slider-wrapper .slider-itemtrack .slider-item .section-title {
+  background-image: none;
+  background-color: var(--MainColor);
+}
+#layout-container #main-screen #course-content .slider-wrapper .slider-itemtrack .slider-item .section-title:before {
+  background-image: none;
+  background-color: var(--MainColor);
+}
+#layout-container #main-screen #course-content .slider-wrapper .slider-itemtrack .slider-item .section-title h3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+#layout-container #main-screen #course-content .slider-wrapper .slider-itemtrack .slider-item .section-desc {
+  max-height: 30%;
+}
+#layout-container #main-screen #course-content .slider-wrapper .slider-itemtrack .slider-item .section-desc .section-title-4 {
+  overflow: auto;
+}
+
+#layout-container div[id*="section-screen"] .section .section-data .section-title {
+  background-color: var(--MainColor);
+  background-image: none;
+}
+#layout-container div[id*="section-screen"] .section .section-data .section-title:before {
+  background-image: none;
+  background-color: var(--MainColor);
+}
+#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item:after,
+ #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item:after,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .no-resources .content-item:after {
+    background-image: none;
+    background-color: var(--MainColor);
+}
+#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item:hover,
+ #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item:hover,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .no-resources .content-item:hover {
+  background-color: var(--MainColorLight);
+  color: var(--MainColor);
+}
+
+/*---- TOC LATERAL - MENÚ DESPLEGABLE LATERAL ----*/
+body:not(.isTablet) #book-index #indice .units ul#list-units li:not(.disabled).active a,
+ body #book-index #indice .units ul#list-units li:not(.disabled).active a {
+  background: var(--MainColor);
+}
+body:not(.isTablet) #book-index #indice .units ul#list-units li:not(.disabled):not(.active) a:hover,
+ body #book-index #indice .units ul#list-units li:not(.disabled):not(.active) a:hover {
+  background: var(--MainColor);
+}
+
+body #book-index #indice .col-main {
+  border-radius: 0 7px 7px 0;
+  background-image: none;
+  background-color: var(--MainColor);
+}
+/*Iconos en menú desplegable*/
+body #book-index #indice .col-main .unit-content .content .material .item .imagen.video:before,
+body #book-index #indice .col-main .unit-content .content .material .item .imagen.musica:before {
+ background-image: none;
+ background-color: #2f2f2f;
+}
+body #book-index #indice .col-main .unit-content .content .material .item .imagen.libro:before {
+ background-image: none;
+ background-color: #2f2f2f;   
+}
+#book-index #indice .unit-content .material .item .imagen:before {
+ background-image: none;
+ background-color: #2f2f2f;
+}
+.navbar .recursos ul li div .imagen img {
+ visibility: hidden;
+}
+.navbar .recursos ul li div .imagen:after {
+ background: #2f2f2f;
+ border-radius: 100%;
+ height: 100px;
+}
+
+/*------*/
+
 body #actividad {
     font-family: var(--MainFontFamily);
     font-size: var(--MainText);
@@ -1597,11 +1679,15 @@ table td.bck-td-4{
     align-items: center;
 }
 /*Mensaje del popup*/
+.popover-template {
+  min-width: 300px;
+}
+.info-popover 
 .info-popover .popover-title, .popover-template .popover-title {
     display: flex;
     color: var(--MainColor);
     font-weight: bold;
-    padding: 1.0rem 4.5rem 1.0rem 1.5rem;
+    padding: 1.5rem 4.5rem 1.5rem 1.5rem;
 }
 .info-popover .popover-title:before,
 .popover-template .popover-title:before {
