@@ -1116,7 +1116,7 @@ body #actividad {
 /*Ajustes para slides con imagen de fondo*/
 #actividad .carousel-inner .item-container.aux-bckg .class_slide,
  #actividad .carousel-inner .item-container.aux-fullscreen.is-left .class_slide {
-  --SlidePadding: 3rem;
+  --SlidePadding: 2rem;
 }
 #actividad .carousel-inner .item-container.aux-fullscreen .class_slide,
  #actividad .carousel-inner .item-container.aux-bckg .class_slide {
