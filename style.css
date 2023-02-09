@@ -1101,6 +1101,11 @@ body #actividad {
   color: white;
 }
 /*--*/
+/*****EXPERIMENTAL*****/
+/*-- Redondeo SLIDES --*/
+#actividad .carousel-inner .item-container .class_slide {
+  border-radius: 15px;
+}
 
 /*Ajustes generales slide*/
 #actividad .class_slide {
