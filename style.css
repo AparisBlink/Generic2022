@@ -2039,7 +2039,7 @@ que sí necesitan una altura mínima*/
   .slide_main input,
    .slide_main .img-input-container {
     border: 2px solid var(--workspace-color);
-    background-color: var(--workspace-lightcolor);
+    background-color: transparent;
     height: 1.8em;
     padding: 0 6px;
     max-width: 100%;
@@ -2201,6 +2201,7 @@ que sí necesitan una altura mínima*/
   }
   .fillblanks-draggable-wrapper .response{
     border-color: var(--workspace-color);
+    border-radius: 7px;
   }
   .fillblanks-draggable-wrapper .response.respuesta_over {
     background-color: var(--workspace-lightcolor);
@@ -2208,6 +2209,13 @@ que sí necesitan una altura mínima*/
   .fillblanks-draggable-wrapper .response p {
     font-size: var(--MainText);
   }
+  .fillblanks-draggable .drag-over {
+    border-top-color: var(--MainColor);
+    border-right-color: var(--MainColor);
+    border-bottom-color: var(--MainColor);
+    border-left-color: var(--MainColor);
+    box-shadow: none;
+}
   /*--*/
   /*-- PLANTILLA ARRASTRAR IMÁGENES A ESPACIOS --*/
   .body_clase #actividad .img-input-container.respuesta_ok {
