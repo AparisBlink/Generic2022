@@ -1104,6 +1104,7 @@ body #actividad {
 
 /*Ajustes generales slide*/
 #actividad .class_slide {
+    padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: var(--SlidePadding);
     padding-right: var(--SlidePadding);
