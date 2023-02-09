@@ -1105,6 +1105,7 @@ body #actividad {
 /*-- Redondeo SLIDES --*/
 #actividad .carousel-inner .item-container .class_slide {
   border-radius: 15px;
+  overflow: hidden;
 }
 
 /*Ajustes generales slide*/
