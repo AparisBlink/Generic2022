@@ -889,25 +889,33 @@ body #book-index #indice .col-main {
 
 
 :root {
-    --ok-color: #16A34A;
-    --ok-lightcolor: #D0EDDB;
-    --error-color: #DC2626;
-    --error-lightcolor: #fee2e2;
-    --solution-color: #00BDFF;
-    --solution-lightcolor: #B2EBFF;
-    --workspace-color: #C2C2C2;
-    --workspace-lightcolor: #EDEDED;
+    --ok-color: #16A34A; /*Color respuestas correctas*/
+    --ok-lightcolor: #D0EDDB; /*Color claro respuestas correctas (fondos, resaltados...)*/
+    --error-color: #DC2626; /*Color respuestas incorrectas*/
+    --error-lightcolor: #fee2e2; /*Color claro respuestas incorrectas (fondos, resaltados...)*/
+    --solution-color: #00BDFF; /*Color soluciones*/
+    --solution-lightcolor: #B2EBFF; /*Color soluciones claro (fondos, resaltados...)*/
+    --workspace-color: #C2C2C2; /*Color NEUTRO actividades*/
+    --workspace-lightcolor: #EDEDED; /*Color claro NEUTRO actividades*/
 
-    --MainColor: #900C3F;
-    --MainColorLight: #ffcfe2;
-    --SlidePadding: 4rem;
-    --TextColor: #2E2E2E;
-    --MainFontFamily: 'Poppins', sans-serif;
-    --MainText: 1.8rem;
-    --MainLineHeight: 1.6;
+    --MainColor: #900C3F; /*Color principal del libro*/
+    --MainColorLight: #ffcfe2; /*Color principal del libro en tono claro*/
+    --SlidePadding: 4rem; /*Padding de la slide. Controla la anchura en elementos al 100%*/
+    --TextColor: #2E2E2E; /*Color del texto por defecto*/
+    --MainFontFamily: 'Poppins', sans-serif; /*Fuente ppal del estilo*/
+    --MainText: 1.8rem; /*Tamaño del estilo por defecto*/
+    --MainLineHeight: 1.6; /*Interlineado del estilo por defecto*/
+    --BorderRadius: 7px; /*Border radius de los elementos HTML*/
 }
 
 /*---- PRIMERA Y SEGUNDA PANTALLA ----*/
+#layout-container #main-screen #course-header .course-title {
+  justify-content: center;
+}
+#layout-container .section-title-1 {
+  font-size: 50px;
+  font-weight: bold;
+}
 #layout-container #main-screen #course-content .slider-wrapper .slider-itemtrack .slider-item .section-title {
   background-image: none;
   background-color: var(--MainColor);
@@ -926,6 +934,12 @@ body #book-index #indice .col-main {
 #layout-container #main-screen #course-content .slider-wrapper .slider-itemtrack .slider-item .section-desc .section-title-4 {
   overflow: auto;
 }
+
+#layout-container div[id*=section-screen] .section .section-content .tabs-content .content .no-resources .content-item .content-title,
+ #layout-container div[id*=section-screen] .section .section-content .tabs-content .content .resources-content .content-item .content-title,
+  #layout-container div[id*=section-screen] .section .section-content .tabs-content .content .unit-content .content-item .content-title {
+    font-weight: bold;
+  }
 
 #layout-container div[id*="section-screen"] .section .section-data .section-title {
   background-color: var(--MainColor);
@@ -947,10 +961,12 @@ body #book-index #indice .col-main {
   background-color: var(--MainColorLight);
   color: var(--MainColor);
 }
-#layout-container .section-title-1 {
+
+#layout-container div[id*="section-screen"] .section .section-data .section-title h1 {
   font-size: 35px;
-  font-weight: bold;
 }
+
+
 /* Estandarizacion de iconos*/
 
 /* ICONOS CONTENIDO UNIDAD*/
@@ -1049,7 +1065,7 @@ body:not(.isTablet) #book-index #indice .units ul#list-units li:not(.disabled):n
 }
 
 body #book-index #indice .col-main {
-  border-radius: 0 7px 7px 0;
+  border-radius: 0 var(--BorderRadius) var(--BorderRadius) 0;
   background-image: none;
   background-color: var(--MainColor);
 }
@@ -1091,7 +1107,7 @@ body #actividad {
 }
 .btn-close-iframe a {
   background-color: white;
-  border-radius: 7px;
+  border-radius: var(--BorderRadius);
   font-weight: bold;
 }
 .btn-close-iframe a:hover,
@@ -1197,7 +1213,7 @@ body #actividad {
     width: fit-content;
     width: -moz-fit-content;
     padding: 0.5rem 2rem;
-    border-radius: 0 0 7px 7px;
+    border-radius: 0 0 var(--BorderRadius) var(--BorderRadius);
     font-weight: bold;
 }
 #actividad .content .header .title {
@@ -1255,13 +1271,13 @@ body #actividad {
 }
 .bck-enfasis-2 {
     padding: 0.1rem 0.6rem;
-    border-radius: 3px;
+    border-radius: var(--BorderRadius);
     background-color: var(--MainColorLight);
 }
 .bck-enfasis-3 {
     background: var(--solution-lightcolor);
     padding: 0.1rem 0.6rem;
-    border-radius: 5px;
+    border-radius: var(--BorderRadius);
 }
 .bck-enfasis-4 {
     border-bottom: 2px solid var(--MainColor);
@@ -1390,7 +1406,7 @@ body #actividad {
     background-color: var(--MainColor);
     color: white;
     text-align: center;
-    border-radius: 5px;
+    border-radius: var(--BorderRadius);
 } 
 
 
@@ -1435,7 +1451,7 @@ body #actividad {
 #actividad .bck-box {
     margin-bottom: 2rem;
     border: 3px solid var(--MainColor);
-    border-radius: 10px;
+    border-radius: var(--BorderRadius);
     padding: 0;
 }
 #actividad .bck-box .bck-title {
@@ -1467,7 +1483,7 @@ body #actividad {
     position: relative;
     background-color: var(--MainColorLight);
     border-color: var(--MainColorLight);
-    border-radius: 10px;
+    border-radius: var(--BorderRadius);
     margin-top: 3rem;
 }
 #actividad .bck-box-3 > .bck-title {
@@ -1475,7 +1491,7 @@ body #actividad {
     color: #ffffff;
     padding: .5rem 1.5rem;
     display: block;
-    border-radius: 5px;
+    border-radius: var(--BorderRadius);
     width: fit-content;
     width: -moz-fit-content;
     margin: -1.5rem auto 1rem;
@@ -1494,7 +1510,7 @@ body #actividad {
     background-color: var(--MainColor);
     color: #ffffff;
     padding: .5rem 1.5rem;
-    border-radius: 5px 5px 0px 0px;
+    border-radius: var(--BorderRadius) var(--BorderRadius) 0px 0px;
     width: fit-content;
     width: -moz-fit-content;
     margin: 0;
@@ -1503,7 +1519,7 @@ body #actividad {
     padding: 0.5rem 1.5rem;
     background-color: #D9D9D9;
     border-left: 3px solid var(--MainColor);
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 var(--BorderRadius) var(--BorderRadius) 0;
 }
 
 /* -- Caja 5 --*/
@@ -1514,7 +1530,7 @@ body #actividad {
 }
 #actividad .bck-box-5 > .bck-title {
     background-color: #ffffff;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 var(--BorderRadius) var(--BorderRadius);
     width: fit-content;
     width: -moz-fit-content;
     margin: 0 auto;
@@ -1562,7 +1578,7 @@ body #actividad {
     margin: 2rem 0;
     background-color: transparent;
     border: 2px solid var(--MainColor);
-    border-radius: 10px;
+    border-radius: var(--BorderRadius);
     overflow: hidden;
 }
 #actividad .bck-dropdown .bck-dropdown-button {
@@ -1635,14 +1651,14 @@ body:not(.edit) .front .bck-flipbox-section {
     color: inherit;
 }
 body:not(.edit) .bck-flipbox-face.front {
-    border-radius: 7px;
+    border-radius: var(--BorderRadius);
     box-shadow: 2px 8px 9px #00000036;
     background-color: var(--MainColorLight);
     border-color: var(--MainColorLight);
     color: var(--MainColor);
 }
 body:not(.edit) .bck-flipbox-face.back {
-    border-radius: 7px;
+    border-radius: var(--BorderRadius);
     background-color: #808080;
     border-color: #808080;
 
@@ -1663,7 +1679,7 @@ body:not(.edit) .bck-flipbox-2 .bck-flipbox-face.back {
 body:not(.edit) .bck-tabs-box {
     background-color: transparent;
     border: 2px solid var(--MainColor);
-    border-radius: 7px;
+    border-radius: var(--BorderRadius);
 }
 .bck-tabtitles {
     background-color: transparent;
@@ -1735,7 +1751,7 @@ table td.bck-td-4{
 .bck-tooltip {
   padding: 0rem 0.5rem;
   background-color: var(--MainColorLight);
-  border-radius: 7px;
+  border-radius: var(--BorderRadius);
   color: var(--MainColor);
   font-weight: bold;
   text-decoration: none;
@@ -1777,7 +1793,7 @@ table td.bck-td-4{
     color: var(--MainColor);
     box-shadow: 1px 3px 5px #00000033;
     border: 0;
-    border-radius: 7px;
+    border-radius: var(--BorderRadius);
     transition: box-shadow 0.2s ease-in-out;
     background-color: var(--MainColorLight);
 }
@@ -1788,7 +1804,7 @@ table td.bck-td-4{
 #actividad .info-template {
     min-width: 175px;
     background: #ffffff;
-    border-radius: 10px 0 0px 10px;
+    border-radius: var(--BorderRadius) 0 0px var(--BorderRadius);
     box-shadow: 0px 6px 3px #00000073;
     padding: 1.5rem 1rem 1rem 1.5rem;
     font-size: calc(var(--MainText)/1.1);
@@ -1812,7 +1828,7 @@ table td.bck-td-4{
     box-shadow: none;
     height: 30px;
     width: 30px;
-    border-radius: 5px;
+    border-radius: var(--BorderRadius);
     left: 0px;
     top: -4px;
     display: flex;
@@ -1844,7 +1860,7 @@ table td.bck-td-4{
 .close-popover {
     color: var(--TextColor);
     background: transparent;
-    border-radius: 5px;
+    border-radius: var(--BorderRadius);
     transition: background 0.2s ease-in-out;
 } 
 .close-popover:hover {
@@ -1871,7 +1887,7 @@ body:not(.edit) #actividad .player.audio {
     min-height: 28px;
     min-width: 25px;
     vertical-align: baseline;
-    border-radius: 7px;
+    border-radius: var(--BorderRadius);
     padding: 0 0.5rem;
     transition: box-shadow 0.3s ease-in-out;
 }
@@ -1924,7 +1940,7 @@ body:not(.edit) #actividad .player.audio {
     width: fit-content;
     width: -moz-fit-content;
     text-decoration: none !important;
-    border-radius: 7px;
+    border-radius: var(--BorderRadius);
     color: var(--MainColor);
     transition: box-shadow 0.3s ease-in-out;
     font-weight: bold;
@@ -1948,7 +1964,6 @@ hr {
 /*--- Enlaces ---*/
 #actividad .slide-wrapper a:not(.player.audio, .bck-file-attach, .zoom_flag_img) {
     text-decoration: underline;
-    border-radius: 7px;
     padding: 0 .5rem;
     transition: none;
     position: relative;
@@ -1962,7 +1977,7 @@ hr {
     background-color: var(--MainColorLight);
     color: var(--MainColor);
     outline: 2px solid var(--MainColor);
-    border-radius: 7px;
+    border-radius: var(--BorderRadius);
 }
 
 /*---- Vídeo ----*/
@@ -1989,11 +2004,11 @@ que sí necesitan una altura mínima*/
 }
   /*Botones*/
   .item-container  .btn {
-    border-radius: 5px;
+    border-radius: var(--BorderRadius);
     font-weight: 700; 
   }
   #actividad .content .review .attemps span {
-    border-radius: 5px;
+    border-radius: var(--BorderRadius);
     font-size: 18px;
     background-color: var(--MainColor);
   }
@@ -2043,7 +2058,7 @@ que sí necesitan una altura mínima*/
     height: 1.8em;
     padding: 0 6px;
     max-width: 100%;
-    border-radius: 5px;
+    border-radius: var(--BorderRadius);
   }
   .body_clase:not(.edit) .form-control,
   .body_clase:not(.edit) input[type="text"],
