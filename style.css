@@ -1123,6 +1123,9 @@ body #actividad {
   border-radius: 15px;
   overflow: hidden;
 }
+#actividad .carousel-inner .item-container {
+  border-radius: 15px;
+}
 
 /*Ajustes generales slide*/
 #actividad .class_slide {
@@ -2002,6 +2005,13 @@ que sí necesitan una altura mínima*/
 #actividad .pregunta .texto_curso{
     font-size: var(--MainText);
 }
+/*Ajuste alineación nota*/
+.nota-budget span {
+  padding: 0px 46px 0px 10px;
+  display: flex;
+  align-items: center;
+}
+
   /*Botones*/
   .item-container  .btn {
     border-radius: var(--BorderRadius);
@@ -2143,7 +2153,7 @@ que sí necesitan una altura mínima*/
   #actividad .workspace .bck-dropdown.right-fb-dropdown .bck-dropdown-button {
     border: 0;
     background-color: #ffffff;
-    color: var(--TextColor);
+    color: inherit;
     display: flex;
     flex-direction: row;
     padding: 1rem 1.5rem;
@@ -2251,15 +2261,18 @@ que sí necesitan una altura mínima*/
   /*Ajustamos el interlineado para que coincida con el general*/
   #actividad .markwords-word {
     line-height: var(--MainLineHeight) !important;
+    border-radius: 5px;
+  }
+  #actividad .markwords-word:hover {
+    background-color: var(--workspace-lightcolor);
   }
   /*Ajustes en la apariencia y vinculación de colores*/
   #actividad .markword-active,
   #actividad .markword-correct,
   #actividad .markword-false,
   #actividad .markword-solution {
-    padding: 0 4px !important;
+    padding: 0 2px !important;
     border: 2px solid var(--workspace-color) !important;
-    border-radius: 5px !important;
   }
   #actividad .markwords-word.markword-correct {
     color: inherit !important;
