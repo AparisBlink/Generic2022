@@ -1113,6 +1113,7 @@ body #actividad {
   background-color: white;
   border-radius: var(--BorderRadius);
   font-weight: bold;
+  padding: 4px 10px;
 }
 .btn-close-iframe a:hover,
  .btn-close-iframe a:active,
@@ -1992,7 +1993,7 @@ hr {
 que sí necesitan una altura mínima*/
 .bck-video-player {
     height: 100%;
-    min-height: 276px;
+    min-height: 0; /*Eliminamos min-height para los vídeos con icono*/
 }
 .external-url-player .bck-video-player {
     height: 276px;
