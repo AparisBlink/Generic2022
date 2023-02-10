@@ -935,9 +935,9 @@ body #book-index #indice .col-main {
   overflow: auto;
 }
 
-#layout-container div[id*=section-screen] .section .section-content .tabs-content .content .no-resources .content-item .content-title,
- #layout-container div[id*=section-screen] .section .section-content .tabs-content .content .resources-content .content-item .content-title,
-  #layout-container div[id*=section-screen] .section .section-content .tabs-content .content .unit-content .content-item .content-title {
+#layout-container div[id*=section-screen] .section .section-content .tabs-content .content .no-resources .content-item .content-title span,
+ #layout-container div[id*=section-screen] .section .section-content .tabs-content .content .resources-content .content-item .content-title span,
+  #layout-container div[id*=section-screen] .section .section-content .tabs-content .content .unit-content .content-item .content-title span {
     font-weight: bold;
   }
 
@@ -1098,6 +1098,10 @@ body #actividad {
     font-family: var(--MainFontFamily);
     font-size: var(--MainText);
     line-height: var(--MainLineHeight);
+}
+.texto_curso p {
+  font-size: var(--MainText);
+  line-height: var(--MainLineHeight);
 }
 
 /*---Ajustes generales---*/
@@ -1763,11 +1767,11 @@ table td.bck-td-4{
 .bck-tooltip:hover {
   box-shadow: 0px 0px 1px 4px var(--MainColor);
 }
-.popover {
+.popover { /*También afecta al popover de recursos del libro digital*/
   font-size: inherit;
   font-family: var(--MainFontFamily);
-  background-color: #dddddd;
-  filter: drop-shadow(2px 4px 6px #dddddd);
+  background-color: var(--workspace-lightcolor);
+  filter: drop-shadow(2px 4px 6px #00000073);
 }
 .popover-title {
   font-weight: bold;
@@ -1992,6 +1996,9 @@ que sí necesitan una altura mínima*/
 }
 .external-url-player .bck-video-player {
     height: 276px;
+}
+.bck-video-container2.center {
+  margin-bottom: 2rem;
 }
 
 /*ACTIVIDADES*/
