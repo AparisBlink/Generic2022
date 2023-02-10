@@ -1970,7 +1970,7 @@ hr {
 }
 
 /*--- Enlaces ---*/
-#actividad .slide-wrapper a:not(.player.audio, .bck-file-attach, .zoom_flag_img) {
+#actividad .slide-wrapper a:not(.player.audio,.player.video, .bck-file-attach, .zoom_flag_img) {
     text-decoration: underline;
     padding: 0 .5rem;
     transition: none;
@@ -1979,15 +1979,37 @@ hr {
     border-radius: 0;
     color: var(--MainColor);
 }
-#actividad .slide-wrapper a:not(.player.audio, .bck-file-attach, .zoom_flag_img):hover,
-#actividad .slide-wrapper a:not(.player.audio, .bck-file-attach, .zoom_flag_img):active,
-#actividad .slide-wrapper a:not(.player.audio, .bck-file-attach, .zoom_flag_img):focus {
+#actividad .slide-wrapper a:not(.player.audio,.player.video, .bck-file-attach, .zoom_flag_img):hover,
+#actividad .slide-wrapper a:not(.player.audio,.player.video, .bck-file-attach, .zoom_flag_img):active,
+#actividad .slide-wrapper a:not(.player.audio,.player.video, .bck-file-attach, .zoom_flag_img):focus {
     background-color: var(--MainColorLight);
     color: var(--MainColor);
     outline: 2px solid var(--MainColor);
     border-radius: var(--BorderRadius);
 }
-
+#actividad .player.audio:before {
+  font-family: "FontAwesome";
+  content: "\f028";
+  font-weight: 400;
+  color: var(--MainColor);
+}
+#actividad .player.video {
+  background-image: none;
+  content: "hola mi bebebebe hola mi debebebebe";
+  color: white;
+  background-color: var(--MainColorLight);
+  border-radius: var(--BorderRadius);
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  display: inline-flex;
+}
+#actividad .player.video:before {
+  font-family: "FontAwesome";
+  content: "\f03d";
+  font-weight: 400;
+  color: var(--MainColor);
+}
 /*---- Vídeo ----*/
 /*Quitamos altura por defecto para que tenga 100%, menos en los vídeos externos (Youtube)
 que sí necesitan una altura mínima*/
