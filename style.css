@@ -972,16 +972,30 @@ body #book-index #indice .col-main {
 /* ICONOS CONTENIDO UNIDAD*/
 #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img {
   background-color: black;
-  background-size: contain;
-  }
+  background-image: none !important;
+}
 
+ #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img,
+   #layout-container div[id*=section-screen] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img:before,
+    #layout-container div[id*=section-screen] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img:before {
+  background-color: transparent;
+  background-image: url(/themes/responsive/assets/styles/generic/images/resources-icons.png);
+  background-repeat: no-repeat;
+  background-size: 118px 60px;
+  content: "";
+  height: 30px;
+  transform: translate(50%,50%);
+  transform-origin: center;
+  width: 30px;
+}
+/*
   /* Icono para imágenes*/
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-8.img {
-    background-image: url(/themes/responsive/images/contenido/recurso-icon-img.png);
-  }
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-8.img,
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-8.img {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-img.png) !important;
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-8.img:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-8.img:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-8.img:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-8.img:before {
+  background-position: 0 0;
   }
 
 /* Icono para actividades*/
@@ -1048,6 +1062,80 @@ body #book-index #indice .col-main {
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .circle-inner{
     background-color: white;
   }
+
+
+
+
+  /*---------*/
+  /* PERO CON ICONOS
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-8.img:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-8.img:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-8.img:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-8.img:before {
+  background-position: url(/themes/responsive/images/contenido/recurso-icon-img.png) !important;
+  }
+
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-6.actividad {
+    background-image: url(/themes/responsive/images/contenido/recurso-icon-actividad.png);
+  }
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-6.actividad,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-6.actividad {
+  background-image: url(/themes/responsive/images/contenido/recurso-icon-actividad.png) !important;
+  }
+
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-2.video {
+  background-image: url(/themes/responsive/images/contenido/recurso-icon-video.png);
+  }
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-2.video,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-2.video {
+  background-image: url(/themes/responsive/images/contenido/recurso-icon-video.png) !important;
+  }
+
+#layout-container div[id*="section-screen"] .section .section-content .tabs-content .unit-content .content-item .content-img.type-3.musica {
+  background-image: url(/themes/responsive/images/contenido/recurso-icon-musica.png);
+}
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-3.musica,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-3.musica {
+  background-image: url(/themes/responsive/images/contenido/recurso-icon-musica.png) !important;
+  }
+
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-5.archivo {
+  background-image: url(/themes/responsive/images/contenido/recurso-icon-archivo.png);
+  }
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-5.archivo,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-5.archivo {
+  background-image: url(/themes/responsive/images/contenido/recurso-icon-archivo.png) !important;
+  }
+
+#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-6.libro {
+  background-image: url(/themes/responsive/images/contenido/recurso-icon-libro.png);
+}
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-6.libro,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-6.libro {
+  background-image: url(/themes/responsive/images/contenido/recurso-icon-libro.png) !important;
+}
+
+#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-7.url {
+  background-image: url(/themes/responsive/images/contenido/recurso-icon-url.png);
+}
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-7.url,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-7.url {
+  background-image: url(/themes/responsive/images/contenido/recurso-icon-url.png) !important;
+  }
+
+
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .circle-outer,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .circle-outer {
+    background: white;
+  }
+
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .circle-inner,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .circle-inner{
+    background-color: white;
+  }
+
+  ---FIN PERO CON ICONOS */
+
 
   /**/ 
 
@@ -1801,7 +1889,7 @@ table td.bck-td-4{
     color: var(--MainColor);
     box-shadow: 1px 3px 5px #00000033;
     border: 0;
-    border-radius: var(--BorderRadius);
+    border-radius: 25px;
     transition: box-shadow 0.2s ease-in-out;
     background-color: var(--MainColorLight);
 }
