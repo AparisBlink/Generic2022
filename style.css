@@ -1163,6 +1163,30 @@ body #book-index #indice .col-main {
   background-image: none;
   background-color: var(--MainColor);
 }
+#book-index #indice .units ul li a:not(.delete) {
+  margin: 5px 10px;
+  border-radius: var(--BorderRadius);
+}
+#book-index #indice .unit-content .content .title-buttons {
+  text-align: center;
+  border-bottom: 0;
+  padding: 5px 15px;
+  margin: 10px 0;
+  background-color: #ffffff;
+  border-radius: var(--BorderRadius);
+  text-align: center;
+}
+#book-index #indice .unit-content .content .title-buttons .btn {
+  color: var(--MainColor);
+  font-weight: bold;
+}
+#book-index #indice .unit-content .material .title-buttons {
+  margin-right: 20px; /*Para compensar los 20px de margen negativo que tiene la sección material*/
+}
+#book-index #indice .unit-content .material .item:hover
+#book-index #indice .unit-content .material .item:focus {
+  outline: 2px solid #ffffff;
+}
 /*Iconos en menú desplegable*/
 body #book-index #indice .col-main .unit-content .content .material .item .imagen.video:before,
 body #book-index #indice .col-main .unit-content .content .material .item .imagen.musica:before {
