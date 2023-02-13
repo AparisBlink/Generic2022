@@ -1005,59 +1005,58 @@ body #book-index #indice .col-main {
   background-position: 0 0;
   }
 
-/* Icono para actividades*/
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-6.actividad {
-    background-image: url(/themes/responsive/images/contenido/recurso-icon-actividad.png);
+  /* Icono para actividades*/
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-6.actividad:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-6.actividad:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-6.actividad:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-6.actividad:before {
+    background-position: -89px -31px;
   }
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-6.actividad,
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-6.actividad {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-actividad.png) !important;
-  }
+
 
 /*Icono para vídeo*/
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-2.video {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-video.png);
-  }
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-2.video,
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-2.video {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-video.png) !important;
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-2.video:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-2.video:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-2.video:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-2.video:before {
+    background-position: -89px 0;
   }
 
+
 /*Icono para música*/
-#layout-container div[id*="section-screen"] .section .section-content .tabs-content .unit-content .content-item .content-img.type-3.musica {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-musica.png);
-}
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-3.musica,
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-3.musica {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-musica.png) !important;
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-3.musica:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-3.musica:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-3.musica:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-3.musica:before {
+    background-position: -45px -31px;
   }
 
 /*Icono para archivo*/
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-5.archivo {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-archivo.png);
-  }
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-5.archivo,
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-5.archivo {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-archivo.png) !important;
-  }
+#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-5.archivo:before,
+#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-5.archivo:before,
+#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-5.archivo:before,
+#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-5.archivo:before {
+  background-position: -45px 0;
+}
 
 /*Icono para libro*/
-#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-6.libro {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-libro.png);
-}
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-6.libro,
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-6.libro {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-libro.png) !important;
+#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-6.libro:before,
+#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-6.libro:before,
+#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-6.libro:before,
+#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-6.libro:before {
+  background-position: -89px -31px;
 }
 
+
 /*Icono para url*/
-#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-7.url {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-url.png);
+
+#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-7.url:before,
+#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-7.url:before,
+#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-7.url:before,
+#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-7.url:before {
+  background-position: -89px -31px;
 }
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-7.url,
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-7.url {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-url.png) !important;
-  }
+
 
 
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .circle-outer,
