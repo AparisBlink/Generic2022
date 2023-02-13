@@ -982,7 +982,7 @@ body #book-index #indice .col-main {
   background-color: var(--MainColor);
 }
 
- #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img:before,
+ #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img:before,
    #layout-container div[id*=section-screen] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img:before,
     #layout-container div[id*=section-screen] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img:before {
