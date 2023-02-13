@@ -1229,6 +1229,7 @@ body #layout-container {
 /*Botón cierre iframe*/
 .btn-close-iframe {
   margin-top: -8px;
+  min-width: 75px; /*Para imagenes pequeñas*/
 }
 .btn-close-iframe a {
   background-color: white;
@@ -2119,7 +2120,6 @@ hr {
 }
 #actividad .player.video {
   background-image: none;
-  content: "hola mi bebebebe hola mi debebebebe";
   color: white;
   background-color: var(--MainColorLight);
   border-radius: var(--BorderRadius);
