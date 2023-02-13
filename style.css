@@ -1193,6 +1193,9 @@ body #actividad {
     font-size: var(--MainText);
     line-height: var(--MainLineHeight);
 }
+body #layout-container {
+  font-family: var(--MainFontFamily);
+}
 .texto_curso p {
   font-size: var(--MainText);
   line-height: var(--MainLineHeight);
@@ -1265,6 +1268,9 @@ body #actividad {
 }
 
 /*---- Navbar -----*/
+body #book-index {
+  font-family: var(--MainFontFamily);
+}
 .slider-indicators li {
     width: 12px;
     height: 12px;
