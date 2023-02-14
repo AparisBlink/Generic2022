@@ -914,6 +914,11 @@ body #book-index #indice .col-main {
 /*- PRIMERA Y SEGUNDA PANTALLA -*/
 /*------------------*/
 
+/* Cambios generales en Primera y Segunda pantalla*/
+body #layout-container {
+  font-family: var(--MainFontFamily);
+}
+
 /*Primera pantalla*/
 #layout-container #main-screen #course-header .course-title {
   justify-content: center;
@@ -1063,22 +1068,20 @@ El icono de las unidades lo añadimos como before, como estaba configurada en la
     background-position: -89px -31px;
   }
 
-  
+  /*Cambio en de los círculos exteriores en la zona del profesor*/
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .circle-outer,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .circle-outer {
     background: white;
   }
-
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .circle-inner,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .circle-inner{
     background-color: white;
   }
 
 
-
-
   /*---------*/
-  /* PERO CON ICONOS
+  /* Estandarización iconos, pero con iconos estandar
+
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-8.img:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-8.img:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-8.img:before,
@@ -1152,17 +1155,10 @@ El icono de las unidades lo añadimos como before, como estaba configurada en la
 
 /*--*/
 
-
+/*------------------------------------------------*/
 /*---- TOC LATERAL - MENÚ DESPLEGABLE LATERAL ----*/
-body:not(.isTablet) #book-index #indice .units ul#list-units li:not(.disabled).active a,
- body #book-index #indice .units ul#list-units li:not(.disabled).active a {
-  background: var(--MainColor);
-}
-body:not(.isTablet) #book-index #indice .units ul#list-units li:not(.disabled):not(.active) a:hover,
- body #book-index #indice .units ul#list-units li:not(.disabled):not(.active) a:hover {
-  background: var(--MainColor);
-}
-
+/*------------------------------------------------*/
+/*Panel izquierdo*/
 body #book-index #indice .col-main {
   border-radius: 0 var(--BorderRadius) var(--BorderRadius) 0;
   background-image: none;
@@ -1172,26 +1168,31 @@ body #book-index #indice .col-main {
   margin: 5px 10px;
   border-radius: var(--BorderRadius);
 }
+body:not(.isTablet) #book-index #indice .units ul#list-units li:not(.disabled).active a,
+ body #book-index #indice .units ul#list-units li:not(.disabled).active a {
+  background: var(--MainColor);
+}
+body:not(.isTablet) #book-index #indice .units ul#list-units li:not(.disabled):not(.active) a:hover,
+ body #book-index #indice .units ul#list-units li:not(.disabled):not(.active) a:hover {
+  background: var(--MainColor);
+}
+
+/*Panel derecho*/
 #book-index #indice .unit-content .content .title-buttons {
-  text-align: center;
-  border-bottom: 0;
-  padding: 5px 15px;
-  margin: 10px 0;
-  background-color: #ffffff;
-  border-radius: var(--BorderRadius);
+  border-bottom: 2px solid #ffffff;
   text-align: center;
 }
 #book-index #indice .unit-content .content .title-buttons .btn {
-  color: var(--MainColor);
   font-weight: bold;
 }
 #book-index #indice .unit-content .material .title-buttons {
   margin-right: 20px; /*Para compensar los 20px de margen negativo que tiene la sección material*/
 }
-#book-index #indice .unit-content .material .item:hover
+#book-index #indice .unit-content .material .item:hover,
 #book-index #indice .unit-content .material .item:focus {
   outline: 2px solid #ffffff;
 }
+
 /*Iconos en menú desplegable*/
 body #book-index #indice .col-main .unit-content .content .material .item .imagen.video:before,
 body #book-index #indice .col-main .unit-content .content .material .item .imagen.musica:before {
@@ -1215,22 +1216,47 @@ body #book-index #indice .col-main .unit-content .content .material .item .image
  height: 100px;
 }
 
-/*------*/
+/*--- Fin TOC LATERAL ---*/
+
+
+/*------------------------------*/
+   /*Ajustes generales slides*/
+/*------------------------------*/
 
 body #actividad {
     font-family: var(--MainFontFamily);
     font-size: var(--MainText);
     line-height: var(--MainLineHeight);
 }
-body #layout-container {
-  font-family: var(--MainFontFamily);
-}
 .texto_curso p {
   font-size: var(--MainText);
   line-height: var(--MainLineHeight);
 }
+#actividad .class_slide {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: var(--SlidePadding);
+  padding-right: var(--SlidePadding);
+}
+#actividad .carousel-inner .item-container {
+  padding: 0 0 3rem 0;
+  margin-bottom: 10rem; /*Para que se vea dónde acaba la pagina*/
+}
 
-/*---Ajustes generales---*/
+/*Redondeo SLIDES*/
+#actividad .carousel-inner .item-container .class_slide {
+  border-radius: 15px;
+  overflow: hidden;
+}
+#actividad .carousel-inner .item-container {
+  border-radius: 15px;
+}
+
+/* Color modal*/
+.modal-backdrop {
+  background-color: #989898;
+}
+
 /*Botón cierre iframe*/
 .btn-close-iframe {
   margin-top: -8px;
@@ -1248,35 +1274,10 @@ body #layout-container {
   background-color: #343434;
   color: white;
 }
-/*Color modal*/
-.modal-backdrop {
-  background-color: #989898;
-}
-/*--*/
-/*****EXPERIMENTAL*****/
-/*-- Redondeo SLIDES --*/
-#actividad .carousel-inner .item-container .class_slide {
-  border-radius: 15px;
-  overflow: hidden;
-}
-#actividad .carousel-inner .item-container {
-  border-radius: 15px;
-}
 
-/*Ajustes generales slide*/
-#actividad .class_slide {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-left: var(--SlidePadding);
-    padding-right: var(--SlidePadding);
-}
-#actividad .carousel-inner .item-container {
-    padding: 0 0 3rem 0;
-    margin-bottom: 10rem; /*Para que se vea dónde acaba la pagina*/
-}
+/*--- Fin ajustes generales slides ---*/
 
-
-/*Ajustes para slides con imagen de fondo*/
+/*---- Ajustes slides con IMG FONDO ------*/
 #actividad .carousel-inner .item-container.aux-fullscreen.is-bottom .class_slide,
  #actividad .carousel-inner .item-container.aux-fullscreen.is-top .class_slide,
   #actividad .carousel-inner .item-container.aux-fullscreen.is-right .class_slide {
@@ -1300,6 +1301,7 @@ body #layout-container {
  #actividad .carousel-inner .item-container.aux-bckg .class_slide {
   padding-left: var(--SlidePadding) !important;
 }
+
 
 /*---- Navbar -----*/
 body #book-index {
@@ -1331,9 +1333,14 @@ body #book-index {
 .slider-indicators li:hover {
     background-color: var(--MainColorLight);    
 }
+/*--- FIN Navbar ---*/
+
+/*------------------------------------*/
+/*---- ESTILOS HTML ----*/
+/*------------------------------------*/
+
 
 /*Titulo de la slide*/
-
 #actividad .content .header {
     padding: 1rem var(--SlidePadding);
     margin-bottom: 2rem;
@@ -1363,8 +1370,6 @@ body #book-index {
     margin: 0;
 }
 #actividad .content .header .title img {
-    max-height: 30px;
-    margin-right: 15px;
     display: none;
 }
 #actividad .content .header .title h3 {
@@ -1376,6 +1381,7 @@ body #book-index {
 #actividad .content .header.empty {
   display: none;
 }
+
 
 /*Titulos*/
 #actividad h1, h2, h3, h4, h5, h6 {
@@ -1406,6 +1412,7 @@ body #book-index {
     font-size: calc(var(--MainText) * 1.15);
     color: var(--MainColor);
 }
+
 
 /*Enfasis*/
 .bck-enfasis-1 {
@@ -1445,7 +1452,8 @@ body #book-index {
     font-size: 2.2rem;
 }
 
-/*Listas ordenadas*/
+
+/*--- Listas ordenadas y desordenadas*/
 .texto_curso ul,
  .texto_curso ol,
  .workspace:not(.multiple-choice,.matching,.ordenar,.clasificar,.test) ul li ul,
@@ -1456,22 +1464,21 @@ body #book-index {
         .popover-content ol {
     padding-left: 2rem;
 }
-
-#actividad ol li::marker {
-    font-weight: bold;
-}
-
-#actividad ol.bck-ol {
-    list-style-type: none;
-    counter-reset: bck-li-counter;
-    padding: 0;
-}
 #actividad ol.bck-ol li,
 #actividad ul.bck-ul li {
     position: relative;
     margin-left: 0; /*Modificamos el margen en cada tipo de lista*/
 }
 
+/*-- Listas ordenadas*/
+#actividad ol li::marker {
+    font-weight: bold;
+}
+#actividad ol.bck-ol {
+    list-style-type: none;
+    counter-reset: bck-li-counter;
+    padding: 0;
+}
 #actividad ol.bck-ol li {
     counter-increment: bck-li-counter;
     margin-left: 2.0rem;
@@ -1494,7 +1501,6 @@ body #book-index {
 /*Ol.1 1. Color*/
 #actividad ol.bck-ol-1 li {
 }
-
 #actividad ol.bck-ol-1 li:before {
     color: var(--MainColor);
 }
@@ -1550,9 +1556,10 @@ body #book-index {
     text-align: center;
     border-radius: var(--BorderRadius);
 } 
+/*-- Fin Listas Ordenadas*/
 
 
-/*Listas desordenadas*/
+/*-- Listas desordenadas*/
 .foro_wiki_cke_text ul li,
 .texto_curso ul li,
 .popover-template .popover-content ul li,
@@ -1561,8 +1568,13 @@ body #book-index {
     .preview ul li {
     padding: 0;
 }
-
-.foro_wiki_cke_text ul li:before, .texto_curso ul li:before, .workspace:not(.test) ul li ul li:before, .cke_contents ul li:before, .preview ul li:before, .classify-item ul li:before, .popover-template .popover-content ul li:before {
+.foro_wiki_cke_text ul li:before,
+ .texto_curso ul li:before,
+  .workspace:not(.test) ul li ul li:before,
+   .cke_contents ul li:before,
+    .preview ul li:before,
+     .classify-item ul li:before,
+      .popover-template .popover-content ul li:before {
     height: 0.45em;
     width: 0.45em;
     background-color: var(--MainColor);
@@ -1587,9 +1599,9 @@ body #book-index {
     left: 0;
     margin-top: 0;
 }
+/*-- Fin desordenadas*/
 
-
-/*--- CAJAS ---*/
+/*--- CAJAS Ajustes generales ---*/
 #actividad .bck-box {
     margin-bottom: 2rem;
     border: 3px solid var(--MainColor);
@@ -1604,6 +1616,7 @@ body #book-index {
 #actividad .bck-box .bck-content {
     padding: 1rem 1.5rem;
 }
+
 
 /*-- Caja 1 --*/
 #actividad .bck-box-1 > .bck-title {
@@ -1641,7 +1654,6 @@ body #book-index {
 #actividad .bck-box-3 > .bck-content {
     padding: 0.5rem 1.5rem;
 }
-
 
 /*-- Caja 4 --*/
 #actividad .bck-box-4 {
@@ -1712,6 +1724,7 @@ body #book-index {
     margin-bottom: 1rem;
 }
 
+
 /*---- Desplegables ----*/
 
 /*Desplegable por defecto*/
@@ -1768,6 +1781,7 @@ body #book-index {
     background-color: transparent;
     color: var(--MainColor);
 }
+
 /*Desplegable 3*/
 #actividad .bck-dropdown-3 {
     border: 0;
@@ -1778,6 +1792,8 @@ body #book-index {
 .bck-dropdown-3 .bck-dropdown-content {
     background-color: var(--MainColorLight);
 }
+
+
 /*---- FLIPBOX ---*/
 body:not(.edit) .bck-flipbox-title,
 body:not(.edit) .bck-flipbox-section {
@@ -1803,7 +1819,6 @@ body:not(.edit) .bck-flipbox-face.back {
     border-radius: var(--BorderRadius);
     background-color: #808080;
     border-color: #808080;
-
 }
 
 /*Flipbox 2*/
@@ -1817,7 +1832,8 @@ body:not(.edit) .bck-flipbox-2 .bck-flipbox-face.back {
     border-color: var(--MainColor);
 }
 
-/*Tabs*/
+
+/*--- Tabs ---*/
 body:not(.edit) .bck-tabs-box {
     background-color: transparent;
     border: 2px solid var(--MainColor);
