@@ -2429,6 +2429,7 @@ que sí necesitan una altura mínima*/
   #actividad .markword-correct,
   #actividad .markword-false,
   #actividad .markword-solution {
+    border-radius: 5px;
     padding: 0 2px !important;
     border: 2px solid var(--workspace-color) !important;
   }
