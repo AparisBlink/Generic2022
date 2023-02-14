@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
    
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100;0,8..144,200;0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;0,8..144,800;0,8..144,900;1,8..144,100;1,8..144,200;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700;1,8..144,800;1,8..144,900&display=swap');
 /*
 *   Imports de todos los archivos de estilos
 */
@@ -889,23 +891,23 @@ body #book-index #indice .col-main {
 
 
 :root {
-    --ok-color: #16A34A; /*Color respuestas correctas*/
-    --ok-lightcolor: #D0EDDB; /*Color claro respuestas correctas (fondos, resaltados...)*/
-    --error-color: #DC2626; /*Color respuestas incorrectas*/
-    --error-lightcolor: #fee2e2; /*Color claro respuestas incorrectas (fondos, resaltados...)*/
-    --solution-color: #00BDFF; /*Color soluciones*/
-    --solution-lightcolor: #B2EBFF; /*Color soluciones claro (fondos, resaltados...)*/
-    --workspace-color: #C2C2C2; /*Color NEUTRO actividades*/
-    --workspace-lightcolor: #EDEDED; /*Color claro NEUTRO actividades*/
+  --ok-color: #16A34A; /*Color respuestas correctas*/
+  --ok-lightcolor: #D0EDDB; /*Color claro respuestas correctas (fondos, resaltados...)*/
+  --error-color: #DC2626; /*Color respuestas incorrectas*/
+  --error-lightcolor: #fee2e2; /*Color claro respuestas incorrectas (fondos, resaltados...)*/
+  --solution-color: #00BDFF; /*Color soluciones*/
+  --solution-lightcolor: #B2EBFF; /*Color soluciones claro (fondos, resaltados...)*/
+  --workspace-color: #C2C2C2; /*Color NEUTRO actividades*/
+  --workspace-lightcolor: #EDEDED; /*Color claro NEUTRO actividades*/
 
-    --MainColor: #900C3F; /*Color principal del libro*/
-    --MainColorLight: #ffcfe2; /*Color principal del libro en tono claro*/
-    --SlidePadding: 4rem; /*Padding de la slide. Controla la anchura en elementos al 100%*/
-    --TextColor: #2E2E2E; /*Color del texto por defecto*/
-    --MainFontFamily: 'Poppins', sans-serif; /*Fuente ppal del estilo*/
-    --MainText: 1.8rem; /*Tamaño del estilo por defecto*/
-    --MainLineHeight: 1.6; /*Interlineado del estilo por defecto*/
-    --BorderRadius: 7px; /*Border radius de los elementos HTML*/
+  --MainColor: #900C3F; /*Color principal del libro*/
+  --MainColorLight: #ffcfe2; /*Color principal del libro en tono claro*/
+  --SlidePadding: 4rem; /*Padding de la slide. Controla la anchura en elementos al 100%*/
+  --TextColor: #2E2E2E; /*Color del texto por defecto*/
+  --MainFontFamily: 'Poppins', sans-serif; /*Fuente ppal del estilo*/
+  --MainText: 1.8rem; /*Tamaño del estilo por defecto*/
+  --MainLineHeight: 1.6; /*Interlineado del estilo por defecto*/
+  --BorderRadius: 7px; /*Border radius de los elementos HTML*/
 }
 
 /*---- PRIMERA Y SEGUNDA PANTALLA ----*/
