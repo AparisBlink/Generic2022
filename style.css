@@ -890,8 +890,6 @@ body #book-index #indice .col-main {
 * CSS AÑADIDO POR HTML *
 ************************/
 
-
-
 :root {
   --ok-color: #16A34A; /*Color respuestas correctas*/
   --ok-lightcolor: #D0EDDB; /*Color claro respuestas correctas (fondos, resaltados...)*/
@@ -912,7 +910,11 @@ body #book-index #indice .col-main {
   --BorderRadius: 7px; /*Border radius de los elementos HTML*/
 }
 
-/*---- PRIMERA Y SEGUNDA PANTALLA ----*/
+/*------------------*/
+/*- PRIMERA Y SEGUNDA PANTALLA -*/
+/*------------------*/
+
+/*Primera pantalla*/
 #layout-container #main-screen #course-header .course-title {
   justify-content: center;
 }
@@ -939,6 +941,7 @@ body #book-index #indice .col-main {
   overflow: auto;
 }
 
+/*Segunda pantalla*/
 #layout-container div[id*=section-screen] .section .section-content .tabs-content .content .no-resources .content-item .content-title span,
  #layout-container div[id*=section-screen] .section .section-content .tabs-content .content .resources-content .content-item .content-title span,
   #layout-container div[id*=section-screen] .section .section-content .tabs-content .content .unit-content .content-item .content-title span {
@@ -965,15 +968,16 @@ body #book-index #indice .col-main {
   background-color: var(--MainColorLight);
   color: var(--MainColor);
 }
-
 #layout-container div[id*="section-screen"] .section .section-data .section-title h1 {
   font-size: 35px;
 }
 
-
+/*----------------------------*/
 /* Estandarizacion de iconos*/
+/*----------------------------*/
 
-/* ICONOS CONTENIDO UNIDAD*/
+/* Quitamos el gradiente como background-image, para añadir el color ppal como fondo
+El icono de las unidades lo añadimos como before, como estaba configurada en la zona del profesor */
 #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img,
    #layout-container div[id*=section-screen] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img,
@@ -1000,7 +1004,7 @@ body #book-index #indice .col-main {
   transform-origin: center;
   width: 30px;
 }
-/*
+
   /* Icono para imágenes*/
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-8.img:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-8.img:before,
@@ -1018,7 +1022,7 @@ body #book-index #indice .col-main {
   }
 
 
-/*Icono para vídeo*/
+  /*Icono para vídeo*/
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-2.video:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-2.video:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-2.video:before,
@@ -1027,7 +1031,7 @@ body #book-index #indice .col-main {
   }
 
 
-/*Icono para música*/
+  /*Icono para música*/
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-3.musica:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-3.musica:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-3.musica:before,
@@ -1035,34 +1039,31 @@ body #book-index #indice .col-main {
     background-position: -45px -31px;
   }
 
-/*Icono para archivo*/
-#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-5.archivo:before,
-#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-5.archivo:before,
-#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-5.archivo:before,
-#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-5.archivo:before {
-  background-position: -45px 0;
-}
+  /*Icono para archivo*/
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-5.archivo:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-5.archivo:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-5.archivo:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-5.archivo:before {
+    background-position: -45px 0;
+  }
 
-/*Icono para libro*/
-#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-6.libro:before,
-#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-6.libro:before,
-#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-6.libro:before,
-#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-6.libro:before {
-  background-position: -89px -31px;
-}
+  /*Icono para libro*/
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-6.libro:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-6.libro:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-6.libro:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-6.libro:before {
+    background-position: -89px -31px;
+  }
 
+  /*Icono para url*/
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-7.url:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-7.url:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-7.url:before,
+  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-7.url:before {
+    background-position: -89px -31px;
+  }
 
-/*Icono para url*/
-
-#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-7.url:before,
-#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-7.url:before,
-#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-7.url:before,
-#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-7.url:before {
-  background-position: -89px -31px;
-}
-
-
-
+  
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .circle-outer,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .circle-outer {
     background: white;
@@ -1246,6 +1247,10 @@ body #layout-container {
   .btn-close-iframe a:focus {
   background-color: #343434;
   color: white;
+}
+/*Color modal*/
+.modal-backdrop {
+  background-color: #989898;
 }
 /*--*/
 /*****EXPERIMENTAL*****/
