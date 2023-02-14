@@ -2798,6 +2798,15 @@ que sí necesitan una altura mínima*/
   }
 
 
+  @media only screen 
+  and (min-device-width : 320px) 
+  and (max-device-width : 480px) {
+    :root {
+      --MainFontSize: 1.6rem;
+      --SlidePadding: 3rem;
+    }
+  }
+
 
 
 
