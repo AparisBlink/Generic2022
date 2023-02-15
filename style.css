@@ -1158,6 +1158,42 @@ El icono de las unidades lo añadimos como before, como estaba configurada en la
 
   /**/ 
 
+/*--- Estandarización de iconos en el menú lateral ---*/
+#indice .unit-content .material .item .imagen:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#indice .unit-content .material .item .imagen.img:after {
+  background-image: url(images/icono_imagen.svg);
+}
+#indice .unit-content .material .item .imagen.musica:after {
+  background-image: url(images/icono_audio.svg);
+}
+#indice .unit-content .material .item .imagen.video:after {
+  background-image: url(images/icono_video.svg);
+}
+#indice .unit-content .material .item .imagen.actividad:after {
+  background-image: url(images/icono_actividad.svg);
+}
+#indice .unit-content .material .item .imagen.archivo:after,
+ #indice .unit-content .material .item .imagen.pdf:after {
+  background-image: url(images/icono_archivo.svg);
+}
+#indice .unit-content .material .item .imagen.url:after {
+  background-image: url(images/web_icono.svg);
+}
+#indice .unit-content .material .item .imagen.libro:after {
+  background-image: url(images/icono_libro_digital.svg);
+}
+
 /*--*/
 
 /*------------------------------------------------*/
