@@ -1000,7 +1000,7 @@ El icono de las unidades lo añadimos como before, como estaba configurada en la
    #layout-container div[id*=section-screen] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img:before,
     #layout-container div[id*=section-screen] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img:before {
   background-color: transparent;
-  background-image: url(/themes/responsive/assets/styles/generic/images/resources-icons.png);
+  background-image: url(images/icono_actividad.svg);
   background-repeat: no-repeat;
   background-size: 118px 60px;
   content: "";
@@ -1015,7 +1015,7 @@ El icono de las unidades lo añadimos como before, como estaba configurada en la
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-8.img:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-8.img:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-8.img:before {
-  background-position: 0 0;
+  background-image: url(images/icono_imagen.svg);
   }
 
   /* Icono para actividades*/
@@ -1023,7 +1023,7 @@ El icono de las unidades lo añadimos como before, como estaba configurada en la
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-6.actividad:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-6.actividad:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-6.actividad:before {
-    background-position: -89px -31px;
+    background-image: url(images/icono_actividad.svg);
   }
 
 
@@ -1032,7 +1032,7 @@ El icono de las unidades lo añadimos como before, como estaba configurada en la
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-2.video:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-2.video:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-2.video:before {
-    background-position: -89px 0;
+    background-image: url(images/icono_video.svg);
   }
 
 
@@ -1041,7 +1041,7 @@ El icono de las unidades lo añadimos como before, como estaba configurada en la
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-3.musica:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-3.musica:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-3.musica:before {
-    background-position: -45px -31px;
+    background-image: url(images/icono_audio.svg);
   }
 
   /*Icono para archivo*/
@@ -1049,7 +1049,7 @@ El icono de las unidades lo añadimos como before, como estaba configurada en la
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-5.archivo:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-5.archivo:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-5.archivo:before {
-    background-position: -45px 0;
+    background-image: url(images/icono_archivo.svg);
   }
 
   /*Icono para libro*/
@@ -1057,7 +1057,7 @@ El icono de las unidades lo añadimos como before, como estaba configurada en la
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-6.libro:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-6.libro:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-6.libro:before {
-    background-position: -89px -31px;
+    background-image: url(images/icono_libro_digital.svg);
   }
 
   /*Icono para url*/
@@ -1065,7 +1065,7 @@ El icono de las unidades lo añadimos como before, como estaba configurada en la
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-7.url:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-7.url:before,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-7.url:before {
-    background-position: -89px -31px;
+    background-image: url(images/web_icono.svg);
   }
 
   /*Cambio en de los círculos exteriores en la zona del profesor*/
@@ -2032,37 +2032,7 @@ table td.bck-td-4{
   margin-bottom: 2rem;
 }
 
-/*Icono audio*/
-body:not(.edit) #actividad .player.audio {
-    background-image: none;
-    background-color: var(--MainColorLight);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    transition: none;
-    width: auto !important;
-    height: auto !important;
-    min-height: 28px;
-    min-width: 25px;
-    vertical-align: baseline;
-    border-radius: var(--BorderRadius);
-    padding: 0 0.5rem;
-    transition: box-shadow 0.3s ease-in-out;
-}
-#actividad .player.audio:before {
-    font-family: "FontAwesome";
-    content: "\f028";
-    font-weight: 400;
-    color: var(--MainColor);
-}
-#actividad .player.audio:hover,
-#actividad .player.audio:focus {
-    outline: 2px solid var(--MainColor);
-    outline-offset: 0;
-}
-#actividad .player.audio:hover {
-    box-shadow: 0 0 0 5px var(--MainColor);
-}
+
 
 /*--- Archivo adjunto ---*/
 /*Quitamos la imagen que aparece por defecto*/
@@ -2159,6 +2129,40 @@ hr {
   font-weight: 400;
   color: var(--MainColor);
 }
+
+/*Icono audio*/
+body:not(.edit) #actividad .player.audio {
+  background-image: none;
+  background-color: var(--MainColorLight);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: none;
+  width: auto !important;
+  height: auto !important;
+  min-height: 28px;
+  min-width: 25px;
+  vertical-align: baseline;
+  border-radius: var(--BorderRadius);
+  padding: 0 0.5rem;
+  transition: box-shadow 0.3s ease-in-out;
+}
+#actividad .player.audio:before {
+  font-family: "FontAwesome";
+  content: "\f028";
+  font-weight: 400;
+  color: var(--MainColor);
+}
+#actividad .player.audio:hover,
+#actividad .player.audio:focus {
+  outline: 2px solid var(--MainColor);
+  outline-offset: 0;
+}
+#actividad .player.audio:hover {
+  box-shadow: 0 0 0 5px var(--MainColor);
+}
+
+
 /*---- Vídeo ----*/
 /*Quitamos altura por defecto para que tenga 100%, menos en los vídeos externos (Youtube)
 que sí necesitan una altura mínima*/
