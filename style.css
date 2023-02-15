@@ -1076,11 +1076,11 @@ El icono de las unidades lo añadimos como before, como estaba configurada en la
   /*Cambio en de los círculos exteriores en la zona del profesor*/
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .circle-outer,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .circle-outer {
-    background: white;
+    display: none;
   }
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .circle-inner,
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .circle-inner{
-    background-color: white;
+    display: none;
   }
 
 
@@ -1247,6 +1247,12 @@ body #book-index #indice .col-main .unit-content .content .material .item .image
 #book-index #indice .unit-content .material .item .imagen:before {
  background-image: none;
  background-color: #2f2f2f;
+}
+#book-index #indice .unit-content .material .item .imagen:after {
+  -webkit-background-size: 30px;
+  -moz-background-size: 30px;
+  -o-background-size: 30px;
+  background-size: 30px;
 }
 .navbar .recursos ul li div .imagen img {
  visibility: hidden;
