@@ -1012,7 +1012,7 @@ El icono de las unidades lo añadimos como before, como estaba configurada en la
       display: flex;
       justify-content: center;
       align-items: center;
-      background-position: center;
+      background-position: center !important;
 }
 
   /* Icono para imágenes*/
