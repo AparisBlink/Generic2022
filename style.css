@@ -999,15 +999,20 @@ El icono de las unidades lo añadimos como before, como estaba configurada en la
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img:before,
    #layout-container div[id*=section-screen] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img:before,
     #layout-container div[id*=section-screen] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img:before {
-  background-color: transparent;
-  background-image: url(images/icono_actividad.svg);
-  background-repeat: no-repeat;
-  background-size: 118px 60px;
-  content: "";
-  height: 30px;
-  transform: translate(50%,50%);
-  transform-origin: center;
-  width: 30px;
+      background-color: transparent;
+      background-image: url(images/icono_actividad.svg);
+      background-repeat: no-repeat;
+      background-size: 30px;
+      content: "";
+      transform: none;
+      transform-origin: center;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-position: center;
 }
 
   /* Icono para imágenes*/
