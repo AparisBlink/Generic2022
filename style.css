@@ -1280,9 +1280,13 @@ body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover .
 
 
 
-#book-index #indice .unit-content .material .item:hover .image:before,
-#book-index #indice .unit-content .material .item:focus .image:before {
+#book-index #indice .unit-content .material .item:hover .imagen:before,
+#book-index #indice .unit-content .material .item:focus .imagen:before {
   background-color: var(--MainColor);
+}
+body #book-index #indice .col-main li.current a,
+ body #book-index #indice .col-main li a:hover {
+  color: var(--TextColor);
 }
 
 /*Iconos en menú desplegable*/
