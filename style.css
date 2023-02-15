@@ -1220,6 +1220,10 @@ body:not(.isTablet) #book-index #indice .units ul#list-units li:not(.disabled):n
  body #book-index #indice .units ul#list-units li:not(.disabled):not(.active) a:hover {
   background: #cdcdcd;
 }
+body:not(.isTablet) #indice .units ul li:not(.disabled) a:hover .title,
+ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
+  color: var(--TextColor);
+}
 
 /*Panel derecho*/
 body #book-index #indice .col-main {
@@ -1241,6 +1245,7 @@ body #book-index #indice .col-main {
 
 #book-index #indice .unit-content a {
   color: var(--TextColor);
+  transition: none;
 }
 
 #book-index #indice .unit-content .actividades .item {
@@ -1254,6 +1259,9 @@ body #book-index #indice .col-main {
   margin: 10px 0;
   border-radius: var(--BorderRadius);
 }
+#book-index #indice .unit-content .actividades .item .text {
+  color: var(--TextColor);
+}
 
 body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover,
  #book-index #indice .unit-content .actividades .item.active,
@@ -1262,8 +1270,11 @@ body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover,
   background-color: var(--MainColor);
 }
 body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover a,
+body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover .text,
  #book-index #indice .unit-content .actividades .item.active a,
-  #book-index #indice .unit-content .actividades .item.current a {
+ #book-index #indice .unit-content .actividades .item.active .text,
+  #book-index #indice .unit-content .actividades .item.current a,
+  #book-index #indice .unit-content .actividades .item.current .text {
     color: #ffffff;
 }
 
