@@ -987,7 +987,7 @@ El icono de las unidades lo añadimos como before, como estaba configurada en la
   #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img,
    #layout-container div[id*=section-screen] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img,
     #layout-container div[id*=section-screen] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img {
-  background-color: black;
+  background-color: #262626;
   background-image: none !important;
 }
 #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img,
@@ -1196,6 +1196,8 @@ El icono de las unidades lo añadimos como before, como estaba configurada en la
 
 /*--*/
 
+
+
 /*------------------------------------------------*/
 /*---- TOC LATERAL - MENÚ DESPLEGABLE LATERAL ----*/
 /*------------------------------------------------*/
@@ -1238,15 +1240,15 @@ body:not(.isTablet) #book-index #indice .units ul#list-units li:not(.disabled):n
 body #book-index #indice .col-main .unit-content .content .material .item .imagen.video:before,
 body #book-index #indice .col-main .unit-content .content .material .item .imagen.musica:before {
  background-image: none;
- background-color: #2f2f2f;
+ background-color: #262626;
 }
 body #book-index #indice .col-main .unit-content .content .material .item .imagen.libro:before {
  background-image: none;
- background-color: #2f2f2f;   
+ background-color: #262626;   
 }
 #book-index #indice .unit-content .material .item .imagen:before {
  background-image: none;
- background-color: #2f2f2f;
+ background-color: #262626;
 }
 #book-index #indice .unit-content .material .item .imagen:after {
   -webkit-background-size: 30px;
@@ -1258,7 +1260,7 @@ body #book-index #indice .col-main .unit-content .content .material .item .image
  visibility: hidden;
 }
 .navbar .recursos ul li div .imagen:after {
- background: #2f2f2f;
+ background: #262626;
  border-radius: 100%;
  height: 100px;
 }
