@@ -1255,8 +1255,8 @@ body #book-index #indice .col-main {
   -o-transition: none;
   -moz-transition: none;
   transition: none;
-  padding: 5px 15px;
-  margin: 10px 0;
+  padding: 8px 15px;
+  margin: 15px 0;
   border-radius: var(--BorderRadius);
 }
 #book-index #indice .unit-content .actividades .item .text {
@@ -1282,7 +1282,7 @@ body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover .
 
 #book-index #indice .unit-content .material .item:hover .imagen:before,
 #book-index #indice .unit-content .material .item:focus .imagen:before {
-  background-color: var(--MainColor);
+  background-color: var(--MainColor) !important;
 }
 body #book-index #indice .col-main li.current a,
  body #book-index #indice .col-main li a:hover {
