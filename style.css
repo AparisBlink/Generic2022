@@ -1210,6 +1210,10 @@ El icono de las unidades lo añadimos como before, como estaba configurada en la
 }
 body:not(.isTablet) #book-index #indice .units ul#list-units li:not(.disabled).active a,
  body #book-index #indice .units ul#list-units li:not(.disabled).active a {
+  background-color: var(--TextColor);
+}
+body:not(.isTablet) #book-index #indice .units ul#list-units li:not(.disabled).active a,
+ body #book-index #indice .units ul#list-units li:not(.disabled).active a {
   background-color: #cdcdcd
 }
 body:not(.isTablet) #book-index #indice .units ul#list-units li:not(.disabled):not(.active) a:hover,
@@ -1228,11 +1232,44 @@ body #book-index #indice .col-main {
   text-align: center;
 }
 #book-index #indice .unit-content .content .title-buttons .btn {
+  color: var(--MainColor);
   font-weight: bold;
 }
 #book-index #indice .unit-content .material .title-buttons {
   margin-right: 20px; /*Para compensar los 20px de margen negativo que tiene la sección material*/
 }
+
+#book-index #indice .unit-content a {
+  color: var(--TextColor);
+}
+
+#book-index #indice .unit-content .actividades .item {
+  border-bottom: 0;
+  opacity: 1;
+  -webkit-transition: none;
+  -o-transition: none;
+  -moz-transition: none;
+  transition: none;
+  padding: 5px 15px;
+  margin: 10px 0;
+  border-radius: var(--BorderRadius);
+}
+
+body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover,
+ #book-index #indice .unit-content .actividades .item.active,
+  #book-index #indice .unit-content .actividades .item.current {
+  opacity: 1;
+  background-color: var(--MainColor);
+}
+body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover a,
+ #book-index #indice .unit-content .actividades .item.active a,
+  #book-index #indice .unit-content .actividades .item.current a {
+    color: #ffffff;
+}
+
+
+
+
 #book-index #indice .unit-content .material .item {
   border-radius: var(--BorderRadius);
 }
