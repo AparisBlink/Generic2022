@@ -2393,7 +2393,7 @@ que sí necesitan una altura mínima*/
 }
 #actividad .player.video:before {
   content: "";
-  background-image: url(images/video_negro.svg);
+  background-image: url(images/iconovideo_negro.svg);
   padding: 0 1.2rem;
   background-repeat: no-repeat;
   background-position: center;
