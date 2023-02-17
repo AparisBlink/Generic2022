@@ -1412,6 +1412,9 @@ body #book-index #indice .col-main .unit-content .content .material .item .image
 }
 
 /*--- Navbar de recursos ----*/
+.navbar .recursos ul li div .imagen img {
+  visibility: hidden;
+}
 .navbar .recursos ul li div .imagen:after {
  background: #262626;
  border-radius: 100%;
