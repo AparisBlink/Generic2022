@@ -1035,12 +1035,12 @@ body #layout-container {
   }
 }
 
-
 @media (max-width: 476px) {
   #layout-container #main-screen #course-header .course-title span {
     white-space: break-spaces;
   }
 }
+
 
 /*Segunda pantalla*/
 #layout-container div[id*=section-screen] .section .section-content .tabs-content .content .no-resources .content-item .content-title span,
@@ -1297,7 +1297,8 @@ El icono de las unidades lo añadimos como before, como estaba configurada en la
 /*------------------------------------------------*/
 /*---- TOC LATERAL - MENÚ DESPLEGABLE LATERAL ----*/
 /*------------------------------------------------*/
-/*Panel izquierdo*/
+
+/*--- Panel izquierdo ---*/
 
 #book-index #indice .units ul li a:not(.delete) {
   margin: 5px 0px 5px 20px;
@@ -1321,12 +1322,17 @@ body:not(.isTablet) #indice .units ul li:not(.disabled) a:hover .title,
   color: var(--TextColor);
 }
 
-/*Panel derecho*/
+/*--- Panel derecho ---*/
+
 body #book-index #indice .col-main {
   border-radius: 0 var(--BorderRadius) var(--BorderRadius) 0;
   background-image: none;
   background-color: #cdcdcd;
 }
+
+
+/*Botones Actividades Unidad y Material de Apoyo*/
+
 #book-index #indice .unit-content .content .title-buttons {
   border-bottom: 2px solid var(--MainColor);
   text-align: center;
@@ -1339,11 +1345,36 @@ body #book-index #indice .col-main {
   margin-right: 20px; /*Para compensar los 20px de margen negativo que tiene la sección material*/
 }
 
+
+/*Colores opciones del menu */
+
 #book-index #indice .unit-content a {
   color: var(--TextColor);
   transition: none;
 }
 
+body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover,
+ #book-index #indice .unit-content .actividades .item.active,
+  #book-index #indice .unit-content .actividades .item.current {
+  opacity: 1;
+  background-color: var(--MainColor);
+}
+
+body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover a,
+body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover .text,
+ #book-index #indice .unit-content .actividades .item.active a,
+ #book-index #indice .unit-content .actividades .item.active .text,
+  #book-index #indice .unit-content .actividades .item.current a,
+  #book-index #indice .unit-content .actividades .item.current .text {
+    color: #ffffff;
+}
+
+/*Fondo iconos material de apoyo*/
+
+#book-index #indice .unit-content .material .item:hover .imagen:before,
+#book-index #indice .unit-content .material .item:focus .imagen:before {
+  background-color: var(--MainColor) !important;
+}
 #book-index #indice .unit-content .actividades .item {
   border-bottom: 0;
   opacity: 1;
@@ -1359,31 +1390,6 @@ body #book-index #indice .col-main {
   color: var(--TextColor);
 }
 
-body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover,
- #book-index #indice .unit-content .actividades .item.active,
-  #book-index #indice .unit-content .actividades .item.current {
-  opacity: 1;
-  background-color: var(--MainColor);
-}
-body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover a,
-body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover .text,
- #book-index #indice .unit-content .actividades .item.active a,
- #book-index #indice .unit-content .actividades .item.active .text,
-  #book-index #indice .unit-content .actividades .item.current a,
-  #book-index #indice .unit-content .actividades .item.current .text {
-    color: #ffffff;
-}
-
-
-
-#book-index #indice .unit-content .material .item:hover .imagen:before,
-#book-index #indice .unit-content .material .item:focus .imagen:before {
-  background-color: var(--MainColor) !important;
-}
-body #book-index #indice .col-main li.current a,
- body #book-index #indice .col-main li a:hover {
-  color: var(--TextColor);
-}
 
 /*Iconos en menú desplegable*/
 body #book-index #indice .col-main .unit-content .content .material .item .imagen.video:before,
@@ -2335,18 +2341,20 @@ body:not(.edit) #actividad .player.audio {
   transition: none;
   width: auto !important;
   height: auto !important;
-  min-height: 28px;
+  min-height: 25px !important;
   min-width: 25px;
   vertical-align: baseline;
   border-radius: var(--BorderRadius);
-  padding: 0 0.5rem;
+  padding: 0 0.3rem;
   transition: box-shadow 0.3s ease-in-out;
+  margin: 0 0.4rem;
 }
 #actividad .player.audio:before {
-  font-family: "FontAwesome";
-  content: "\f028";
-  font-weight: 400;
-  color: var(--MainColor);
+  content: "";
+  background-image: url(images/icono_audio_negro.svg);
+  padding: 0 1.2rem;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 #actividad .player.audio:hover,
 #actividad .player.audio:focus {
@@ -2384,10 +2392,11 @@ que sí necesitan una altura mínima*/
   display: inline-flex;
 }
 #actividad .player.video:before {
-  font-family: "FontAwesome";
-  content: "\f03d";
-  font-weight: 400;
-  color: var(--MainColor);
+  content: "";
+  background-image: url(images/video_negro.svg);
+  padding: 0 1.2rem;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 #actividad .player.video:hover,
 #actividad .player.video:focus {
