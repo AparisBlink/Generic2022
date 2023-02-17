@@ -942,8 +942,28 @@ body #layout-container {
 #layout-container #main-screen #course-content .slider-wrapper .slider-itemtrack .slider-item .section-desc {
   max-height: 30%;
 }
-#layout-container #main-screen #course-content .slider-wrapper .slider-itemtrack .slider-item .section-desc .section-title-4 {
-  overflow: auto;
+
+/*Modificación de las Media Queries ya existentes */ 
+@media (max-width: 1024px) {
+  #layout-container #main-screen #course-header {
+    padding: 0 40px;
+    flex-direction: column;
+}
+}
+
+@media (max-height: 375px), (max-width: 476px) {
+  #layout-container #main-screen #course-header .course-title [class*=section-title-] {
+    font-size: 30px;
+    line-height: 40px;
+    white-space: break-spaces;
+  }
+}
+
+
+@media (max-width: 476px) {
+  #layout-container #main-screen #course-header .course-title span {
+    white-space: break-spaces;
+  }
 }
 
 /*Segunda pantalla*/
@@ -1345,6 +1365,17 @@ body #actividad {
   margin-bottom: 10rem; /*Para que se vea dónde acaba la pagina*/
 }
 
+/*Titulo del libro en barra de herramientas*/
+.libro-left ul li .title {
+  font-family: var(--MainFontFamily);
+}
+
+/*Botón Volver*/
+.go-back button span,
+ #layout-container div.go-back button span {
+  font-family: var(--MainFontFamily);
+}
+
 /*Redondeo SLIDES*/
 #actividad .carousel-inner .item-container .class_slide {
   border-radius: 15px;
@@ -1440,6 +1471,7 @@ body #book-index {
 /*------------------------------------*/
 /*---- ESTILOS HTML ----*/
 /*------------------------------------*/
+
 
 
 /*Titulo de la slide*/
@@ -2215,22 +2247,7 @@ hr {
   font-weight: 400;
   color: var(--MainColor);
 }
-#actividad .player.video {
-  background-image: none;
-  color: white;
-  background-color: var(--MainColorLight);
-  border-radius: var(--BorderRadius);
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-  display: inline-flex;
-}
-#actividad .player.video:before {
-  font-family: "FontAwesome";
-  content: "\f03d";
-  font-weight: 400;
-  color: var(--MainColor);
-}
+
 
 /*Icono audio*/
 body:not(.edit) #actividad .player.audio {
@@ -2277,6 +2294,32 @@ que sí necesitan una altura mínima*/
 }
 .bck-video-container2.center {
   margin-bottom: 2rem;
+}
+
+/*-- Ajustes para video en linea ---*/
+#actividad .player.video {
+  background-image: none;
+  color: white;
+  background-color: var(--MainColorLight);
+  border-radius: var(--BorderRadius);
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  display: inline-flex;
+}
+#actividad .player.video:before {
+  font-family: "FontAwesome";
+  content: "\f03d";
+  font-weight: 400;
+  color: var(--MainColor);
+}
+#actividad .player.video:hover,
+#actividad .player.video:focus {
+  outline: 2px solid var(--MainColor);
+  outline-offset: 0;
+}
+#actividad .player.video:hover {
+  box-shadow: 0 0 0 5px var(--MainColor);
 }
 
 /*ACTIVIDADES*/
