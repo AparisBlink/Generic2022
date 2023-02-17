@@ -1417,24 +1417,6 @@ body #book-index #indice .col-main .unit-content .content .material .item .image
  border-radius: 100%;
  height: 100px;
 }
-.navbar .recursos ul li div .imagen.img:after {
-  content: url(images/icono_imagen.svg);
-}
-.navbar .recursos ul li div .imagen.video:after {
-  content: url(images/icono_video.svg);
-}
-.navbar .recursos ul li div .imagen.url:after {
-  content: url(images/icono_web.svg);
-}
-.navbar .recursos ul li div .imagen.archivo:after {
-  content: url(images/icono_archivo.svg);
-}
-.navbar .recursos ul li div .imagen.musica:after {
-  content: url(images/icono_audio.svg);
-}
-.navbar .recursos ul li div .imagen.actividad:after {
-  content: url(images/icono_actividad.svg);
-}
 
 
 /*--- Fin TOC LATERAL ---*/
@@ -1443,6 +1425,21 @@ body #book-index #indice .col-main .unit-content .content .material .item .image
 /*------------------------------*/
    /*Ajustes generales slides*/
 /*------------------------------*/
+/*Titulo del libro en barra de herramientas*/
+.libro-left ul li .title {
+  font-family: var(--MainFontFamily);
+}
+
+/*Botón Volver*/
+.go-back button span,
+ #layout-container div.go-back button span {
+  font-family: var(--MainFontFamily);
+}
+
+/* Color modal*/
+.modal-backdrop {
+  background-color: #989898;
+}
 
 body #actividad {
     font-family: var(--MainFontFamily);
@@ -1464,17 +1461,6 @@ body #actividad {
   margin-bottom: 10rem; /*Para que se vea dónde acaba la pagina*/
 }
 
-/*Titulo del libro en barra de herramientas*/
-.libro-left ul li .title {
-  font-family: var(--MainFontFamily);
-}
-
-/*Botón Volver*/
-.go-back button span,
- #layout-container div.go-back button span {
-  font-family: var(--MainFontFamily);
-}
-
 /*Redondeo SLIDES*/
 #actividad .carousel-inner .item-container .class_slide {
   border-radius: 15px;
@@ -1484,10 +1470,6 @@ body #actividad {
   border-radius: 15px;
 }
 
-/* Color modal*/
-.modal-backdrop {
-  background-color: #989898;
-}
 
 /*Botón cierre iframe*/
 .btn-close-iframe {
