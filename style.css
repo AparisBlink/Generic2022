@@ -1392,6 +1392,10 @@ body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover .
 
 
 /*Iconos en menú desplegable*/
+body #book-index #indice .col-main li.current a,
+ body #book-index #indice .col-main li a:hover {
+  color: var(--TextColor);
+}
 body #book-index #indice .col-main .unit-content .content .material .item .imagen.video:before,
 body #book-index #indice .col-main .unit-content .content .material .item .imagen.musica:before {
  background-image: none;
