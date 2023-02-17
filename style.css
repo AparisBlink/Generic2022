@@ -1332,7 +1332,6 @@ body #book-index #indice .col-main {
 
 
 /*Botones Actividades Unidad y Material de Apoyo*/
-
 #book-index #indice .unit-content .content .title-buttons {
   border-bottom: 2px solid var(--MainColor);
   text-align: center;
@@ -1347,19 +1346,16 @@ body #book-index #indice .col-main {
 
 
 /*Colores opciones del menu */
-
 #book-index #indice .unit-content a {
   color: var(--TextColor);
   transition: none;
 }
-
 body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover,
  #book-index #indice .unit-content .actividades .item.active,
   #book-index #indice .unit-content .actividades .item.current {
   opacity: 1;
   background-color: var(--MainColor);
 }
-
 body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover a,
 body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover .text,
  #book-index #indice .unit-content .actividades .item.active a,
@@ -1370,11 +1366,6 @@ body:not(.isTablet) #book-index #indice .unit-content .actividades .item:hover .
 }
 
 /*Fondo iconos material de apoyo*/
-
-#book-index #indice .unit-content .material .item:hover .imagen:before,
-#book-index #indice .unit-content .material .item:focus .imagen:before {
-  background-color: var(--MainColor) !important;
-}
 #book-index #indice .unit-content .actividades .item {
   border-bottom: 0;
   opacity: 1;
@@ -1396,16 +1387,13 @@ body #book-index #indice .col-main li.current a,
  body #book-index #indice .col-main li a:hover {
   color: var(--TextColor);
 }
+
+
+/*Esta parte se puede simplificar para unificarlo todo en el genérico .item imagen*/
+#book-index #indice .unit-content .material .item .imagen:before,
 body #book-index #indice .col-main .unit-content .content .material .item .imagen.video:before,
-body #book-index #indice .col-main .unit-content .content .material .item .imagen.musica:before {
- background-image: none;
- background-color: #262626;
-}
+body #book-index #indice .col-main .unit-content .content .material .item .imagen.musica:before,
 body #book-index #indice .col-main .unit-content .content .material .item .imagen.libro:before {
- background-image: none;
- background-color: #262626;   
-}
-#book-index #indice .unit-content .material .item .imagen:before {
  background-image: none;
  background-color: #262626;
 }
@@ -1415,14 +1403,39 @@ body #book-index #indice .col-main .unit-content .content .material .item .image
   -o-background-size: 30px;
   background-size: 30px;
 }
-.navbar .recursos ul li div .imagen img {
- visibility: hidden;
+
+
+/*Si simplificamos la parte anterior, se puede quitar el !important*/
+#book-index #indice .unit-content .material .item:hover .imagen:before,
+#book-index #indice .unit-content .material .item:focus .imagen:before {
+  background-color: var(--MainColor) !important;
 }
+
+/*--- Navbar de recursos ----*/
 .navbar .recursos ul li div .imagen:after {
  background: #262626;
  border-radius: 100%;
  height: 100px;
 }
+.navbar .recursos ul li div .imagen.img:after {
+  content: url(images/icono_imagen.svg);
+}
+.navbar .recursos ul li div .imagen.video:after {
+  content: url(images/icono_video.svg);
+}
+.navbar .recursos ul li div .imagen.url:after {
+  content: url(images/icono_web.svg);
+}
+.navbar .recursos ul li div .imagen.archivo:after {
+  content: url(images/icono_archivo.svg);
+}
+.navbar .recursos ul li div .imagen.musica:after {
+  content: url(images/icono_audio.svg);
+}
+.navbar .recursos ul li div .imagen.actividad:after {
+  content: url(images/icono_actividad.svg);
+}
+
 
 /*--- Fin TOC LATERAL ---*/
 
