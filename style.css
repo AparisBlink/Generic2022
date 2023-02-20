@@ -2343,20 +2343,23 @@ body:not(.edit) #actividad .player.audio {
   transition: none;
   width: auto !important;
   height: auto !important;
-  min-height: 25px !important;
-  min-width: 25px;
+  min-height: 28px !important;
+  min-width: 28px;
   vertical-align: baseline;
   border-radius: var(--BorderRadius);
   padding: 0 0.3rem;
   transition: box-shadow 0.3s ease-in-out;
-  margin: 0 0.4rem;
+  margin: 0 0.5rem;
 }
 #actividad .player.audio:before {
   content: "";
   background-image: url(images/icono_audio_negro.svg);
-  padding: 0 1.2rem;
   background-repeat: no-repeat;
   background-position: center;
+  width: 2.5rem;
+  height: 1.8rem;
+  display: flex;
+  justify-content: center;
 }
 #actividad .player.audio:hover,
 #actividad .player.audio:focus {
