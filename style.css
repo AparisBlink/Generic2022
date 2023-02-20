@@ -2398,10 +2398,14 @@ que sí necesitan una altura mínima*/
 }
 #actividad .player.video:before {
   content: "";
-  background-image: url(images/iconovideo_negro.svg);
+  background-image: url(images/icono_video_negro.svg);
   padding: 0 1.2rem;
   background-repeat: no-repeat;
   background-position: center;
+  width: 2.5rem;
+  height: 1.8rem;
+  display: flex;
+  justify-content: center;
 }
 #actividad .player.video:hover,
 #actividad .player.video:focus {
