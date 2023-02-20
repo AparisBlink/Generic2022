@@ -1725,6 +1725,7 @@ body #book-index {
 
 /*Ol.2 a) Negro*/
 #actividad ol.bck-ol-2 li {
+  margin-left: 2.7rem;
 }
 #actividad ol.bck-ol-2 li:before {
     content: counter(bck-li-counter, lower-alpha) ")";
@@ -1733,6 +1734,7 @@ body #book-index {
 
 /*Ol.3 a) Color*/
 #actividad ol.bck-ol-3 li {
+  margin-left: 2.7rem;
 }
 #actividad ol.bck-ol-3 li:before {
     content: counter(bck-li-counter, lower-alpha) ")";
@@ -1741,6 +1743,7 @@ body #book-index {
 
 /*Ol.4 A. Color*/
 #actividad ol.bck-ol-4 li {
+  margin-left: 2.5rem;
 }
 #actividad ol.bck-ol-4 li:before {
     content: counter(bck-li-counter, upper-alpha) ".";
@@ -1766,6 +1769,7 @@ body #book-index {
 /*Ol.7 Boton Num Color*/
 #actividad ol.bck-ol-7 li {
     margin-bottom: 1rem;
+    margin-left: 3rem;
 }
 #actividad ol.bck-ol-7 li:before {
     content: counter(bck-li-counter) "";
