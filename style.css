@@ -1179,82 +1179,7 @@ El icono de las unidades lo añadimos como before, como estaba configurada en la
     display: none;
   }
 
-
-  /*---------*/
-  /* Estandarización iconos, pero con iconos estandar
-
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-8.img:before,
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-8.img:before,
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-8.img:before,
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .content-img.type-8.img:before {
-  background-position: url(/themes/responsive/images/contenido/recurso-icon-img.png) !important;
-  }
-
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-6.actividad {
-    background-image: url(/themes/responsive/images/contenido/recurso-icon-actividad.png);
-  }
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-6.actividad,
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-6.actividad {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-actividad.png) !important;
-  }
-
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-2.video {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-video.png);
-  }
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-2.video,
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-2.video {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-video.png) !important;
-  }
-
-#layout-container div[id*="section-screen"] .section .section-content .tabs-content .unit-content .content-item .content-img.type-3.musica {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-musica.png);
-}
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-3.musica,
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-3.musica {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-musica.png) !important;
-  }
-
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-5.archivo {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-archivo.png);
-  }
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-5.archivo,
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-5.archivo {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-archivo.png) !important;
-  }
-
-#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-6.libro {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-libro.png);
-}
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-6.libro,
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-6.libro {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-libro.png) !important;
-}
-
-#layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .unit-content .content-item .content-img.type-7.url {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-url.png);
-}
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content .resources-content .content-item .content-img.type-7.url,
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .content-img.type-7.url {
-  background-image: url(/themes/responsive/images/contenido/recurso-icon-url.png) !important;
-  }
-
-
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .circle-outer,
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .circle-outer {
-    background: white;
-  }
-
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .unit-content .content-item .circle-inner,
-  #layout-container div[id*="section-screen"] .section .section-content .tabs-content .content.teacher-content .resources-content .content-item .circle-inner{
-    background-color: white;
-  }
-
-  ---FIN PERO CON ICONOS */
-
-
-  /**/ 
-
-/*--- Estandarización de iconos en el menú lateral ---*/
+/*--- Estandarización de iconos en el menú TOC lateral ---*/
 #indice .unit-content .material .item .imagen:after {
   content: '';
   position: absolute;
@@ -1290,7 +1215,11 @@ El icono de las unidades lo añadimos como before, como estaba configurada en la
   background-image: url(images/icono_libro_digital.svg);
 }
 
-/*--*/
+/*----------------*/
+/* FIN ESTANDARIZACIÓN DE ICONOS */
+/*----------------*/
+
+
 
 
 
@@ -2435,7 +2364,14 @@ que sí necesitan una altura mínima*/
   padding: 0;
 }
 
+/*------------------------*/
+/*--- FIN ESTILOS HTML----*/
+/*------------------------*/
+
+/*------------------------*/
 /*ACTIVIDADES*/
+/*------------------------*/
+
 
 /*--- Ajustes actividades ---*/
 /*Generico workspace*/
@@ -3099,6 +3035,7 @@ que sí necesitan una altura mínima*/
   }
 
 
+  /*------ MEDIA QUERIES PARA CONTENIDO HTML -----*/
   @media only screen 
   and (min-device-width : 320px) 
   and (max-device-width : 480px) {
