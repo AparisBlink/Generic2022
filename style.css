@@ -2684,7 +2684,7 @@ que sí necesitan una altura mínima*/
 }
   /*--*/
   /*-- PLANTILLA ARRASTRAR IMÁGENES A ESPACIOS --*/
-  .body_clase #actividad .img-input-container.respuesta_ok {
+  #actividad .img-input-container.respuesta_ok {
     border-style: solid;
   }
   .fillblankimages-draggable-wrapper .response {
@@ -2693,6 +2693,13 @@ que sí necesitan una altura mínima*/
   .fillblankimages-draggable-wrapper .response.respuesta_over {
     background-color: var(--workspace-lightcolor);
   }
+  .fillblankimages-draggable .drag-over {
+    border-top-color: var(--MainColor);
+    border-right-color: var(--MainColor);
+    border-bottom-color: var(--MainColor);
+    border-left-color: var(--MainColor);
+    box-shadow: 0px 0px 3px 2px var(--MainColor);
+}
   /*-- PLANTILLA ARRASTRAR IMÁGENES A IMÁGENES --*/
   #actividad .image-over-image .drag_image-over-image li {
     cursor: move;
@@ -2712,7 +2719,7 @@ que sí necesitan una altura mínima*/
   #actividad .markword-correct,
   #actividad .markword-false,
   #actividad .markword-solution {
-    border-radius: 5px;
+    border-radius: 5px !important;
     padding: 0 2px !important;
     border: 2px solid var(--workspace-color) !important;
   }
