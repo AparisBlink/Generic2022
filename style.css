@@ -2739,6 +2739,12 @@ que sí necesitan una altura mínima*/
     border: 2px solid transparent !important;
   }
   /*--*/
+  /*-- CALCULO NUMERICO --*/
+  #actividad .workspace.calculo .cifra input[type=text]:focus,
+   #actividad .workspace.calculo .cifra input[type=tel]:focus {
+    border-color: var(--MainColor);
+ }
+  /*--*/
   /*-- PLANTILLA RELACIONAR --*/
   #actividad .workspace.matching .opcion {
     border: 2px solid var(--workspace-color);  
